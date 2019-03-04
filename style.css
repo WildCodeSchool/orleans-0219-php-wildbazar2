@@ -9,8 +9,13 @@
 
 .footer {
 	background-color: #ff8533;
+	font-family: 'Arimo', sans-serif;
 }
 
 /*.tableFooter {
 	justify-content: center;
-}*/
+}
+*/
+.footerImg {
+	float: left;
+}
