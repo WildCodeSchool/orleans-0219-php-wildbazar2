@@ -7,3 +7,21 @@
     font-family: 'Libre Baskerville', serif;
 
 */
+
+
+.row {
+	border: groove;
+}
+
+.title, .card{
+	border: groove;
+}
+
+.title {
+	text-align: center;
+}
+
+
+.card-img{
+	width: 15%;
+}
