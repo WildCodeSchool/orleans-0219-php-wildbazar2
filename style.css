@@ -22,7 +22,7 @@
 }
 
 .modal {
-	font-family: arimo;
+	font-family: Arimo-Regular;
 	font-size: 1.1em;
 }
 
@@ -34,8 +34,12 @@
 }
 .modal-body p {
 	padding-top: 1em;
-	padding-right: 1.5em;
+	padding-right: 3em;
 	text-align: justify;
 }
 
-.modal-body .features{}
+.modal-body .features{
+	margin-left: 2em;
+	font-weight: bold;
+	font-size: 1.2em;
+}
