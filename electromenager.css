@@ -27,3 +27,8 @@
 .card-body {
 	background-color: #d6d6c2;
 }
+
+section {
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
