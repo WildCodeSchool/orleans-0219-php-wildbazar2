@@ -63,3 +63,28 @@
 
 }
 
+
+/*Categories*/
+
+.category, .cont-cat a {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;}
+
+img.cat {
+	width: 99%;
+	height: auto;
+	box-sizing: border-box;}
+
+div.cont-cat {
+	margin: 3%; 
+	border: 1px solid lightgray;}
+
+div.cont-cat:hover {
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 30px 0 rgba(0, 0, 0, 0.19);
+	transition: box-shadow .25s ease-in;
+  	-webkit-transition: box-shadow .25s ease-in;
+  	-moz-transition: box-shadow .25s ease-in;
+  	-ms-transition: box-shadow .25s ease-in;
+  	-o-transition: box-shadow .25s ease-in;}
