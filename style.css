@@ -20,3 +20,22 @@
 	background-color: #ff8533;
 	border: solid 1px white;
 }
+
+.modal {
+	font-family: arimo;
+	font-size: 1.1em;
+}
+
+.modal-body img {
+	margin-left: 2em;
+	padding: 1em;
+	box-shadow: 1px 1px 0px 0px rgba(255, 133, 51);
+
+}
+.modal-body p {
+	padding-top: 1em;
+	padding-right: 1.5em;
+	text-align: justify;
+}
+
+.modal-body .features{}
