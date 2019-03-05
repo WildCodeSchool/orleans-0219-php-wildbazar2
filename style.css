@@ -1,11 +1,7 @@
-@font-face{
-	font-family: 'LibreBaskerville';
-	src: url('fonts/LibreBaskerville.ttf')
-}
-@font-face{
-	font-family: 'Arimo-Regular';
-	src: url('fonts/Arimo-Regular.ttf')
-}
+/*    font-family: 'Arimo', sans-serif;
+
+    font-family: 'Libre Baskerville', serif;*/
+
 #about {
 	justify-content: center;
 	text-align: center;
@@ -18,7 +14,7 @@
 }
 
 .title{
-	font-family: LibreBaskerville-Bold;
+	font-family: 'Libre Baskerville', serif;
 	font-size: 3em;
 }
 
@@ -88,3 +84,47 @@ div.cont-cat:hover {
   	-moz-transition: box-shadow .25s ease-in;
   	-ms-transition: box-shadow .25s ease-in;
   	-o-transition: box-shadow .25s ease-in;}
+
+
+/*FOOTER*/
+.footer {
+	background-color: #ff8533;
+	font-family: 'Arimo', sans-serif;
+	padding-bottom: 10px;
+}
+
+.footerImg {
+	height: 40%;
+	padding-left: 20%;
+}
+
+.tableFooter {
+	padding-left: 20%;
+}
+
+footer a {
+	color: #3366ff;
+}
+
+.titleFooter {
+	font-family: 'Libre Baskerville', serif;
+	padding-top: 4%;
+}
+
+.inputText {
+	height: 100px;
+	width: 50%;
+}
+
+.btnFooter {
+	border: solid 1px white;
+	box-shadow: 1px 2px 2px white;
+	margin-left: 2.5%;
+}
+
+.btnFooter:hover {
+	border: solid 1px #ff8533;
+	box-shadow: 1px 2px 2px #ff8533;
+	margin-left: 2.5%;
+	background-color: white;
+}

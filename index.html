@@ -10,13 +10,14 @@
 
 		<!--  Call fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Arimo|Libre+Baskerville" rel="stylesheet"> 
+
 		<link rel="stylesheet" href="style.css" />
 
-		<title>Wild bazrd 2</title>
+		<title>Wild Bazard 2</title>
 	</head>
 
 	<body>
-		<main class="container-fluid">
+
 
 			<!-- Header -->
 			<header class="container-fluid">
@@ -52,6 +53,7 @@
 				  		<button type="button" class="btn btn-warning pull-right">Cart<i class="fas fa-cart-arrow-down"></i></button>
 					    
 					</nav>
+				<main class="container-fluid">
 
 				<section>
 
@@ -120,13 +122,6 @@
 				</div>
 			</section>
 
-	<!-- About us -->
-
-
-
-	<!-- To selling -->
-
-
 <!-- About us -->
 			<section id="about">
 				<div class="row justify-content-center">
@@ -153,6 +148,9 @@
 					</div>
 				</div>
 			</section>
+
+<!-- Top selling -->
+
 
 			<div class="row">
 		    	<div class="col-12 mb-4 text-center">
@@ -196,30 +194,71 @@
         		</div>
       		</div>
 
-			<!-- Footer -->
-
-
-
 		</main>
 
-		<!-- Optional JavaScript -->
-		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<!-- Footer -->
 
-		<!-- Font Awesome  -->
-		<script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
+		<footer class="container-fluid">
+			<div class="row footer">
+				<div class="col-12 col-sm-8 col-md-6">
+					<div class="row tableFooter">
+						<div class="col-5 col-sm-5 col-md-5 col-lg-3"> <a href="#"> Home </a> </div>
+						<div class="col-5 col-sm-5 col-md-5 col-lg-3"> <a href="#">Category 1 </a></div>
+					</div>
+					<div class="row tableFooter">
+						<div class="col-5 col-sm-5 col-md-5 col-lg-3"> <a href="#">About us </a></div>
+						<div class="col-5 col-sm-5 col-md-5 col-lg-3"> <a href="#">Category 1 </a></div>
+					</div>
+					<div class="row tableFooter">
+						<div class="col-5 col-sm-5 col-md-5 col-lg-3"> <a href="#">Top selling </a></div>
+						<div class="col-5 col-sm-5 col-md-5 col-lg-3"> <a href="#">Category 1 </a></div>
+					</div>				
+					<div class="row tableFooter">
+						<div class="col-5 col-sm-5 col-md-5 col-lg-3"> <a href="#">Contact </a></div>
+						<div class="col-5 col-sm-5 col-md-5 col-lg-3"> <a href="#">Category 1 </a></div>
+					</div>				
+					<div class="row tableFooter">
+						<div class="col-5 col-sm-5 col-md-5 col-lg-3"> <a href="#">Legal mentions </a></div>
+						<div class="col-5 col-sm-5 col-md-5 col-lg-3"> <a href="#">Category 1 </a></div>
+					</div>
+					<br>	
+					<div class="row">
+						<div class="col-6 col-sm-6 col-md-6 col-lg-4">
+							<img src="images/wild.png" class="footerImg" alt="logo">
+						</div>
+						<div class="col-6 col-sm-6 col-md-6 col-lg-6">
+							<h2 class="titleFooter"> WILD BAZAR</h2>
+							<p>1, rue de la Paix</p>
+							<p>75000 Paris</p>
+							<p>01-23-45-67-89</p>
+						</div>
+					</div>
+					
+					
+				</div>	
+				<div class="col-12 col-sm-12 col-md-6"> 
+					<h3>Contact us</h3>
+					<form method="post" action="traitement.php">
+						<p>
+							<label for="email"><i class="far fa-envelope"></i></label> <input type="email" name="email" id="email">
+						</p>
+						<p>
+							<label for="message"> <i class="far fa-comment"></i> </label>	 <input type="text" name="message" class="inputText" id="message">
+						</p>
+						<button type="button" class="btn btn-lg btnFooter">Submit</button>
+					</form>
+				</div>					
+			</div>
+		</footer>
 
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-
-    
-		<!-- Optional JavaScript -->
-		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-		</body>
+	<!-- Font Awesome  -->
+	<script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
+	
 	</body>
 </html>
