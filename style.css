@@ -1,6 +1,6 @@
 @font-face{
-	font-family: 'LibreBaskerville-Bold';
-	src: url('fonts/LibreBaskerville-Bold.ttf')
+	font-family: 'LibreBaskerville';
+	src: url('fonts/LibreBaskerville.ttf')
 }
 @font-face{
 	font-family: 'Arimo-Regular';
@@ -18,7 +18,7 @@
 }
 
 .title{
-	font-family: LibreBaskerville-Bold;
+	font-family: LibreBaskerville;
 	font-size: 3em;
 }
 
