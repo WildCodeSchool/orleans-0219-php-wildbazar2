@@ -1,27 +1,49 @@
-/*How to call fonts
-
-
-
-    font-family: 'Arimo', sans-serif;
-
-    font-family: 'Libre Baskerville', serif;
-
-*/
-
-
-.row {
-	border: groove;
+@font-face{
+	font-family: 'LibreBaskerville-Bold';
+	src: url('fonts/LibreBaskerville-Bold.ttf')
 }
-
-.title, .card{
-	border: groove;
+@font-face{
+	font-family: 'Arimo-Regular';
+	src: url('fonts/Arimo-Regular.ttf')
 }
-
-.title {
+#about {
+	justify-content: center;
 	text-align: center;
+	margin-top: 5em;
+	padding-top: 3em;
+	padding-bottom: 4em;
+	background-color: lightgrey;
+	box-shadow: 0px 0px 12px grey;
+
 }
 
+.title{
+	font-family: LibreBaskerville-Bold;
+	font-size: 3em;
+}
 
-.card-img{
-	width: 15%;
+.media{
+	padding-top: 5em;
+	background-color: lightgrey;
+
+}
+
+.media-img {
+	object-fit: cover;
+	padding-top: 0.5em;
+	padding-bottom: 2em;
+}
+
+.media-body{
+	text-align: justify;
+	font-size: 1.5em;
+}
+
+.media-body p{
+	font-family: Arimo-Regular;
+	font-size: 1.1em;
+	padding-left: 2em;
+	padding-right: 2em;
+	margin: 0;
+
 }
