@@ -59,3 +59,25 @@ font-family: 'Libre Baskerville', serif;
   color: black;
   text-align: center;
 }
+
+.navbar{
+	background-color: #ff8533;
+	 
+}
+
+.navbar-brand{
+	font-family: 'Libre Baskerville', serif;
+}
+
+.logo{
+	width: 50px;
+	height: 50px;
+}
+
+.nav-link{
+	font-family: 'Arimo', sans-serif;
+}
+
+.fas{
+	height: 20px;
+}
