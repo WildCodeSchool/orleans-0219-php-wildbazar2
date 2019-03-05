@@ -14,7 +14,7 @@
 		<!-- Call style.css -->
 		<link rel="stylesheet" type="text/css" href="style.css">
 
-		<title>Hello, world!</title>
+		<title>Wild Bazar 2</title>
 	</head>
 	<body>
 		
@@ -35,49 +35,56 @@
 
 		<footer class="container-fluid">
 			<div class="row footer">
-				<div class="col">
+				<div class="col-12 col-sm-8 col-md-6">
 					<div class="row tableFooter">
-						<div class="col-3">Home</div>
-						<div class="col-3">Category 1</div>
+						<div class="col-5 col-sm-5 col-md-5 col-lg-3"> <a href="#"> Home </a> </div>
+						<div class="col-5 col-sm-5 col-md-5 col-lg-3"> <a href="#">Category 1 </a></div>
 					</div>
-					<div class="row">
-						<div class="col-3">About us</div>
-						<div class="col-3">Category 1</div>
+					<div class="row tableFooter">
+						<div class="col-5 col-sm-5 col-md-5 col-lg-3"> <a href="#">About us </a></div>
+						<div class="col-5 col-sm-5 col-md-5 col-lg-3"> <a href="#">Category 1 </a></div>
 					</div>
-					<div class="row">
-						<div class="col-3">Top selling</div>
-						<div class="col-3">Category 1</div>
+					<div class="row tableFooter">
+						<div class="col-5 col-sm-5 col-md-5 col-lg-3"> <a href="#">Top selling </a></div>
+						<div class="col-5 col-sm-5 col-md-5 col-lg-3"> <a href="#">Category 1 </a></div>
 					</div>				
-					<div class="row">
-						<div class="col-3">Contact</div>
-						<div class="col-3">Category 1</div>
+					<div class="row tableFooter">
+						<div class="col-5 col-sm-5 col-md-5 col-lg-3"> <a href="#">Contact </a></div>
+						<div class="col-5 col-sm-5 col-md-5 col-lg-3"> <a href="#">Category 1 </a></div>
 					</div>				
-					<div class="row">
-						<div class="col-3">Legal mentions</div>
-						<div class="col-3">Category 1</div>
+					<div class="row tableFooter">
+						<div class="col-5 col-sm-5 col-md-5 col-lg-3"> <a href="#">Legal mentions </a></div>
+						<div class="col-5 col-sm-5 col-md-5 col-lg-3"> <a href="#">Category 1 </a></div>
 					</div>
 					<br>	
-					<img src="images/wild.png" class="footerImg">
-					<p> WILD BAZAR</p>
-					<p>1, rue de la Paix</p>
-					<p>75000 Paris</p>
-					<p>01-23-45-67-89</p>
+					<div class="row">
+						<div class="col-6 col-sm-6 col-md-6 col-lg-4">
+							<img src="images/wild.png" class="footerImg" alt="logo">
+						</div>
+						<div class="col-6 col-sm-6 col-md-6 col-lg-6">
+							<h2 class="title"> WILD BAZAR</h2>
+							<p>1, rue de la Paix</p>
+							<p>75000 Paris</p>
+							<p>01-23-45-67-89</p>
+						</div>
+					</div>
+					
+					
 				</div>	
-				<div class="col"> 
-					<p>Contact us</p>
+				<div class="col-12 col-sm-12 col-md-6"> 
+					<h3>Contact us</h3>
 					<form method="post" action="traitement.php">
 						<p>
-							<label for="email"><i class="far fa-envelope"></label></i> <input type="email" name="email">
+							<label for="email"><i class="far fa-envelope"></i></label> <input type="email" name="email" id="email">
 						</p>
 						<p>
-							<label for="message"><i class="far fa-comment"></i></label>  <input type="text" name="message">	
+							<label for="message"> <i class="far fa-comment"></i> </label>	 <input type="text" name="message" class="inputText" id="message">
 						</p>
-
+						<button type="button" class="btn btn-lg">Submit</button>
 					</form>
 				</div>					
 			</div>
 		</footer>
-
 
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
