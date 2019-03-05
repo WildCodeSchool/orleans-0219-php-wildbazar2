@@ -1,9 +1,41 @@
-/*How to call fonts
+/*Watches-items*/
+section#watches,
+div.watches,
+div.cont-watches {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;}
 
+div.cont-watches {
+	box-sizing: border-box;}
 
+div.card.cont-watches {
+	border: none!important;
+}
 
-    font-family: 'Arimo', sans-serif;
+div.cont-watches img {width: 100%;}
 
-    font-family: 'Libre Baskerville', serif;
+div.cont-watches:hover {
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 30px 0 rgba(0, 0, 0, 0.19);
+	opacity: 0.7;
+	transition: box-shadow .25s ease-in;
+  	-webkit-transition: box-shadow .25s ease-in;
+  	-moz-transition: box-shadow .25s ease-in;
+  	-ms-transition: box-shadow .25s ease-in;
+  	-o-transition: box-shadow .25s ease-in;}
 
-*/
+a.btn {
+	background-color: #ff8533;
+	color: white;
+	border: none;}
+
+a.btn:hover {
+	background-color: white;
+	color: #ff8533;
+	border: 1px solid #ff8533;
+	transition: background-color .25s ease-in;
+  	-webkit-transition: background-color .25s ease-in;
+  	-moz-transition: background-color .25s ease-in;
+  	-ms-transition: background-color .25s ease-in;
+  	-o-transition: background-color .25s ease-in;}}
