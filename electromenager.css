@@ -11,13 +11,32 @@
 }
 
 .card {
-	border: none;
+	border: solid 1px;
 }
 
-.card:hover {
-	transform: scale(1.1);
+.card-img-top {
+	object-fit: cover;
+	padding: 2em;
+}
+
+.card-img-top:hover {
+	transform: scale(1.3);
 	transition: all 0.2s ease-in;
 }
+
+/*.btnInfo {
+	position: relative;
+	left: 95%;
+}
+
+.iInfoHide {
+	display: none;
+}
+
+.iInfo:hover .iInfoHide{
+	display: block;
+}*/
+
 
 .modal-dialog {
     max-width: 40%!important;
@@ -37,7 +56,15 @@ section {
 .btn {
 	background-color: #ff8533;
 	border: solid 1px white;
+	color: white;
 }
+
+.btn:hover {
+	border: solid 1px #ff8533;
+	color: #ff8533;
+	background-color: white;
+}
+
 
 /*FOOTER*/
 .footer {
