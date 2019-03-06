@@ -24,18 +24,10 @@
 	transition: all 0.2s ease-in;
 }
 
-/*.btnInfo {
-	position: relative;
-	left: 95%;
+.btnInfo {
+	margin-left: 100px;
 }
 
-.iInfoHide {
-	display: none;
-}
-
-.iInfo:hover .iInfoHide{
-	display: block;
-}*/
 
 
 .modal-dialog {
