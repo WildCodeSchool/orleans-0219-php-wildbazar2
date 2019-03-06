@@ -1,0 +1,54 @@
+/*Watches-items*/
+section#watches,
+div.watches,
+div.cont-watches {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;}
+
+div.card.cont-watches {
+	border: none!important;
+	transition: all .2s ease-out;
+	box-sizing: border-box;
+	margin: 3%;
+	position: relative;}
+
+div.card.cont-watches:hover {
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 30px 0 rgba(0, 0, 0, 0.19);
+	opacity: 0.7;
+	transform: scale(1.1);
+	transition: all .2s ease-in;
+  	-webkit-transition: box-shadow .25s ease-in;
+  	-moz-transition: box-shadow .25s ease-in;
+  	-ms-transition: box-shadow .25s ease-in;
+  	-o-transition: box-shadow .25s ease-in;}
+
+div.cont-watches img {
+	width: 100%;}
+
+button.btn-card {
+	background-color: #ff8533;
+	color: white;
+	border: none;}
+
+button.btn-card:hover {
+	background-color: white;
+	color: #ff8533;
+	border: 1px solid #ff8533;
+	transition: background-color .25s ease-in;
+  	-webkit-transition: background-color .25s ease-in;
+  	-moz-transition: background-color .25s ease-in;
+  	-ms-transition: background-color .25s ease-in;
+  	-o-transition: background-color .25s ease-in;}}
+
+.modal-dialog {max-width: 350px!important;}
+
+.modal-body .card {border: none!important;}
+
+.promo {
+	position: absolute;
+	top: 4%;
+	right: 4%;
+	color: red;
+	font-weight: 900;
