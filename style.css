@@ -2,6 +2,82 @@
 
     font-family: 'Libre Baskerville', serif;*/
 
+
+/* header*/
+
+.navbar{
+	padding-top: 40px;
+}
+
+.navbar-brand{
+	font-family: 'Libre Baskerville', serif;
+	font-size: 2.5em;
+}
+
+.logo{
+	width: 70px;
+	height: 70px;
+}
+
+.nav-link{
+	font-family: 'Arimo', sans-serif;
+	font-size: 1.5em;
+
+}
+
+.fas{
+	height: 20px;
+}
+
+.carousel_title{
+	font-family: 'Libre Baskerville', serif;
+	font-size: 4em;
+	color: black;
+}
+
+.carousel_text{
+	font-family: 'Arimo', sans-serif;
+	font-size: 3em;
+	color:  #ff6833 ;
+}
+
+.carousel_title1{
+	font-family: 'Libre Baskerville', serif;
+	font-size: 4em;
+	color: white;
+}
+
+.carousel_text1{
+	font-family: 'Arimo', sans-serif;
+	font-size: 3em;
+	color: white;
+}
+
+.carousel_title2{
+	font-family: 'Libre Baskerville', serif;
+	font-size: 4em;
+	color: black;
+	
+}
+
+.carousel_text2{
+	font-family: 'Arimo', sans-serif;
+	font-size: 3em;
+	color: black;
+	
+}
+
+.carousel_image{
+	opacity: 0.9;
+}
+
+.text{
+	font-family: 'Arimo', sans-serif;
+	font-size: 2em;
+}
+
+/*about*/
+
 #about {
 	justify-content: center;
 	text-align: center;
