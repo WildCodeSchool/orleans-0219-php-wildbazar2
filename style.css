@@ -90,6 +90,19 @@ div.cont-cat:hover {
   	-ms-transition: box-shadow .25s ease-in;
   	-o-transition: box-shadow .25s ease-in;}
 
+/* top selling */
+.card{
+	border: transparent;
+}
+
+.nameWanted {
+	font-family: Arimo-Regular;
+	position:absolute;
+    top: 5%;
+    left: 85%;
+    font-size: 1.3em;
+}
+
 
 /*FOOTER*/
 .footer {
