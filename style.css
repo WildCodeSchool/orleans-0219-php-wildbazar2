@@ -10,6 +10,7 @@
 
 .card{
 	transition: all 0.2s ease-out;
+	border: none;
 }
 .card:hover{
 	transform: scale(1.1);
