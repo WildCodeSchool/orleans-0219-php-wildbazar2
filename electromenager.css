@@ -7,30 +7,26 @@
 
 
 .price {
-	position: absolute;
-	right: 5%;
-	top: 5%;
 	font-weight: bold;
 }
 
-
 .card {
-	border: solid 3px #d6d6c2;
+	border: none;
 }
 
-.card-img-top {
-	min-height: 200px;
-	min-width: 200px;
-}
+/*.card-body h5 {
+	height: 60%;
+}*/
 
-
-.card-body {
-	background-color: #d6d6c2;
-}
 
 section {
 	padding-top: 2%;
 	padding-bottom: 2%;
+}
+
+.btn {
+	background-color: #ff8533;
+	border: solid 1px white;
 }
 
 /*FOOTER*/
@@ -86,4 +82,8 @@ footer {
 
 footer p {
 	font-size: 1.1em;
+}
+
+.search {
+	font-size: 1.5em;
 }
