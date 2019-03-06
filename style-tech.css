@@ -7,19 +7,28 @@
     font-family: 'Libre Baskerville', serif;
 
 */
-
-.card{
-	transition: all 0.2s ease-out;
+.card {
 	border: none;
 }
-.card:hover{
-	transform: scale(1.1);
+.card-img-top{
+	object-fit: cover;
+	padding: 2em;
+	transition: all 0.2s ease-out;
+}
+.card-img-top:hover{
+	transform: scale(1.3);
 	transition: all 0.2s ease-in;
 }
 
 .btn {
 	background-color: #ff8533;
 	border: solid 1px white;
+	color: white;
+}
+.btn:hover{
+	background-color: white;
+	color: #ff8533;
+	border: 1px solid #ff8533;
 }
 
 .modal {
