@@ -14,10 +14,20 @@
 	border: none;
 }
 
-/*.card-body h5 {
-	height: 60%;
-}*/
+.card:hover {
+	transform: scale(1.1);
+	transition: all 0.2s ease-in;
+}
 
+.modal-dialog {
+    max-width: 40%!important;
+    margin: 1.75rem auto;
+ }
+
+ .modal-body {
+ 	max-height: 30%;
+ 	overflow: scroll;
+ }
 
 section {
 	padding-top: 2%;
