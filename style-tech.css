@@ -1,0 +1,55 @@
+/*How to call fonts
+
+
+
+    font-family: 'Arimo', sans-serif;
+
+    font-family: 'Libre Baskerville', serif;
+
+*/
+.card {
+	border: none;
+}
+.card-img-top{
+	object-fit: cover;
+	padding: 2em;
+	transition: all 0.2s ease-out;
+}
+.card-img-top:hover{
+	transform: scale(1.3);
+	transition: all 0.2s ease-in;
+}
+
+.btn {
+	background-color: #ff8533;
+	border: solid 1px white;
+	color: white;
+}
+.btn:hover{
+	background-color: white;
+	color: #ff8533;
+	border: 1px solid #ff8533;
+}
+
+.modal {
+	font-family: Arimo-Regular;
+	font-size: 1.1em;
+}
+
+.modal-body img {
+	margin-left: 2em;
+	padding: 1em;
+	box-shadow: 1px 1px 0px 0px rgba(255, 133, 51);
+
+}
+.modal-body p {
+	padding-top: 1em;
+	padding-right: 3em;
+	text-align: justify;
+}
+
+.modal-body .features{
+	margin-left: 2em;
+	font-weight: bold;
+	font-size: 1.2em;
+}
