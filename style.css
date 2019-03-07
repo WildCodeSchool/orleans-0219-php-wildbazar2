@@ -101,16 +101,20 @@ p, li {
 	font-size: 2em;
 }
 
+.homeImg {
+	opacity: 0.7!important;
+}
+
 .carousel_title{
 	font-family: 'Libre Baskerville', serif;
 	font-size: 4em;
-	color: black;
+	color: #ff8533;
 }
 
 .carousel_text{
 	font-family: 'Alegreya', sans-serif;
 	font-size: 3em;
-	color:  #ff6833 ;
+	color: #ff8533;
 }
 
 .carousel_title1{
@@ -136,7 +140,20 @@ p, li {
 	font-family: 'Alegreya', sans-serif;
 	font-size: 3em;
 	color: black;
-	
+}
+
+.carousel_title3{
+	font-family: 'Libre Baskerville', serif;
+	font-size: 4em;
+	color: white;
+	text-shadow: #343a40 2px 2px;	
+}
+
+.carousel_text3{
+	font-family: 'Alegreya', sans-serif;
+	font-size: 3em;
+	color: white;
+	text-shadow: #343a40 2px 2px;
 }
 
 .carousel_image{
