@@ -35,17 +35,6 @@
   object-fit: cover;
 }
 
-.btn:hover{
-  background-color: white;
-  border: solid 1px #ff8533;
-  color: #ff8533 
-}
-
-.btn{
-	background-color: #ff8533;
-	border: solid 1px white;
-  color: white;
-}
 
 .fas{
   margin-left: 50px;
@@ -57,6 +46,55 @@ hr
   border:solid 1px;
   width: 80%;
 }
+
+button.btn-card:hover {
+  background-color: white;
+  color: #ff8533;
+  border: 1px solid #ff8533;
+  transition: background-color .25s ease-in;
+    -webkit-transition: background-color .25s ease-in;
+    -moz-transition: background-color .25s ease-in;
+    -ms-transition: background-color .25s ease-in;
+    -o-transition: background-color .25s ease-in;
+  }
+
+  button.btn-card {
+  background-color: #ff8533;
+  color: white;
+  border: none;
+  }
+
+  .btn
+  {
+    background-color: #ff8533;
+    border:solid 1px white;
+    color: white;
+  }
+
+.btn:hover
+{
+  background-color: white;
+  border:solid 1px #ff8533;
+  color:#ff8533;
+}
+
+/*   MODAL   */
+
+.modal-header {
+  position: relative;
+}
+
+.modal-header h3 {
+  position: absolute;
+  right: 10%;
+  color: #ff8533;
+}
+
+hr {border: 1px solid lightgrey;
+  width: 80%;
+  color: lightgrey}
+
+.modal-body .card {border: none!important;}
 
 
 /* header */
