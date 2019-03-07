@@ -62,27 +62,28 @@
 }
 
 .modal-dialog {
-    max-width: 40%!important;
-    min-width: 350px;
-    margin: 1.75rem auto;
+    min-width: 40%!important;
 }
 
-.modal-body {
-	max-height: 30%;
-	overflow: scroll;
+
+.modal-header h3 {
+	position: absolute;
+	right: 10%;
+	color: #ff8533;
 }
 
 .modal-content h5 {
 	font-weight: bold;
-	font-size: 1.5em;
+	font-size: 1.3em;
 }
 
 .modal-body .price {
 	font-size: 2.5em;
 }
 
-.modal-body img {
-	width: 70%;
+.modalImg img {
+	width: 80%;
+	transform: none!important;
 }
 
 .modal-body p {
