@@ -15,99 +15,143 @@
 <link rel="stylesheet" type="text/css" href="Aquariumm.css">
 
 <title>Hello, world!</title>
-</head>
-<body>
-<h1>Hello, world!</h1>
+  </head>
+
+  <body>
 
 
-<!-- Header -->
+      <!-- Navbar -->
+      <header id="home" class="container-fluid">
+
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <img class="logo" src="https://raw.githubusercontent.com/WildCodeSchool/orleans-0219-php-wildbazar2/footer/images/wild.png" alt="logo">
+              <a class="navbar-brand" href="#home">Wild Bazar</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#about">About us<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#fashion">Fashion</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#pet shop">Pet shop</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#high-Tech">High-Tech</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#watchs">Watches</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#home appliance">Home appliance</a>
+                    </li>
+                </ul>
+            </div>
+              <button type="button" class="btn btn-warning pull-right">Cart <i class="fas fa-cart-arrow-down"></i></button>    
+        </nav>
+
+      <!--Image-->
+
+        <section>
+                    <div class="image-categorie">
+                      <img class="image_cate" src="images/fish.jpg" class="d-block w-100" alt="fishs">
+                    </div>
+        </section>
+      </header>
+
+
+<!-- categorie -->
 
 <div id="Aquarium">
   <div class="row justify-content-center p-4 mt-5">
-    <div class="col-12  col-md-6 col-lg-2 mr-4">
+    <div class="col-12  col-md-6 col-lg-3 mt-4">
       <div class="card" style=";">
           <img src=" images/aquarium 30L.jpeg" class="card-img-top" alt="...">
           <h5 class="card-title">Aquarium</h5>
           <p class="price">230 &euro;</p>
         <div class="card-body">
-            <a href="#" class="btn btn-primary"><i class="fas fa-cart-plus"></i>  Add to cart</a>
-           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#photo1"><i class="fas fa-search-plus"></i>
-</button>           
-          </div>
+            <a href="#" class="btn"><i class="fas fa-cart-plus"></i>  Add to cart</a>
+           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#photo1"><i class="fas fa-info"></i>
+           </button>           
+        </div>
       </div>
     </div>
-    <div class="col-12 col-md-6 col-lg-2 mr-4 ">
+    <div class="col-12 col-md-6 col-lg-3 mt-4 ">
       <div class="card" style=";">
        <img src=" images/aquarium et meuble.jpeg" class="card-img-top" alt="...">
        <h5 class="card-title">Aquarium Register</h5>
        <p class="price">330 &euro;</p>
         <div class="card-body">
-             <a href="#" class="btn btn-primary"><i class="fas fa-cart-plus"></i>  Add to cart</a>
-           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#photo2"><i class="fas fa-search-plus"></i>
-</button>
-           </div>
+             <a href="#" class="btn"><i class="fas fa-cart-plus"></i>  Add to cart</a>
+           <button type="button" class="btn" data-toggle="modal" data-target="#photo2"><i class="fas fa-info"></i>
+           </button>
+        </div>
       </div>
     </div>
-    <div class="col-12  col-md-6 col-lg-2 mr-4">
+    <div class="col-12  col-md-6 col-lg-3 mt-4">
       <div class="card" style=";">
           <img src=" images/aquarium poisson rouge.jpeg" class="card-img-top" alt="...">
           <h5 class="card-title">Aquarium Register</h5>
           <p class="price">100 &euro;</p>
-        <div class="card-body">
-            <a href="#" class="btn btn-primary"><i class="fas fa-cart-plus"></i>   Add to cart</a>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#photo3"><i class="fas fa-search-plus"></i>
-</button>         
+          <div class="card-body">
+            <a href="#" class="btn"><i class="fas fa-cart-plus"></i>   Add to cart</a>
+            <button type="button" class="btn" data-toggle="modal" data-target="#photo3"><i class="fas fa-info"></i>
+            </button>         
           </div>
       </div>
     </div>
-    <div class="col-12 col-md-6 col-lg-2 mr-4">
+    <div class="col-12 col-md-6 col-lg-3 mt-4">
       <div class="card" style=";">
        <img src="images/bouffepoissonrouge.jpeg" class="card-img-top" alt="...">
        <h5 class="card-title">Red Fish Food</h5>
        <p class="price">5 &euro;</p>
          <div class="card-body">
-           <a href="#" class="btn btn-primary"><i class="fas fa-cart-plus"></i>  Add to cart</a>
-           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#photo4"><i class="fas fa-search-plus"></i>
-</button>         
-           </div>
+           <a href="#" class="btn"><i class="fas fa-cart-plus"></i>  Add to cart</a>
+           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#photo4"><i class="fas fa-info"></i>
+           </button>         
+         </div>
       </div>
     </div>
   </div>
-  <div class="row justify-content-center p-2">
-    <div class="col-12  col-md-6 col-lg-2 mr-4">
-      <div class="card" style=";">
+    <hr>
+    <div class="row justify-content-center p-2">
+      <div class="col-12  col-md-6 col-lg-2 mr-4">
+        <div class="card" style=";">
           <img src=" images/chateau.jpeg" class="card-img-top" alt="...">
           <h5 class="card-title">Castle Decoration</h5>
           <p class="price">15 &euro;</p>
-        <div class="card-body">
-            <a href="#" class="btn btn-primary"><i class="fas fa-cart-plus"></i>  Add to cart</a>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#photo5"><i class="fas fa-search-plus"></i>
-</button>         
+          <div class="card-body">
+            <a href="#" class="btn"><i class="fas fa-cart-plus"></i>  Add to cart</a>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#photo5"><i class="fas fa-info"></i>
+            </button>         
           </div>
+        </div>
       </div>
-    </div>
-    <div class="col-12 col-md-6 col-lg-2 mr-4">
-      <div class="card" style=";">
-       <img src="images/chauffe aquarium.jpeg" class="card-img-top" alt="...">
-       <h5 class="card-title">Aquarium Heater</h5>
-       <p class="price">17 &euro;</p>
-         <div class="card-body">
-           <a href="#" class="btn btn-primary"><i class="fas fa-cart-plus"></i>  Add to cart</a>
-           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#photo6"><i class="fas fa-search-plus"></i>
-</button>         
-           </div>
+      <div class="col-12 col-md-6 col-lg-2 mr-4">
+        <div class="card" style=";">
+          <img src="images/chauffe aquarium.jpeg" class="card-img-top" alt="...">
+            <h5 class="card-title">Aquarium Heater</h5>
+            <p class="price">17 &euro;</p>
+          <div class="card-body">
+            <a href="#" class="btn"><i class="fas fa-cart-plus"></i>  Add to cart</a>
+           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#photo6"><i class="fas fa-info"></i>
+           </button>         
+          </div>
+        </div>
       </div>
-    </div>
     <div class="col-12  col-md-6 col-lg-2 mr-4">
       <div class="card" style=";">
           <img src="images/decoration-aquarium-clowny.jpeg " class="card-img-top" alt="...">
           <h5 class="card-title">Aquarium Decoration</h5>
           <p class="price">13 &euro;</p>
-        <div class="card-body">
-            
-            <a href="#" class="btn btn-primary"><i class="fas fa-cart-plus"></i>  Add to cart</a>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#photo7"><i class="fas fa-search-plus"></i>
-</button>         
+          <div class="card-body">   
+            <a href="#" class="btn"><i class="fas fa-cart-plus"></i>  Add to cart</a>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#photo7"><i class="fas fa-info"></i>
+            </button>         
           </div>
       </div>
     </div>
@@ -117,13 +161,14 @@
        <h5 class="card-title">Landing Net</h5>
        <p class="price">3 &euro;</p>
          <div class="card-body">  
-           <a href="#" class="btn btn-primary"><i class="fas fa-cart-plus"></i>  Add to cart</a>
-           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#photo8"><i class="fas fa-search-plus"></i>
-</button>         
+           <a href="#" class="btn"><i class="fas fa-cart-plus"></i>  Add to cart</a>
+           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#photo8"><i class="fas fa-info"></i>
+           </button>         
            </div>
       </div>
     </div>
   </div>
+  <hr>
   <div class="row justify-content-center p-2">
     <div class="col-12  col-md-6 col-lg-2 mr-4">
       <div class="card" style=";">
@@ -131,8 +176,8 @@
           <h5 class="card-title">Cleaning Kit</h5>
           <p class="price">6 &euro;</p>
         <div class="card-body">
-            <a href="#" class="btn btn-primary"><i class="fas fa-cart-plus"></i>  Add to cart</a>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#photo9"><i class="fas fa-search-plus"></i>
+            <a href="#" class="btn"><i class="fas fa-cart-plus"></i>  Add to cart</a>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#photo9"><i class="fas fa-info"></i>
 </button>         
           </div>
       </div>
@@ -143,8 +188,8 @@
        <h5 class="card-title">Plastic Plant</h5>
        <p class="price">4 &euro;</p>
          <div class="card-body">
-          <a href="#" class="btn btn-primary"><i class="fas fa-cart-plus"></i>  Add to cart</a>
-           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#photo10"><i class="fas fa-search-plus"></i>
+          <a href="#" class="btn"><i class="fas fa-cart-plus"></i>  Add to cart</a>
+           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#photo10"><i class="fas fa-info"></i>
 </button>         
            </div>
       </div>
@@ -155,8 +200,8 @@
           <h5 class="card-title">Oxygen Pump</h5>
           <p class="price">13 &euro;</p>
         <div class="card-body">
-            <a href="#" class="btn btn-primary"><i class="fas fa-cart-plus"></i>  Add to cart</a>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#photo11"><i class="fas fa-search-plus"></i>
+            <a href="#" class="btn"><i class="fas fa-cart-plus"></i>  Add to cart</a>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#photo11"><i class="fas fa-info"></i>
 </button>         
           </div>
       </div>
@@ -167,8 +212,8 @@
        <h5 class="card-title">Daily Programmer</h5>
        <p class="price">18 &euro;</p>
          <div class="card-body">
-           <a href="#" class="btn btn-primary"><i class="fas fa-cart-plus"></i>  Add to cart</a>
-           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#photo12"><i class="fas fa-search-plus"></i>
+           <a href="#" class="btn"><i class="fas fa-cart-plus"></i>  Add to cart</a>
+           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#photo12"><i class="fas fa-info"></i>
 </button>         
            </div>
       </div>
@@ -207,7 +252,6 @@
         </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
         <a href="#" class="btn btn-primary"><i class="fas fa-cart-plus"></i>  Add to cart</a>
       </div>
     </div>
@@ -245,7 +289,6 @@
         </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
         <a href="#" class="btn btn-primary"><i class="fas fa-cart-plus"></i>  Add to cart</a>
       </div>
     </div>
@@ -282,7 +325,6 @@
         </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
         <a href="#" class="btn btn-primary"><i class="fas fa-cart-plus"></i>  Add to cart</a>
       </div>
     </div>
@@ -318,7 +360,6 @@
         </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
         <a href="#" class="btn btn-primary"><i class="fas fa-cart-plus"></i>  Add to cart</a>
       </div>
     </div>
@@ -355,7 +396,6 @@
         </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
         <a href="#" class="btn btn-primary"><i class="fas fa-cart-plus"></i>  Add to cart</a>
       </div>
     </div>
@@ -392,7 +432,6 @@
         </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
         <a href="#" class="btn btn-primary"><i class="fas fa-cart-plus"></i>  Add to cart</a>
       </div>
     </div>
@@ -428,7 +467,6 @@
         </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
         <a href="#" class="btn btn-primary"><i class="fas fa-cart-plus"></i>  Add to cart</a>
       </div>
     </div>
@@ -465,7 +503,6 @@
         </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
         <a href="#" class="btn btn-primary"><i class="fas fa-cart-plus"></i>  Add to cart</a>
       </div>
     </div>
@@ -501,7 +538,6 @@
         </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
         <a href="#" class="btn btn-primary"><i class="fas fa-cart-plus"></i>  Add to cart</a>
       </div>
     </div>
@@ -538,7 +574,6 @@
         </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
         <a href="#" class="btn btn-primary"><i class="fas fa-cart-plus"></i>  Add to cart</a>
       </div>
     </div>
@@ -574,7 +609,6 @@
         </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
         <a href="#" class="btn btn-primary"><i class="fas fa-cart-plus"></i>  Add to cart</a>
       </div>
     </div>
@@ -605,13 +639,61 @@
         </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
         <a href="#" class="btn btn-primary"><i class="fas fa-cart-plus"></i>  Add to cart</a>
       </div>
     </div>
   </div>
 </div>
 <!-- Footer -->
+
+<footer class="container-fluid footer">
+      <div class="row">
+        <div class="col-12 col-sm-8 col-md-6">
+          <div class="row tableFooter">
+            <div class="col-5 col-sm-5 col-md-5 col-lg-3"> <a href="#"> Home </a> </div>
+            <div class="col-5 col-sm-5 col-md-5 col-lg-3"> <a href="#">Category 1 </a></div>
+          </div>
+          <div class="row tableFooter">
+            <div class="col-5 col-sm-5 col-md-5 col-lg-3"> <a href="#">About us </a></div>
+            <div class="col-5 col-sm-5 col-md-5 col-lg-3"> <a href="#">Category 1 </a></div>
+          </div>
+          <div class="row tableFooter">
+            <div class="col-5 col-sm-5 col-md-5 col-lg-3"> <a href="#">Top selling </a></div>
+            <div class="col-5 col-sm-5 col-md-5 col-lg-3"> <a href="#">Category 1 </a></div>
+          </div>        
+          <div class="row tableFooter">
+            <div class="col-5 col-sm-5 col-md-5 col-lg-3"> <a href="#">Contact </a></div>
+            <div class="col-5 col-sm-5 col-md-5 col-lg-3"> <a href="#">Category 1 </a></div>
+          </div>        
+          <div class="row tableFooter">
+            <div class="col-5 col-sm-5 col-md-5 col-lg-3"> <a href="#">Legal mentions </a></div>
+            <div class="col-5 col-sm-5 col-md-5 col-lg-3"> <a href="#">Category 1 </a></div>
+          </div>
+          <br>  
+
+          
+          
+        </div>  
+        <div class="col-12 col-sm-12 col-md-6"> 
+          <h3>Contact us</h3>
+          <form method="post" action="traitement.php">
+            <p>
+              <label for="email"><i class="far fa-envelope"></i></label> <input type="email" name="email" id="email">
+            </p>
+            <p>
+              <label for="message"> <i class="far fa-comment"></i> </label>  <input type="text" name="message" class="inputText" id="message">
+            </p>
+            <button type="button" class="btn btn-lg" id="btnFooter">Submit</button>
+          </form>
+        </div>          
+      </div>
+      <div>
+        <p> 
+          <img src="images/wild.png" class="footerImg" alt="logo">
+          <span class="titleFooter"> WILD BAZAR</span> 1, rue de la Paix - 75000 Paris - <i class="fas fa-phone"></i> 01-23-45-67-89
+        </p>
+      </div>
+</footer>
 
 
 <!-- Optional JavaScript -->
