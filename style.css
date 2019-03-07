@@ -49,6 +49,20 @@ p, li {
 
 }
 
+@media screen and (min-width: 200px) and (max-width: 1270px){
+	.modal-dialog {
+		min-width: 80%;
+		max-width: 300px;
+	}
+	.btn.btn-warning.pull-right {
+		display: none;
+	}
+	.nav-link{
+		font-size: 1em;
+	}
+
+}
+
 .fas{
 	height: 20px;
 }
