@@ -7,12 +7,114 @@
     font-family: 'Libre Baskerville', serif;
 
 */
+#home{
+	box-shadow: 0px 15px 10px -15px #111;
+	padding: 0;
+	margin: 0;
+}
+.navbar{
+	padding-top: 2em;
+	padding-bottom: 2em;
+	background-color: #212529;
+}
+
+.navbar-brand{
+	font-family: 'Libre Baskerville', serif;
+	font-size: 2.5em;
+
+}
+
+.logo{
+	width: 70px;
+	height: 70px;
+	color: #ff8533;
+}
+
+.nav-link{
+	font-family: 'Arimo', sans-serif;
+	font-size: 1.5em;
+
+}
+
+.fas{
+	height: 20px;
+}
+.navbar button{
+	border: solid 1px #ff8533;
+}
+.navbar button:hover{
+	border: solid 1px #ff8533;
+	background-color: #343a40;
+}
+#navbarNav .nav-link{
+	text-transform: uppercase;
+	margin-left: 2em;
+	transition: all 0.2s ease-out;
+}
+#navbarNav .nav-link:hover{
+	color: #ff8533;
+	transition: all 0.2s ease-in; 
+}
+
+.carousel_title{
+	font-family: 'Libre Baskerville', serif;
+	font-size: 4em;
+	color: black;
+}
+
+.carousel_text{
+	font-family: 'Arimo', sans-serif;
+	font-size: 3em;
+	color:  #ff6833 ;
+}
+
+.carousel_title1{
+	font-family: 'Libre Baskerville', serif;
+	font-size: 4em;
+	color: white;
+}
+
+.carousel_text1{
+	font-family: 'Arimo', sans-serif;
+	font-size: 3em;
+	color: white;
+}
+
+.carousel_title2{
+	font-family: 'Libre Baskerville', serif;
+	font-size: 4em;
+	color: black;
+	
+}
+
+.carousel_text2{
+	font-family: 'Arimo', sans-serif;
+	font-size: 3em;
+	color: black;
+	
+}
+
+.carousel_image{
+	opacity: 0.9;
+}
+
+.text{
+	font-family: 'Arimo', sans-serif;
+	font-size: 2em;
+}
+
+
+
+#tech{
+	margin-top: 5em;
+	margin-bottom: 5em;
+}
 .card {
 	border: none;
 }
 .card-img-top{
 	object-fit: cover;
-	padding: 2em;
+	padding-bottom: 2em;
 	transition: all 0.2s ease-out;
 }
 .card-img-top:hover{
@@ -52,6 +154,12 @@
 	margin-left: 2em;
 	font-weight: bold;
 	font-size: 1.2em;
+}
+
+hr {
+	border: solid 1px #212529;
+	width: 80%;
+	color: #212529;
 }
 
 .footer {
