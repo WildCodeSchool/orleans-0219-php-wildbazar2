@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+		<!--  Call fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Arimo|Libre+Baskerville" rel="stylesheet"> 
+
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="electromenager.css" />
+
+		<title>WB2 - Home appliance</title>
+	</head>
+
+	<body>
+
+
+			<!-- Header -->
+			<header id="home" class="container-fluid">
+
+				<nav class="navbar navbar-expand-lg navbar-light">
+					<img class="logo" src="https://raw.githubusercontent.com/WildCodeSchool/orleans-0219-php-wildbazar2/footer/images/wild.png" alt="logo">
+					  	<a class="navbar-brand" href="#home">Wild Bazar</a>
+					  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					    	<span class="navbar-toggler-icon"></span>
+					  	</button>
+						<div class="collapse navbar-collapse" id="navbarNav">
+						    <ul class="navbar-nav">
+						      	<li class="nav-item active">
+						        	<a class="nav-link" href="#about">About us<span class="sr-only">(current)</span></a>
+						      	</li>
+						      	<li class="nav-item">
+						        	<a class="nav-link" href="#fashion">Fashion</a>
+						      	</li>
+						      	<li class="nav-item">
+						        	<a class="nav-link" href="#pet shop">Pet shop</a>
+						      	</li>
+						      	<li class="nav-item">
+						        	<a class="nav-link" href="#high-Tech">High-Tech</a>
+						      	</li>
+						      	<li class="nav-item">
+						        	<a class="nav-link" href="#watchs">Watches</a>
+						      	</li>
+						      	<li class="nav-item">
+						        	<a class="nav-link" href="#electromenager">Home appliance</a>
+						      	</li>
+						    </ul>
+						</div>
+				  		<button type="button" class="btn btn-warning pull-right">Cart <i class="fas fa-cart-arrow-down"></i></button>
+					    
+					</nav>
+				
+
+				<section>
+					<!-- <div class="jumbotron jumbotron-fluid"> -->
+						<div class="home_appliance_banner">
+							<img src="images/home_appliance_banner.png"/ class="img-fluid" alt="home appliance">
+							<h1>Home appliance</h1>
+							<p>Useful equipment for cooking or laundry
+</p>
+						</div>
+					<!-- </div> -->
+				</section>
+			</header>
+
+
+<!-- Main -->
+		<main class="container-fluid">
+			<section>
+				<!-- Black toaster -->
+				<div class="row justify-content-center">
+					<div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-2 ">				
+						<div class="card">
+							<img class="card-img-top" src="images/grille_pain_russel_noir.jpg" alt="Card image cap">
+							<div class="card-body">
+								<h5 class="card-text">Black toaster</h5>
+								<p class="price">30 &euro;</p>
+								<a href="#" class="btn" id="categoryBtn"><i class="fas fa-cart-plus"></i> Add to cart</a>
+								<div title="More details" class="btnInfo"> 
+									<button type="button" data-toggle="modal" data-target="#blackToaster" class="btn">
+										<i class="fas fa-info"></i>
+									</button> 
+								</div>
+							</div>
+						</div>
+					</div>
+
+				<!-- Black toaster modal -->
+					<div class="modal fade" id="blackToaster" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+						<div class="modal-dialog modal-dialog-centered" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLongTitle">Black toaster - Russel Hobbs</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									<div class="row">
+										<div class="col-md-12 col-lg-6">
+											<img class="card-img-top" src="images/grille_pain_russel_noir.jpg" alt="Card image cap">
+										</div>
+										<div class="col-md-12 col-lg-6">
+											<p class="price">Price : 30 &euro;</p>
+											<p> This toaster with a beautiful black design will fit well in your kitchen.
+											Toast clip included.
+											2 Large slots.
+											</p>
+										</div>
+									</div>
+									<p class="carac">Features :</p>
+									<ul class="carac">
+										<li>Size : 20x15cm</li>
+										<li>Power : 585W</li>
+										<li>Color : Black</li>
+									</ul>
+								</div>
+								<div class="modal-footer">
+									<a href="#" class="btn btn-primary"><i class="fas fa-cart-plus"></i> Add to cart</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				<!-- STAR WARS TOASTER -->
+					<div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-2 ">					
+						<div class="card">
+							<img class="card-img-top" src="images/grille_pain_etoile_de_la_mort.jpeg" alt="Card image cap">
+							<div class="card-body">
+								<h5 class="card-text">Star-Wars toaster</h5>
+								<p class="price">59 &euro;</p>
+								<a href="#" class="btn btn-primary"><i class="fas fa-cart-plus"></i> Add to cart</a>
+								<div title="More details" class="btnInfo"> 
+									<button type="button" data-toggle="modal" data-target="#starWarsToaster" class="btn">
+										<i class="fas fa-info"></i>
+									</button> 
+								</div> 
+							</div>
+						</div>
+					</div>
+				<!-- STAR WARS TOASTER MODAL-->
+					<div class="modal fade" id="starWarsToaster" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+						<div class="modal-dialog modal-dialog-centered" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLongTitle">Star-Wars toaster</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									<div class="row">
+										<div class="col-md-12  col-lg-6">
+											<img class="card-img-top" src="images/grille_pain_etoile_de_la_mort.jpeg" alt="Card image cap">
+										</div>
+										<div class="col-md-12 col-lg-6">
+											<p class="price">Price : 59 &euro;</p>
+											<p> A good toaster if you like Star Wars universe. Customize your toasts with a TIE fighter. 2 slots.
+											</p>
+										</div>
+									</div>
+									<p class="carac">Features :</p>
+									<ul class="carac">
+										<li>Size : Round (Death Star style)</li>
+										<li>Power : 500W</li>
+										<li>Color : Grey</li>
+									</ul>
+								</div>
+								<div class="modal-footer">
+									<a href="#" class="btn btn-primary"><i class="fas fa-cart-plus"></i> Add to cart</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+
+<!-- RED TOASTER -->
+					<div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-2 ">	
+						<div class="card">
+							<img class="card-img-top" src="images/grille_pain_rouge.jpg" alt="Card image cap">
+							<div class="card-body">
+								<h5 class="card-text">Red toaster</h5>
+								<p class="price">189 &euro;</p>
+								<a href="#" class="btn btn-primary"><i class="fas fa-cart-plus"></i> Add to cart</a>
+								<div title="More details" class="btnInfo"> 
+									<button type="button" data-toggle="modal" data-target="#redToaster" class="btn">
+										<i class="fas fa-info"></i>
+									</button> 
+								</div> 
+							</div>
+						</div>
+					</div>
+<!-- RED TOASTER MODAL -->
+					<div class="modal fade" id="redToaster" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+						<div class="modal-dialog modal-dialog-centered" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLongTitle">Red toaster - Kitchenaid</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									<div class="row">
+										<div class="col-md-12  col-lg-6">
+											<img class="card-img-top" src="images/grille_pain_rouge.jpg" alt="Card image cap">
+										</div>
+										<div class="col-md-12 col-lg-6">
+											<p class="price">Price : 185 &euro;</p>
+											<p> Make a statement in your kitchen with the KitchenAid KMT4116 4-Slice Long Slot Toaster. Designed for versatility, efficiency and style, this classy toaster is available in a range of colours to suit your home decor.
+											</p>
+										</div>
+									</div>
+									<p class="carac">Features :</p>
+									<ul class="carac">
+										<li>Size : 30x15cm</li>
+										<li>Power : 1800W</li>
+										<li>Color : Black</li>
+									</ul>
+								</div>
+								<div class="modal-footer">
+									<a href="#" class="btn btn-primary"><i class="fas fa-cart-plus"></i> Add to cart</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+<!-- VINTAGE TOASTER -->
+					<div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-2 ">				
+						<div class="card">
+							<img class="card-img-top" src="images/grille_pain_vintage.jpg" alt="Card image cap">
+							<div class="card-body">
+								<h5 class="card-text">Vintage toaster</h5>
+								<p class="price">49 &euro;</p>
+								<a href="#" class="btn btn-primary"><i class="fas fa-cart-plus"></i> Add to cart</a>
+								<div title="More details" class="btnInfo"> 
+									<button type="button" data-toggle="modal" data-target="#vintageToaster" class="btn">
+										<i class="fas fa-info"></i>
+									</button> 
+								</div>
+							</div>
+						</div>
+					</div>
+
+<!-- VINTAGE TOASTER MODAL -->
+					<div class="modal fade" id="vintageToaster" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+						<div class="modal-dialog modal-dialog-centered" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLongTitle">Vintage toaster - Ariete</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									<div class="row">
+										<div class="col-md-12  col-lg-6">
+											<img class="card-img-top" src="images/grille_pain_vintage.jpg" alt="Card image cap">
+										</div>
+										<div class="col-md-12 col-lg-6">
+											<p class="price">Price : 49 &euro;</p>
+											<p> 2 slots vintage toaster. Automatic ejection & crumb tray. Functions for defrosting, reheating and toasting. Perfect for toasting simple toasts or sandwiches. 6 position thermostat, cold walls.
+											</p>
+										</div>
+									</div>
+									<p class="carac">Features :</p>
+									<ul class="carac">
+										<li>Size : 39x38 cm</li>
+										<li>Power : 1000W</li>
+										<li>Color : Black</li>
+									</ul>
+								</div>
+								<div class="modal-footer">
+									<a href="#" class="btn btn-primary"><i class="fas fa-cart-plus"></i> Add to cart</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<br>
+
+					
+
+<!-- RED MICROWAVE -->
+
+				<div class="row justify-content-center">
+					<div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-2 ">				
+						<div class="card">
+							<img class="card-img-top" src="images/micro_ondes_rouge.jpg" alt="Card image cap">
+							<div class="card-body">
+								<h5 class="card-text">Red microwave</h5>
+								<p class="price">185 &euro;</p>
+								<a href="#" class="btn btn-primary"><i class="fas fa-cart-plus"></i> Add to cart</a>
+								<div title="More details" class="btnInfo"> 
+									<button type="button" data-toggle="modal" data-target="#redMicrowave" class="btn">
+										<i class="fas fa-info"></i>
+									</button> 
+								</div>
+							</div>
+						</div>
+					</div>				
+<!-- RED MICROWAVE MODAL -->
+					<div class="modal fade" id="redMicrowave" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+						<div class="modal-dialog modal-dialog-centered" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLongTitle">Red microwave - Salco</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									<div class="row">
+										<div class="col-md-12  col-lg-6">
+											<img class="card-img-top" src="images/micro_ondes_rouge.jpg" alt="Card image cap">
+										</div>
+										<div class="col-md-12 col-lg-6">
+											<p class="price">Price : 185 &euro;</p>
+											<p> This red microwave will bring a touch of joy to your kitchen.
+											</p>
+										</div>
+									</div>
+									<p class="carac">Features :</p>
+									<ul class="carac">
+										<li>Size : 50x30x35 cm</li>
+										<li>Power : 900 W</li>
+										<li>Color : Red</li>
+									</ul>
+								</div>
+								<div class="modal-footer">
+									<a href="#" class="btn btn-primary"><i class="fas fa-cart-plus"></i> Add to cart</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+<!-- ROUND MICROWAVE -->
+					<div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-2 ">				
+						<div class="card">
+							<img class="card-img-top" src="images/micro_ondes_rond.jpg" alt="Card image cap">
+							<div class="card-body">
+								<h5 class="card-text">Round microwave</h5>
+								<p class="price">89 &euro;</p>
+								<a href="#" class="btn btn-primary"><i class="fas fa-cart-plus"></i> Add to cart</a>
+								<div title="More details" class="btnInfo"> 
+									<button type="button" data-toggle="modal" data-target="#roundMicrowave" class="btn">
+										<i class="fas fa-info"></i>
+									</button> 
+								</div>
+							</div>
+						</div>
+					</div>
+<!-- ROUND MICROWAVE MODAL -->
+					<div class="modal fade" id="roundMicrowave" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+						<div class="modal-dialog modal-dialog-centered" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLongTitle">Round microwave Spoutnik - Brandt</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									<div class="row">
+										<div class="col-md-12  col-lg-6">
+											<img class="card-img-top" src="images/micro_ondes_rond.jpg" alt="Card image cap">
+										</div>
+										<div class="col-md-12 col-lg-6">
+											<p class="price">Price : 89 &euro;</p>
+											<p> SPOUTNIK is compact in shape, but still has a 28 cm tray that can accommodate the same types of food as a conventional rectangular microwave. SPOUTNIK has a completely new opening system that simplifies access to food.
+											</p>
+										</div>
+									</div>
+									<p class="carac">Features :</p>
+									<ul class="carac">
+										<li>Size : 26x42x32 cm</li>
+										<li>Power : 1200 W</li>
+										<li>Color : Green (other colors available soon)</li>
+									</ul>
+								</div>
+								<div class="modal-footer">
+									<a href="#" class="btn btn-primary"><i class="fas fa-cart-plus"></i> Add to cart</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+<!-- BLACK MICROWAVE -->
+					<div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-2 ">				
+						<div class="card">
+							<img class="card-img-top" src="images/micro_onde_noir.jpg" alt="Card image cap">
+							<div class="card-body">
+								<h5 class="card-text">Black microwave</h5>
+								<p class="price">75 &euro;</p>
+								<a href="#" class="btn btn-primary"><i class="fas fa-cart-plus"></i> Add to cart</a>
+								<div title="More details" class="btnInfo"> 
+									<button type="button" data-toggle="modal" data-target="#blackMicrowave" class="btn">
+										<i class="fas fa-info"></i>
+									</button> 
+								</div>
+							</div>
+						</div>
+					</div>
+
+<!-- BLACK MICROWAVE MODAL -->
+					<div class="modal fade" id="blackMicrowave" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+						<div class="modal-dialog modal-dialog-centered" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLongTitle">Black microwave - Daewoo</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									<div class="row">
+										<div class="col-md-12  col-lg-6">
+											<img class="card-img-top" src="images/micro_onde_noir.jpg" alt="Card image cap">
+										</div>
+										<div class="col-md-12 col-lg-6">
+											<p class="price">Price : 75 &euro;</p>
+											<p> Monofunction microwave oven - Capacity 23 litres - Power MO 800 watts - S.R.C System - Touch control panel with rotary knob.
+											</p>
+										</div>
+									</div>
+									<p class="carac">Features :</p>
+									<ul class="carac">
+										<li>Size : 50x30x35 cm</li>
+										<li>Power : 800 W</li>
+										<li>Color : Black</li>
+									</ul>
+								</div>
+								<div class="modal-footer">
+									<a href="#" class="btn btn-primary"><i class="fas fa-cart-plus"></i> Add to cart</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+<!-- PINK MICROWAVE -->
+
+					<div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-2 ">				
+						<div class="card">
+							<img class="card-img-top" src="images/micro_ondes_violet.jpg" alt="Card image cap">
+							<div class="card-body">
+								<h5 class="card-text">Pink microwave</h5>
+								<p class="price">99 &euro;</p>
+								<a href="#" class="btn btn-primary"><i class="fas fa-cart-plus"></i> Add to cart</a>
+								<div title="More details" class="btnInfo"> 
+									<button type="button" data-toggle="modal" data-target="#pinkMicrowave" class="btn">
+										<i class="fas fa-info"></i>
+									</button> 
+								</div>
+							</div>
+						</div>
+					</div>
+<!-- PINK MICROWAVE MODAL -->
+					<div class="modal fade" id="pinkMicrowave" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+						<div class="modal-dialog modal-dialog-centered" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLongTitle">Pink microwave - Schneider</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									<div class="row">
+										<div class="col-md-12  col-lg-6">
+											<img class="card-img-top" src="images/micro_ondes_violet.jpg" alt="Card image cap">
+										</div>
+										<div class="col-md-12 col-lg-6">
+											<p class="price">Price : 99 &euro;</p>
+											<p> Capacity 25 L. Microwave power 900 W, grill 1000 W. Mechanical controls. Timer 30 mn. Turntable 27 cm.
+										</div>
+									</div>
+									<p class="carac">Features :</p>
+									<ul class="carac">
+										<li>Size : 49x35x36 cmcm</li>
+										<li>Power : 900/1000 W</li>
+										<li>Color : Pink</li>
+									</ul>
+								</div>
+								<div class="modal-footer">
+									<a href="#" class="btn btn-primary"><i class="fas fa-cart-plus"></i> Add to cart</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<br>
+<!-- ROBOT HOOVER -->
+				<div class="row justify-content-center">
+					<div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-2 ">			
+						<div class="card">
+							<img class="card-img-top" src="images/aspirateur_robot_dv.jpg" alt="Card image cap">
+							<div class="card-body">
+								<h5 class="card-text">Star-Wars hoover</h5>
+								<p class="price">649 &euro;</p>
+								<a href="#" class="btn btn-primary"><i class="fas fa-cart-plus"></i> Add to cart</a>
+								<div title="More details" class="btnInfo"> 
+									<button type="button" data-toggle="modal" data-target="#hooverVador" class="btn">
+										<i class="fas fa-info"></i>
+									</button> 
+								</div>
+							</div>
+						</div>
+					</div>
+<!-- ROBOT HOOVER MODAL -->
+					<div class="modal fade" id="hooverVador" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+						<div class="modal-dialog modal-dialog-centered" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLongTitle">Star-Wars hoover - Samsung</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									<div class="row">
+										<div class="col-md-12  col-lg-6">
+											<img class="card-img-top" src="images/aspirateur_robot_dv.jpg" alt="Card image cap">
+										</div>
+										<div class="col-md-12 col-lg-6">
+											<p class="price">Price : 649 &euro;</p>
+											<p> Sensor: FullView Sensor™ 2.0 ; Automatic Loading ; Wi-fi Control ; Intelligent Power Control; Highlights: Connected robot vacuum cleaner for hard floors and carpets; Cyclone Force vacuum technology; Design Star Wars
+											</p>
+										</div>
+									</div>
+									<p class="carac">Features :</p>
+									<ul class="carac">
+										<li>Size : 20x20x18 cm</li>
+										<li>Power : 500 W</li>
+										<li>Color : Black / Dark Vador design</li>
+									</ul>
+								</div>
+								<div class="modal-footer">
+									<a href="#" class="btn btn-primary"><i class="fas fa-cart-plus"></i> Add to cart</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+<!-- CLASSICAL HOOVER -->
+					<div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-2 ">				
+						<div class="card">
+							<img class="card-img-top" src="images/aspirateur_fagor.jpg" alt="Card image cap">
+							<div class="card-body">
+								<h5 class="card-text">Classical hoover</h5>
+								<p class="price">175 &euro;</p>
+								<a href="#" class="btn btn-primary"><i class="fas fa-cart-plus"></i> Add to cart</a>
+								<div title="More details" class="btnInfo"> 
+									<button type="button" data-toggle="modal" data-target="#hooverClassic" class="btn">
+										<i class="fas fa-info"></i>
+									</button> 
+								</div>
+							</div>
+						</div>
+					</div>
+<!-- CLASSICAL HOOVER MODAL -->
+					<div class="modal fade" id="hooverClassic" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+						<div class="modal-dialog modal-dialog-centered" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="hooverClassic">Classical hoover - Fagor</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									<div class="row">
+										<div class="col-md-12  col-lg-6">
+											<img class="card-img-top" src="images/aspirateur_fagor.jpg" alt="Card image cap">
+										</div>
+										<div class="col-md-12 col-lg-6">
+											<p class="price">Price : 175 &euro;</p>
+											<p>     Cleaning mode: Eco2 Level Cyclone.     Maximum noise level: 76 dB. Cord length: 6 m.    Filter type: Hepa filter.
+											</p>
+										</div>
+									</div>
+									<p class="carac">Features :</p>
+									<ul class="carac">
+										<li>Size : 30x35x35 cm</li>
+										<li>Power : 620 W</li>
+										<li>Color : Grey / Green</li>
+									</ul>
+								</div>
+								<div class="modal-footer">
+									<a href="#" class="btn btn-primary"><i class="fas fa-cart-plus"></i> Add to cart</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+<!-- SMILEY HOOVER -->
+					<div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-2 ">				
+						<div class="card">
+							<img class="card-img-top" src="images/aspirateur_henry.jpg" alt="Card image cap">
+							<div class="card-body">
+								<h5 class="card-text">Smiley hoover</h5>
+								<p class="price">158 &euro;</p>
+								<a href="#" class="btn btn-primary"><i class="fas fa-cart-plus"></i> Add to cart</a>
+								<div title="More details" class="btnInfo"> 
+									<button type="button" data-toggle="modal" data-target="#smileyHoover" class="btn">
+										<i class="fas fa-info"></i>
+									</button> 
+								</div>
+							</div>
+						</div>
+					</div>
+<!-- SMILEY HOOVER MODAL -->
+					<div class="modal fade" id="smileyHoover" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+						<div class="modal-dialog modal-dialog-centered" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLongTitle">Smiley hoover - Henry</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									<div class="row">
+										<div class="col-md-12  col-lg-6">
+											<img class="card-img-top" src="images/aspirateur_henry.jpg" alt="Card image cap">
+										</div>
+										<div class="col-md-12 col-lg-6">
+											<p class="price">Price : 158 &euro;</p>
+											<p> Power supply 230 V - AC 50/60 Hz. Air flow rate 44 L/sec. Vacuum 2250 mm. Tank 8 L. Cable length: 10 m. Weight 8.5 kg.
+											</p>
+										</div>
+									</div>
+									<p class="carac">Features :</p>
+									<ul class="carac">
+										<li>Size : 34x34x34 cm</li>
+										<li>Power : 500 W</li>
+										<li>Color : Red</li>
+									</ul>
+								</div>
+								<div class="modal-footer">
+									<a href="#" class="btn btn-primary"><i class="fas fa-cart-plus"></i> Add to cart</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+<!-- HOOVER TABLE -->
+					<div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-2 ">				
+						<div class="card">
+							<img class="card-img-top" src="images/aspirateur_de_table.jpg" alt="Card image cap">
+							<div class="card-body">							
+								<h5 class="card-text">Hoover table cleaner</h5>
+								<p class="price">119 &euro;</p>
+								<a href="#" class="btn btn-primary"><i class="fas fa-cart-plus"></i> Add to cart</a>
+								<div title="More details" class="btnInfo"> 
+									<button type="button" data-toggle="modal" data-target="#tableHoover" class="btn">
+										<i class="fas fa-info"></i>
+									</button> 
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="modal fade" id="tableHoover" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+						<div class="modal-dialog modal-dialog-centered" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLongTitle">Hoover table cleaner - Alessi</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									<div class="row">
+										<div class="col-md-12  col-lg-6">
+											<img class="card-img-top" src="images/aspirateur_de_table.jpg" alt="Card image cap">
+										</div>
+										<div class="col-md-12 col-lg-6">
+											<p class="price">Price : 119 &euro;</p>
+											<p> Material: Stainless steel - Thermoplastic resin. Weight: 3.4 kg. Characteristics: Charger - nozzle for interstices and liquid nozzle.  Suction power: 7l.
+											</p>
+										</div>
+									</div>
+									<p class="carac">Features :</p>
+									<ul class="carac">
+										<li>Size : 38.x11x11 cm</li>
+										<li>Power : 400 W</li>
+										<li>Color : Steel / White</li>
+									</ul>
+								</div>
+								<div class="modal-footer">
+									<a href="#" class="btn btn-primary"><i class="fas fa-cart-plus"></i> Add to cart</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+
+				</div>		
+			</section>
+		</main>
+
+		<!-- Footer -->
+
+		<footer class="container-fluid footer">
+			<div class="row">
+				<div class="col-12 col-sm-8 col-md-6">
+					<div class="row tableFooter">
+						<div class="col-5 col-sm-5 col-md-5 col-lg-3"> <a href="#"> Home </a> </div>
+						<div class="col-5 col-sm-5 col-md-5 col-lg-3"> <a href="#">Category 1 </a></div>
+					</div>
+					<div class="row tableFooter">
+						<div class="col-5 col-sm-5 col-md-5 col-lg-3"> <a href="#">About us </a></div>
+						<div class="col-5 col-sm-5 col-md-5 col-lg-3"> <a href="#">Category 1 </a></div>
+					</div>
+					<div class="row tableFooter">
+						<div class="col-5 col-sm-5 col-md-5 col-lg-3"> <a href="#">Top selling </a></div>
+						<div class="col-5 col-sm-5 col-md-5 col-lg-3"> <a href="#">Category 1 </a></div>
+					</div>				
+					<div class="row tableFooter">
+						<div class="col-5 col-sm-5 col-md-5 col-lg-3"> <a href="#">Contact </a></div>
+						<div class="col-5 col-sm-5 col-md-5 col-lg-3"> <a href="#">Category 1 </a></div>
+					</div>				
+					<div class="row tableFooter">
+						<div class="col-5 col-sm-5 col-md-5 col-lg-3"> <a href="#">Legal mentions </a></div>
+						<div class="col-5 col-sm-5 col-md-5 col-lg-3"> <a href="#">Category 1 </a></div>
+					</div>
+					<br>	
+
+					
+					
+				</div>	
+				<div class="col-12 col-sm-12 col-md-6"> 
+					<h3>Contact us</h3>
+					<form method="post" action="traitement.php">
+						<p>
+							<label for="email"><i class="far fa-envelope"></i></label> <input type="email" name="email" id="email">
+						</p>
+						<p>
+							<label for="message"> <i class="far fa-comment"></i> </label>	 <input type="text" name="message" class="inputText" id="message">
+						</p>
+						<button type="button" class="btn btn-lg" id="btnFooter">Submit</button>
+					</form>
+				</div>					
+			</div>
+			<div>
+				<p> 
+					<img src="images/wild.png" class="footerImg" alt="logo">
+					<span class="titleFooter"> WILD BAZAR</span> 1, rue de la Paix - 75000 Paris - <i class="fas fa-phone"></i> 01-23-45-67-89
+				</p>
+			</div>
+		</footer>
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+	<!-- Font Awesome  -->
+	<script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
+	
+	</body>
+</html>
