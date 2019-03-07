@@ -1,0 +1,38 @@
+/*How to call fonts
+
+
+
+    font-family: 'Arimo', sans-serif;
+
+    font-family: 'Libre Baskerville', serif;
+
+*/
+
+.card{
+	transition: all 0.2s ease-out;
+}
+.card:hover{
+	transform: scale(1.1);
+	transition: all 0.2s ease-in;
+}
+
+.btn {
+	background-color: #ff8533;
+	border: solid 1px white;
+	color: white;
+}
+
+.card-img-top{
+	padding: 2em;
+	transition: all 0.2s ease-out;
+	object-fit: cover;
+}
+.btn:hover{
+	background-color: white;
+	border: solid 1px #ff8533;
+	color: #ff8533;
+}
+
+.card{
+	border: transparent;
+}
