@@ -4,26 +4,41 @@
 
     font-family: 'Libre Baskerville', serif;*/
 
-.home_appliance_banner {
+/*.home_appliance_banner {
 	color: #ff8533;
 	text-shadow: white 1px 1px;
 	font-weight: bold;
+}*/
+
+.home_appliance_banner {
+	position: relative;
 }
 
 .home_appliance_banner h1 {
 	position: absolute;
-	top: 20%;
-	left: 3%;
-	font-size: 3.5em;
+	top: 8.5vw;
+	left: 1.8vw;
+	font-size: 3vw;
+	color: #ff8533;
+	font-weight: bold;
 }
 
 .home_appliance_banner p {
 	position: absolute;
-	top: 65%;
-	right: 3%;
-	padding-top: 1%;
-	font-size: 1.5em;
+	top: 12vw;
+	left: 2vw;
+	font-size: 1.2vw;
+	font-weight: bold;
 }
+
+
+/*
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+   .home_appliance_banner h1 {
+       font-size: 150%
+   }
+}*/
 
 
 .price {
