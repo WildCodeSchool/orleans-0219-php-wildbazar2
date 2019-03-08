@@ -9,8 +9,7 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 <!--  Call fonts -->
-<link href="https://fonts.googleapis.com/css?family=Arimo|Libre+Baskerville" rel="stylesheet"> 
-
+<link href="https://fonts.googleapis.com/css?family=Alegreya|Ubuntu" rel="stylesheet"> 
 <!-- Call style.css -->
 <link rel="stylesheet" type="text/css" href="Aquariumm.css">
 
@@ -23,7 +22,7 @@
       <!-- Navbar -->
       <header id="home" class="container-fluid">
 
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-dark">
           <img class="logo" src="https://raw.githubusercontent.com/WildCodeSchool/orleans-0219-php-wildbazar2/footer/images/wild.png" alt="logo">
               <a class="navbar-brand" href="#home">Wild Bazar</a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,7 +30,7 @@
               </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                       <a class="nav-link" href="#about">About us<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
@@ -51,23 +50,30 @@
                     </li>
                 </ul>
             </div>
-              <button type="button" class="btn btn-warning pull-right">Cart <i class="fas fa-cart-arrow-down"></i></button>    
-        </nav>
+              <button type="button" class="btn btn-warning pull-right">Cart <i class="fas fa-cart-arrow-down"></i></button>
+              
+</nav>
 
       <!--Image-->
-
-        <section>
-                    <div class="image-categorie">
-                      <img class="image_cate" src="images/fish.jpg" class="d-block w-100" alt="fishs">
-                    </div>
-        </section>
+<section>
+    <div class="image-categorie">
+      <div class="row">
+    <div class="col-12  col-md-6 col-lg-2 mr-4">
+      <img class="image_cate" src="images/fish.jpg" class="d-block w-100" alt="fishs">
+    </div>
+    <div class="Citation">
+<h1>PET SHOP<h1><i class="fas fa-fish"></i><i class="fas fa-fish"></i><i class="fas fa-fish"></i><h2>A HOUSE WITHOUT A CAT IS AN AQUARIUM WITHOUT FISH...</h2>
+    </div>
+  </div>
+  </div>
+</section>
       </header>
 
-
+    
 <!-- categorie -->
 
 <div id="Aquarium">
-  <div class="row justify-content-center p-4 mr-45">
+  <div class="row justify-content-center p-4 mr-4">
     <div class="col-12  col-md-6 col-lg-2 mr-4">
       <div class="card" style=";">
           <img src=" images/aquarium 30L.jpeg" class="card-img-top" alt="...">
@@ -75,7 +81,7 @@
           <p class="price">230 &euro;</p>
         <div class="card-body">
             <a href="#" class="btn"><i class="fas fa-cart-plus"></i>  Add to cart</a>
-           <button type="button" class="btn" data-toggle="modal" data-target="#photo1"><i class="fas fa-info"></i>
+           <button type="button" class="btn1" data-toggle="modal" data-target="#photo1"><i class="fas fa-info"></i>
            </button>           
         </div>
       </div>
@@ -87,7 +93,7 @@
        <p class="price">330 &euro;</p>
         <div class="card-body">
              <a href="#" class="btn"><i class="fas fa-cart-plus"></i>  Add to cart</a>
-           <button type="button" class="btn" data-toggle="modal" data-target="#photo2"><i class="fas fa-info"></i>
+           <button type="button" class="btn1" data-toggle="modal" data-target="#photo2"><i class="fas fa-info"></i>
            </button>
         </div>
       </div>
@@ -99,7 +105,7 @@
           <p class="price">100 &euro;</p>
           <div class="card-body">
             <a href="#" class="btn"><i class="fas fa-cart-plus"></i>   Add to cart</a>
-            <button type="button" class="btn" data-toggle="modal" data-target="#photo3"><i class="fas fa-info"></i>
+            <button type="button" class="btn1" data-toggle="modal" data-target="#photo3"><i class="fas fa-info"></i>
             </button>         
           </div>
       </div>
@@ -111,7 +117,7 @@
        <p class="price">5 &euro;</p>
          <div class="card-body">
            <a href="#" class="btn"><i class="fas fa-cart-plus"></i>  Add to cart</a>
-           <button type="button" class="btn" data-toggle="modal" data-target="#photo4"><i class="fas fa-info"></i>
+           <button type="button" class="btn1" data-toggle="modal" data-target="#photo4"><i class="fas fa-info"></i>
            </button>         
          </div>
       </div>
@@ -123,10 +129,10 @@
         <div class="card" style=";">
           <img src=" images/chateau.jpeg" class="card-img-top" alt="...">
           <h5 class="card-title">Castle Decoration</h5>
-          <p class="price">15 &euro;</p>
+          <p class="price">5 &euro;</p>
           <div class="card-body">
             <a href="#" class="btn"><i class="fas fa-cart-plus"></i>  Add to cart</a>
-            <button type="button" class="btn" data-toggle="modal" data-target="#photo5"><i class="fas fa-info"></i>
+            <button type="button" class="btn1" data-toggle="modal" data-target="#photo5"><i class="fas fa-info"></i>
             </button>         
           </div>
         </div>
@@ -138,7 +144,7 @@
             <p class="price">17 &euro;</p>
           <div class="card-body">
             <a href="#" class="btn"><i class="fas fa-cart-plus"></i>  Add to cart</a>
-           <button type="button" class="btn" data-toggle="modal" data-target="#photo6"><i class="fas fa-info"></i>
+           <button type="button" class="btn1" data-toggle="modal" data-target="#photo6"><i class="fas fa-info"></i>
            </button>         
           </div>
         </div>
@@ -147,10 +153,10 @@
       <div class="card" style=";">
           <img src="images/decoration-aquarium-clowny.jpeg " class="card-img-top" alt="...">
           <h5 class="card-title">Aquarium Decoration</h5>
-          <p class="price">13 &euro;</p>
+          <p class="price">6 &euro;</p>
           <div class="card-body">   
             <a href="#" class="btn"><i class="fas fa-cart-plus"></i>  Add to cart</a>
-            <button type="button" class="btn" data-toggle="modal" data-target="#photo7"><i class="fas fa-info"></i>
+            <button type="button" class="btn1" data-toggle="modal" data-target="#photo7"><i class="fas fa-info"></i>
             </button>         
           </div>
       </div>
@@ -162,7 +168,7 @@
        <p class="price">3 &euro;</p>
          <div class="card-body">  
            <a href="#" class="btn"><i class="fas fa-cart-plus"></i>  Add to cart</a>
-           <button type="button" class="btn" data-toggle="modal" data-target="#photo8"><i class="fas fa-info"></i>
+           <button type="button" class="btn1" data-toggle="modal" data-target="#photo8"><i class="fas fa-info"></i>
            </button>         
            </div>
       </div>
@@ -177,7 +183,7 @@
           <p class="price">6 &euro;</p>
         <div class="card-body">
             <a href="#" class="btn"><i class="fas fa-cart-plus"></i>  Add to cart</a>
-            <button type="button" class="btn" data-toggle="modal" data-target="#photo9"><i class="fas fa-info"></i>
+            <button type="button" class="btn1" data-toggle="modal" data-target="#photo9"><i class="fas fa-info"></i>
 </button>         
           </div>
       </div>
@@ -189,7 +195,7 @@
        <p class="price">4 &euro;</p>
          <div class="card-body">
           <a href="#" class="btn"><i class="fas fa-cart-plus"></i>  Add to cart</a>
-           <button type="button" class="btn" data-toggle="modal" data-target="#photo10"><i class="fas fa-info"></i>
+           <button type="button" class="btn1" data-toggle="modal" data-target="#photo10"><i class="fas fa-info"></i>
 </button>         
            </div>
       </div>
@@ -201,7 +207,7 @@
           <p class="price">13 &euro;</p>
         <div class="card-body">
             <a href="#" class="btn"><i class="fas fa-cart-plus"></i>  Add to cart</a>
-            <button type="button" class="btn" data-toggle="modal" data-target="#photo11"><i class="fas fa-info"></i>
+            <button type="button" class="btn1" data-toggle="modal" data-target="#photo11"><i class="fas fa-info"></i>
 </button>         
           </div>
       </div>
@@ -213,7 +219,7 @@
        <p class="price">18 &euro;</p>
          <div class="card-body">
            <a href="#" class="btn"><i class="fas fa-cart-plus"></i>  Add to cart</a>
-           <button type="button" class="btn" data-toggle="modal" data-target="#photo12"><i class="fas fa-info"></i>
+           <button type="button" class="btn1" data-toggle="modal" data-target="#photo12"><i class="fas fa-info"></i>
 </button>         
            </div>
       </div>
@@ -228,7 +234,7 @@
 
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">Aquarium</h5>
-        <h3> 230$</h3>
+        <h3> 230&euro;</h3>
         <button type="button" class="close" data-dismiss="modal">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -239,9 +245,9 @@
           <div class="card-body">
             <h5 class="descriptif">Caracteristics</h5>
             <ul class="card-text">
-              <li>Size:  260mm</li>
-              <li>width:  380mm</li>
-              <li>height:  390mm</li>
+              <li><b>Size</b>:  260mm</li>
+              <li><b>Width</b>:  380mm</li>
+              <li><b>Height</b>:  390mm</li>
             </ul>
           </div>
         </div>
@@ -265,7 +271,7 @@
 
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">Aquarium Register</h5>
-        <h3> 330.00$</h3>
+        <h3> 330.00&euro;</h3>
         <button type="button" class="close" data-dismiss="modal">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -276,10 +282,10 @@
           <div class="card-body">
             <h5 class="descriptif">Caracteristics</h5>
             <ul class="card-text">
-              <li>Size: 150mm</li>
-              <li>width: 45mm </li>
-              <li>heigth:  800mm</li>
-              <li>color:  Black</li>
+              <li><b>Size</b>: 150mm</li>
+              <li><b>Width</b>: 45mm </li>
+              <li><b>Heigth</b>:  800mm</li>
+              <li><b>Color</b>:  Black</li>
             </ul>
           </div>
         </div>
@@ -302,7 +308,7 @@
 
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">Gold Fish Aquarium</h5>
-        <h3> 100.00$</h3>
+        <h3> 100.00&euro;</h3>
         <button type="button" class="close" data-dismiss="modal">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -313,9 +319,9 @@
           <div class="card-body">
             <h5 class="descriptif">Caracteristics</h5>
             <ul class="card-text">
-              <li>Size:  61mmm</li>
-              <li>width: 330mm</li>
-              <li>capacity:  60L</li>
+              <li><b>Size</b>:  61mmm</li>
+              <li><b>Width</b>: 330mm</li>
+              <li><b>Capacity</b>:  60L</li>
             </ul>
           </div>
         </div>
@@ -338,7 +344,7 @@
 
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">Red Fish Food</h5>
-        <h3> 5.00$</h3>
+        <h3> 5.00&euro;</h3>
         <button type="button" class="close" data-dismiss="modal">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -349,8 +355,8 @@
           <div class="card-body">
             <h5 class="descriptif">Caracteristics</h5>
             <ul class="card-text">
-              <li>weight:  50g</li>
-              <li>color:  red</li>
+              <li><b>Weight</b>:  50g</li>
+              <li><b>Color</b>:  red</li>
             </ul>
           </div>
         </div>
@@ -372,7 +378,7 @@
 
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">Castle Decoration</h5>
-        <h3> 15.00$</h3>
+        <h3> 5.00&euro;</h3>
         <button type="button" class="close" data-dismiss="modal">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -383,8 +389,8 @@
           <div class="card-body">
             <h5 class="descriptif">Caracteristics</h5>
             <ul class="card-text">
-              <li>Size:  120mm</li>
-              <li>width:  70mm</li>
+              <li><b>Size</b>:  120mm</li>
+              <li><b>Width</b>:  70mm</li>
             </ul>
           </div>
         </div>
@@ -406,7 +412,7 @@
 
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">Aquarium Heater</h5>
-        <h3> 17.00$</h3>
+        <h3> 17.00&euro;</h3>
         <button type="button" class="close" data-dismiss="modal">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -417,9 +423,9 @@
           <div class="card-body">
             <h5 class="descriptif">Caracteristics</h5>
             <ul class="card-text">
-              <li>Size:  100mm</li>
-              <li>width: 30mm</li>
-              <li>color:  black</li>
+              <li><b>Size</b>:  100mm</li>
+              <li><b>Width</b>: 30mm</li>
+              <li><b>Color</b>:  black</li>
             </ul>
           </div>
         </div>
@@ -442,7 +448,7 @@
 
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">Aquarium Decoration</h5>
-        <h3> 13.00$</h3>
+        <h3> 6.00&euro;</h3>
         <button type="button" class="close" data-dismiss="modal">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -453,8 +459,8 @@
           <div class="card-body">
             <h5 class="descriptif">Caracteristics</h5>
             <ul class="card-text">
-              <li>Size:  9mm</li>
-              <li>width:  13mm</li>
+              <li><b>Size</b>:  9mm</li>
+              <li><b>Width</b>:  13mm</li>
             </ul>
           </div>
         </div>
@@ -477,7 +483,7 @@
 
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">Landing Net</h5>
-        <h3> 3.00$</h3>
+        <h3> 3.00&euro;</h3>
         <button type="button" class="close" data-dismiss="modal">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -488,9 +494,9 @@
           <div class="card-body">
             <h5 class="descriptif">Caracteristics</h5>
             <ul class="card-text">
-             <li>Size:  150mm</li>
-              <li>width:  120mm</li>
-              <li>color:  blue</li>
+             <li><b>Size</b>:  150mm</li>
+              <li><b>Width</b>:  120mm</li>
+              <li><b>Color</b>:  blue</li>
             </ul>
           </div>
         </div>
@@ -513,7 +519,7 @@
 
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">Cleaning Kit</h5>
-        <h3> 6.00$</h3>
+        <h3> 6.00&euro;</h3>
         <button type="button" class="close" data-dismiss="modal">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -524,8 +530,8 @@
           <div class="card-body">
             <h5 class="descriptif">Caracteristics</h5>
             <ul class="card-text">
-              <li>Size:  150mm</li>
-              <li>color:  Blue</li>
+              <li><b>Size</b>:  150mm</li>
+              <li><b>Color</b>:  Blue</li>
             </ul>
           </div>
         </div>
@@ -548,7 +554,7 @@
 
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">Plastic Plant</h5>
-        <h3> 4.00$</h3>
+        <h3> 4.00&euro;</h3>
         <button type="button" class="close" data-dismiss="modal">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -559,9 +565,9 @@
           <div class="card-body">
             <h5 class="descriptif">Caracteristics</h5>
             <ul class="card-text">
-              <li>Size:  150mm</li>
-              <li>width: 40mm</li>
-              <li>color:  Green</li>
+              <li><b>Size</b>:  150mm</li>
+              <li><b>Width</b>: 40mm</li>
+              <li><b>Color</b>:  Green</li>
             </ul>
           </div>
         </div>
@@ -584,7 +590,7 @@
 
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">Oxygen Pump</h5>
-        <h3> 13.00$</h3>
+        <h3> 13.00&euro;</h3>
         <button type="button" class="close" data-dismiss="modal">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -595,8 +601,8 @@
           <div class="card-body">
             <h5 class="descriptif">Caracteristics</h5>
             <ul class="card-text">
-              <li>Power:  5W</li>
-              <li>color:  Black</li>
+              <li><b>Power</b>:  5W</li>
+              <li><b>Color</b>:  Black</li>
             </ul>
           </div>
         </div>
@@ -619,7 +625,7 @@
 
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">Daily Programmer</h5>
-        <h3> 18.00$</h3>
+        <h3> 18.00&euro;</h3>
         <button type="button" class="close" data-dismiss="modal">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -630,9 +636,9 @@
           <div class="card-body">
             <h5 class="descriptif">Caracteristics</h5>
             <ul class="card-text">
-              <li>Size:  100mm</li>
-              <li>width: 30mm</li>
-              <li>color:  black</li>
+              <li><b>Size</b>:  100mm</li>
+              <li><b>Width</b>: 30mm</li>
+              <li><b>Color</b>:  black</li>
             </ul>
           </div>
         </div>
@@ -654,34 +660,31 @@
         <div class="col-12 col-sm-8 col-md-6">
           <div class="row tableFooter">
             <div class="col-5 col-sm-5 col-md-5 col-lg-3"> <a href="#"> Home </a> </div>
-            <div class="col-5 col-sm-5 col-md-5 col-lg-3"> <a href="#">Category 1 </a></div>
+            <div class="col-5 col-sm-5 col-md-5 col-lg-3"> <a href="#">Fashion</a></div>
           </div>
           <div class="row tableFooter">
             <div class="col-5 col-sm-5 col-md-5 col-lg-3"> <a href="#">About us </a></div>
-            <div class="col-5 col-sm-5 col-md-5 col-lg-3"> <a href="#">Category 1 </a></div>
+            <div class="col-5 col-sm-5 col-md-5 col-lg-3"> <a href="#">Pet shop</a></div>
           </div>
           <div class="row tableFooter">
             <div class="col-5 col-sm-5 col-md-5 col-lg-3"> <a href="#">Top selling </a></div>
-            <div class="col-5 col-sm-5 col-md-5 col-lg-3"> <a href="#">Category 1 </a></div>
+            <div class="col-5 col-sm-5 col-md-5 col-lg-3"> <a href="#">high-tech</a></div>
           </div>        
           <div class="row tableFooter">
             <div class="col-5 col-sm-5 col-md-5 col-lg-3"> <a href="#">Contact </a></div>
-            <div class="col-5 col-sm-5 col-md-5 col-lg-3"> <a href="#">Category 1 </a></div>
+            <div class="col-5 col-sm-5 col-md-5 col-lg-3"> <a href="#">Watches</a></div>
           </div>        
           <div class="row tableFooter">
             <div class="col-5 col-sm-5 col-md-5 col-lg-3"> <a href="#">Legal mentions </a></div>
-            <div class="col-5 col-sm-5 col-md-5 col-lg-3"> <a href="#">Category 1 </a></div>
+            <div class="col-5 col-sm-5 col-md-5 col-lg-3"> <a href="#">Fishery</a></div>
           </div>
-          <br>  
-
-          
-          
+        <br>  
         </div>  
-        <div class="col-12 col-sm-12 col-md-6"> 
+        <div class="form col-12 col-sm-12 col-md-6"> 
           <h3>Contact us</h3>
           <form method="post" action="traitement.php">
             <p>
-              <label for="email"><i class="far fa-envelope"></i></label> <input type="email" name="email" id="email">
+              <label for="email"><i class="far fa-envelope"></i></label> <input type="email" name="email" id="email" placeholder="wildbazard2@example.com">
             </p>
             <p>
               <label for="message"> <i class="far fa-comment"></i> </label>  <input type="text" name="message" class="inputText" id="message">
@@ -690,23 +693,22 @@
           </form>
         </div>          
       </div>
-      <div>
+      <div class="info">
         <p> 
           <img src="images/wild.png" class="footerImg" alt="logo">
           <span class="titleFooter"> WILD BAZAR</span> 1, rue de la Paix - 75000 Paris - <i class="fas fa-phone"></i> 01-23-45-67-89
         </p>
       </div>
-</footer>
+    </footer>
 
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-<!-- Font Awesome  -->
-<script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
-
-</body>
+  <!-- Font Awesome  -->
+  <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
+  
+  </body>
 </html>
