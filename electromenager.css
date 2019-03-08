@@ -1,14 +1,16 @@
 /*How to call fonts
 
-    font-family: 'Arimo', sans-serif;
+    font-family: 'Alegreya', sans-serif;
 
     font-family: 'Libre Baskerville', serif;*/
 
-/*.home_appliance_banner {
-	color: #ff8533;
-	text-shadow: white 1px 1px;
-	font-weight: bold;
-}*/
+h1, h2, h3, h4, h5 {
+	font-family: 'Libre Baskerville', serif;*/
+}
+
+p, li {
+	font-family: 'Alegreya', sans-serif;
+}
 
 .home_appliance_banner {
 	position: relative;
@@ -30,15 +32,6 @@
 	font-size: 1.2vw;
 	font-weight: bold;
 }
-
-
-/*
-
-@media screen and (min-width: 768px) and (max-width: 992px) {
-   .home_appliance_banner h1 {
-       font-size: 150%
-   }
-}*/
 
 
 .price {
@@ -121,3 +114,10 @@ section {
 	color: #ff8533;
 	background-color: white;
 }
+
+hr {
+	border: solid 1px;
+	color: rgb(225, 225, 225);
+	width: 80%
+}
+
