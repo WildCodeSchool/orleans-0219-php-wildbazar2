@@ -60,6 +60,9 @@ p, li {
 
 }
 
+@media screen and (max-width: 750px){
+.carousel {display: none!important;}}
+
 .fas{
 	height: 20px;
 }
