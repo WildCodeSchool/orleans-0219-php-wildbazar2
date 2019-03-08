@@ -8,12 +8,14 @@
 */
 
 /*header*/
+
 #home{
 	box-shadow: 0px 15px 10px -15px #111;
 	padding: 0;
 	margin: 0;
 	text-align: center;
 }
+
 .navbar{
 	padding-top: 2em;
 	padding-bottom: 2em;
@@ -41,7 +43,6 @@
 .nav-link{
 	font-family: 'Alegreya', sans-serif;
 	font-size: 1.5em;
-
 }
 
 .fas{
@@ -138,7 +139,10 @@
 	border: solid 1px white;
 	color: white;
 	font-family: 'Alegreya', sans-serif;
+}
 
+.card-body{
+	text-align: justify;
 }
 
 .card-img-top:hover{
@@ -212,6 +216,7 @@ span{
 
 
 /*Modal*/
+
 .modal {
 	font-family: 'Alegreya', sans-serif;
 	font-size: 1.1em;
@@ -242,6 +247,12 @@ span{
 		min-width: 80%;
 		max-width: 300px;
 	}
+	.btn.btn-warning.pull-right{
+		display: none;
+	}
+	.nav-link{
+		font-size: 1em;
+	}
 }
 
 
@@ -257,6 +268,7 @@ span{
 
 .modal-body .card {
 	border: none!important;
+	text-align: justify;
 }
 
 .modal-header {
@@ -274,7 +286,6 @@ hr{
 	width: 70%;
 	color: lightgrey
 }
-
 
 
 /*FOOTER*/
@@ -347,8 +358,8 @@ footer .info{
 	padding-left: 1.5em;
 	padding-top: 1em;
 	margin-top: 1.5em;
-
 	color: white;
+	font-family: 'Alegreya', sans-serif;
 }
 
 input{
