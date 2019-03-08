@@ -261,12 +261,15 @@ footer a:hover{
 
 #btnFooter {
 	margin-left: 2.5%;
+	background: #ff8533;
+	color: white;
 }
 
 #btnFooter:hover {
 	border: solid 1px #ff8533;
 	margin-left: 2.5%;
-	background-color: #343a40;
+	background-color: transparent;
+	color: #ff8533;
 }
 
 footer {
@@ -300,3 +303,6 @@ footer h3{
 	color: white;
 }
 
+@media screen and (max-width: 750px){
+#email, .inputText {width:80%;;
+	margin: 0 auto 0 10px!important;}}
