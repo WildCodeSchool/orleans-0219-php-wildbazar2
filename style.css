@@ -1,9 +1,9 @@
 /*    font-family: 'Alegreya', sans-serif;
 
-    font-family: 'Libre Baskerville', serif;*/
+    font-family: 'Ubuntu', serif;*/
 
 h1, h2, h3, h4, h5 {
-	font-family: 'Libre Baskerville', serif;*/
+	font-family: 'Ubuntu', serif;*/
 }
 
 p, li {
@@ -31,7 +31,7 @@ p, li {
 }
 
 .navbar-brand{
-	font-family: 'Libre Baskerville', serif;
+	font-family: 'Ubuntu', serif;
 	font-size: 2.5em;
 
 }
@@ -102,11 +102,11 @@ p, li {
 }
 
 .homeImg {
-	opacity: 0.7!important;
+	opacity: 0.9!important;
 }
 
 .carousel_title{
-	font-family: 'Libre Baskerville', serif;
+	font-family: 'Ubuntu', serif;
 	font-size: 4em;
 	color: #ff8533;
 }
@@ -118,7 +118,7 @@ p, li {
 }
 
 .carousel_title1{
-	font-family: 'Libre Baskerville', serif;
+	font-family: 'Ubuntu', serif;
 	font-size: 4em;
 	color: white;
 }
@@ -130,7 +130,7 @@ p, li {
 }
 
 .carousel_title2{
-	font-family: 'Libre Baskerville', serif;
+	font-family: 'Ubuntu', serif;
 	font-size: 4em;
 	color: black;
 	
@@ -143,9 +143,9 @@ p, li {
 }
 
 .carousel_title3{
-	font-family: 'Libre Baskerville', serif;
+	font-family: 'Ubuntu', serif;
 	font-size: 4em;
-	color: white;
+	color: #ff8533;
 	text-shadow: #343a40 2px 2px;	
 }
 
@@ -156,9 +156,6 @@ p, li {
 	text-shadow: #343a40 2px 2px;
 }
 
-.carousel_image{
-	opacity: 0.9;
-}
 
 /*FIN HEADER*/
 .text{
@@ -180,7 +177,7 @@ p, li {
 }
 
 .title{
-	font-family: 'Libre Baskerville', serif;
+	font-family: 'Ubuntu', serif;
 	font-size: 3em;
 }
 
@@ -283,11 +280,15 @@ img.cat {
 
 .overlay .text {
   color: white;
-  font-size: 16px;
+  font-size: 2em;
   font-weight: 900;
   padding: 16px 32px;
   border-radius: 2px;
   margin-top: 22%;
+}
+
+#topSelling {
+	margin-bottom: 5%;
 }
 
 
@@ -320,7 +321,7 @@ footer a:hover{
 }
 
 .titleFooter {
-	font-family: 'Libre Baskerville', serif;
+	font-family: 'Ubuntu', serif;
 	padding-top: 4%;
 	font-size: 1.1em;
 	padding-left: 0.5em;
@@ -336,6 +337,7 @@ footer a:hover{
 	width: 60%;
 }
 
+
 #btnFooter {
 	margin-left: 2.5%;
 	border: 1px solid #ff8533;
@@ -348,7 +350,7 @@ footer a:hover{
 }
 
 footer {
-	padding: 0;
+	padding-top: 0;
 	margin: 0;
 }
 
