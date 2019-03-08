@@ -3,7 +3,11 @@
     font-family: 'Ubuntu', serif;*/
 
 h1, h2, h3, h4, h5 {
+<<<<<<< HEAD
+	font-family: 'Libre Baskerville', serif;
+=======
 	font-family: 'Ubuntu', serif;*/
+>>>>>>> 1c2efb034db05f455947fa3303183f1a38922c27
 }
 
 p, li {
