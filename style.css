@@ -287,6 +287,10 @@ img.cat {
   margin-top: 22%;
 }
 
+#topSelling {
+	margin-bottom: 5%;
+}
+
 
 /*FOOTER*/
 .footer {
@@ -346,7 +350,7 @@ footer a:hover{
 }
 
 footer {
-	padding: 0;
+	padding-top: 0;
 	margin: 0;
 }
 
