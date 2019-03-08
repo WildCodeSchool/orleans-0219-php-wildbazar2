@@ -7,13 +7,13 @@
     font-family: 'Libre Baskerville', serif;
 
 */
-
+/*dubut du header*/
 }
 #home{
 	box-shadow: 0px 15px 10px -15px #111;
 	padding: 0;
 	margin: 0;
-	text-align: center;
+
 }
 .navbar{
 	padding-top: 2em;
@@ -30,7 +30,7 @@
 
 .navbar-brand{
 	font-family: 'Libre Baskerville', serif;
-	font-size: 2.5em;
+	font-size: 2.3em;
 
 }
 
@@ -46,9 +46,7 @@
 
 }
 
-.fas{
-	height: 20px;
-}
+
 .navbar button{
 	border: solid 1px #ff8533;
 }
@@ -65,32 +63,44 @@
 	color: #ff8533;
 	transition: all 0.2s ease-in; 
 }
-
-.navbar img{
-	object-fit: cover;
+.home-tech{
+	position: relative;
+	padding: 0;
+	margin: 0;
 }
 
-.main-title{
+.home-tech h1{
+	font-size: 6vw;
 	position: absolute;
-	top: 30%;
-	text-align: center;
-}
-.main-title h1{
-	font-size: 6em;
-	color: #ff8533;
+	top: 8.5vw;
+	left: 50vw;
+	font-weight: bold;
 }
 
-.main-title p{
-	font-size: 2em;
+.home-tech p{
+	font-size: 3vw;
+	position: absolute;
+	top: 18vw;
+	left: 50vw;
+	font-weight: bold;
+}
+.home-tech img{
+	width: 100%;
 }
 
 
+/*fin du header*/
+
+
+
+/*debut de la section tech*/
 #tech{
 	margin-top: 5em;
 	margin-bottom: 5em;
 }
 .card {
 	border: none;
+	max-width: 350px;
 }
 .card-img-top{
 	object-fit: cover;
@@ -113,6 +123,7 @@
 	border: 1px solid #ff8533;
 }
 
+
 .modal {
 	font-family: Arimo-Regular;
 	font-size: 1.1em;
@@ -127,23 +138,19 @@
 	margin-left: 1.2em;
 }
 
+.price{
+	font-size: 1.5em;
+}
+
 .modal p{
 	margin-top: 1.5em;
 	padding-right: 3em;
 	text-align: justify;
+	font-size: 1.5em;
 }
 
-@media screen and (min-width: 200px) and (max-width: 500px){
-	.modal-dialog{
-		min-width: 80%;
-		max-width: 300px;
-	}
-}
-
-
-.modal-body .card{
+.card{
 	border: none;
-
 }
 
 .modal-img{
@@ -156,6 +163,11 @@ hr {
 	width: 80%;
 	color: lightgrey;
 }
+
+/*fin de la section tech*/
+
+
+/*debut de la section footer */
 
 .footer {
 	background-color: #343a40;
@@ -238,3 +250,63 @@ h3{
 	color: white;
 }
 
+/*fin de la section footer */
+
+/*media queries*/
+
+
+@media screen and (min-width: 200px) and (max-width: 1270px){
+	.modal-dialog{
+		min-width: 80%;
+		max-width: 300px;
+	}
+	.btn.btn-warning.pull-right{
+		display: none;
+	}
+	.nav-link{
+	font-size: 1em;
+
+}
+}
+
+@media screen and (min-width: 200px) and (max-width: 600px){
+	.btn.btn-warning.pull-right{
+		display: none;
+	}
+
+}
+@media screen and (min-width: 200px) and (max-width: 800px){
+		.home-tech h1{
+	font-size: 6vw;
+	position: absolute;
+	top: 15vw;
+	left: 5vw;
+	font-weight: bold;
+}
+
+.home-tech p{
+	font-size: 3vw;
+	position: absolute;
+	top: 22vw;
+	left: 5vw;
+	font-weight: bold;
+}
+}
+
+@media screen and (min-width: 800px) and (max-width: 1000px){
+		.home-tech h1{
+	font-size: 6vw;
+	position: absolute;
+	top: 15vw;
+	left: 35vw;
+	font-weight: bold;
+}
+
+.home-tech p{
+	font-size: 3vw;
+	position: absolute;
+	top: 22vw;
+	left: 35vw;
+	font-weight: bold;
+}
+}
