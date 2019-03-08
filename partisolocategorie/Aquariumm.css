@@ -25,13 +25,15 @@ p{
 
 .price{
  text-align: left;
+ font-family: 'alegreya', sans-serif;
+
 }
 
 .card{
   margin-top: 15px;
   border: transparent;
-  
-}
+  }
+
 .card-img-top:hover{
 	transform: scale(1.3);
 	transition: all 0.2s ease-in;
@@ -58,17 +60,6 @@ hr
 b{
   font-weight: bold; 
 }
-
-button.btn-card:hover {
-  background-color: white;
-  color: #ff8533;
-  border: 1px solid #ff8533;
-  transition: background-color .25s ease-in;
-    -webkit-transition: background-color .25s ease-in;
-    -moz-transition: background-color .25s ease-in;
-    -ms-transition: background-color .25s ease-in;
-    -o-transition: background-color .25s ease-in;
-  }
 
   button.btn-card {
   background-color: #ff8533;
@@ -109,6 +100,10 @@ button.btn-card:hover {
   color:#ff8533;
 }
 
+.card-body
+{
+  padding: 0rem!important;
+}
 /*   MODAL   */
 
 .modal-body
