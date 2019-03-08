@@ -2,17 +2,112 @@
 
 
 
-    font-family: 'Arimo', sans-serif;
+    font-family: 'Alegreya', sans-serif;
 
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Ubuntu', serif;
 
 */
+/*dubut du header*/
+}
+#home{
+	box-shadow: 0px 15px 10px -15px #111;
+	padding: 0;
+	margin: 0;
+
+}
+.navbar{
+	padding-top: 2em;
+	padding-bottom: 2em;
+	margin-right: 0;
+	background-color: #343a40;
+}
+
+.navbar-nav{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.navbar-brand{
+	font-family: 'Ubuntu', serif;
+	font-size: 2.3em;
+
+}
+
+.logo{
+	width: 70px;
+	height: 70px;
+	color: #ff8533;
+}
+
+.nav-link{
+	font-family: 'Alegreya', sans-serif;
+	font-size: 1.5em;
+
+}
+
+
+.navbar button{
+	border: solid 1px #ff8533;
+}
+.navbar button:hover{
+	border: solid 1px #ff8533;
+	background-color: #343a40;
+}
+#navbarNav .nav-link{
+	text-transform: uppercase;
+	margin-left: 0.5em;
+	transition: all 0.2s ease-out;
+}
+#navbarNav .nav-link:hover{
+	color: #ff8533;
+	transition: all 0.2s ease-in; 
+}
+.home-tech{
+	position: relative;
+	padding: 0;
+	margin: 0;
+	box-shadow: 0px 15px 10px -15px #111;
+}
+
+.home-tech h1{
+	font-size: 6vw;
+	position: absolute;
+	top: 8.5vw;
+	left: 50vw;
+	font-weight: bold;
+	font-family: Ubuntu;
+	color: #ff8533;;
+}
+
+.home-tech p{
+	font-size: 3vw;
+	position: absolute;
+	top: 18vw;
+	left: 50vw;
+	font-weight: bold;
+}
+.home-tech img{
+	width: 100%;
+}
+
+
+/*fin du header*/
+
+
+
+/*debut de la section tech*/
+#tech{
+	margin-top: 5em;
+	margin-bottom: 5em;
+}
 .card {
 	border: none;
+	max-width: 350px;
 }
 .card-img-top{
 	object-fit: cover;
-	padding: 2em;
+	padding-bottom: 2em;
 	transition: all 0.2s ease-out;
 }
 .card-img-top:hover{
@@ -31,21 +126,30 @@
 	border: 1px solid #ff8533;
 }
 
+
 .modal {
-	font-family: Arimo-Regular;
+	font-family: Alegreya-Regular;
 	font-size: 1.1em;
 }
 
-.modal-body img {
-	margin-left: 2em;
-	padding: 1em;
-	box-shadow: 1px 1px 0px 0px rgba(255, 133, 51);
-
+.modal-dialog{
+	max-width: 50%;
+	min-width: 350px;
 }
-.modal-body p {
-	padding-top: 1em;
+
+.card-title-features{
+	margin-left: 1.2em;
+}
+
+.price{
+	font-size: 1.5em;
+}
+
+.modal p{
+	margin-top: 1.5em;
 	padding-right: 3em;
 	text-align: justify;
+	font-size: 1.5em;
 }
 
 .modal-body .features{
@@ -55,11 +159,30 @@
 
 }
 
+.card{
+	border: none;
 }
+
+.modal-img{
+	width: 80%!important;
+	margin: auto;	
+
+}
+
+hr {
+	border: solid 1px lightgrey;
+	width: 80%;
+	color: lightgrey;
+}
+
+/*fin de la section tech*/
+
+
+/*debut de la section footer */
 
 .footer {
 	background-color: #343a40;
-	font-family: 'Arimo', sans-serif;
+	font-family: 'Alegreya', sans-serif;
 	box-shadow: 0px 0px 6px lightgrey;
 	padding-top: 5em;
 }
@@ -85,7 +208,7 @@ footer a:hover{
 }
 
 .titleFooter {
-	font-family: 'Libre Baskerville', serif;
+	font-family: 'Ubuntu', serif;
 	padding-top: 4%;
 	font-size: 1.1em;
 }
@@ -117,6 +240,7 @@ footer {
 
 footer p {
 	font-size: 1.1em;
+	font-family: Alegrya;
 }
 
 footer .info{
@@ -138,3 +262,67 @@ h3{
 	color: white;
 }
 
+/*fin de la section footer */
+
+/*media queries*/
+
+
+@media screen and (min-width: 200px) and (max-width: 1270px){
+	.modal-dialog{
+		min-width: 80%;
+		max-width: 300px;
+	}
+	.btn.btn-warning.pull-right{
+		display: none;
+	}
+	.nav-link{
+	font-size: 1em;
+
+}
+}
+
+@media screen and (min-width: 200px) and (max-width: 600px){
+	.btn.btn-warning.pull-right{
+		display: none;
+	}
+
+}
+@media screen and (min-width: 200px) and (max-width: 800px){
+		.home-tech h1{
+	font-size: 6vw;
+	position: absolute;
+	top: 15vw;
+	left: 5vw;
+	font-weight: bold;
+}
+
+.home-tech p{
+	font-size: 3vw;
+	position: absolute;
+	top: 22vw;
+	left: 5vw;
+	font-weight: bold;
+}
+}
+
+@media screen and (min-width: 800px) and (max-width: 1000px){
+		.home-tech h1{
+	font-size: 6vw;
+	position: absolute;
+	top: 15vw;
+	left: 35vw;
+	font-weight: bold;
+}
+
+.home-tech p{
+	font-size: 3vw;
+	position: absolute;
+	top: 22vw;
+	left: 35vw;
+	font-weight: bold;
+}
+}
+
+html p{
+	font-family: Alegreya;
+}
