@@ -2,13 +2,12 @@
 
 
 
-    font-family: 'Arimo', sans-serif;
+    font-family: 'Alegreya', sans-serif;
 
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Ubuntu', serif;
 */
 
 /*header*/
-
 #home{
 	box-shadow: 0px 15px 10px -15px #111;
 	padding: 0;
@@ -29,9 +28,8 @@
 }
 
 .navbar-brand{
-	font-family: 'Libre Baskerville', serif;
+	font-family: 'Ubuntu', serif;
 	font-size: 2.5em;
-
 }
 
 .logo{
@@ -41,26 +39,31 @@
 }
 
 .nav-link{
-	font-family: 'Arimo', sans-serif;
+	font-family: 'Alegreya', sans-serif;
 	font-size: 1.5em;
 
 }
 
 .fas{
 	height: 20px;
+	font-family: 'Alegreya', sans-serif;
 }
+
 .navbar button{
 	border: solid 1px #ff8533;
 }
+
 .navbar button:hover{
 	border: solid 1px #ff8533;
 	background-color: #343a40;
 }
+
 #navbarNav .nav-link{
 	text-transform: uppercase;
 	margin-left: 0.5em;
 	transition: all 0.2s ease-out;
 }
+
 #navbarNav .nav-link:hover{
 	color: #ff8533;
 	transition: all 0.2s ease-in; 
@@ -75,6 +78,7 @@
 	top: 30%;
 	text-align: center;
 }
+
 .main-title h1{
 	font-size: 6em;
 	color: #ff8533;
@@ -85,38 +89,38 @@
 }
 
 .carousel_title{
-	font-family: 'Libre Baskerville', serif;
+	font-family: 'Ubuntu', serif;
 	font-size: 4em;
 	color: black;
 }
 
 .carousel_text{
-	font-family: 'Arimo', sans-serif;
+	font-family: 'Alegreya', sans-serif;
 	font-size: 3em;
 	color:  #ff6833 ;
 }
 
 .carousel_title1{
-	font-family: 'Libre Baskerville', serif;
+	font-family: 'Ubuntu', serif;
 	font-size: 4em;
 	color: white;
 }
 
 .carousel_text1{
-	font-family: 'Arimo', sans-serif;
+	font-family: 'Alegreya', sans-serif;
 	font-size: 3em;
 	color: white;
 }
 
 .carousel_title2{
-	font-family: 'Libre Baskerville', serif;
+	font-family: 'Ubuntu', serif;
 	font-size: 4em;
 	color: black;
 	
 }
 
 .carousel_text2{
-	font-family: 'Arimo', sans-serif;
+	font-family: 'Alegreya', sans-serif;
 	font-size: 3em;
 	color: black;
 	
@@ -133,6 +137,8 @@
 	background-color: #ff8533;
 	border: solid 1px white;
 	color: white;
+	font-family: 'Alegreya', sans-serif;
+
 }
 
 .card-img-top:hover{
@@ -145,10 +151,38 @@
 	transition: all 0.2s ease-out;
 	object-fit: cover;
 }
+
+.card-title{
+	font-family: 'Ubuntu', serif;
+}
+
+.card-text{
+	font-family: 'Alegreya', sans-serif;
+}
+
 .btn:hover{
 	background-color: white;
 	border: solid 1px #ff8533;
 	color: #ff8533;
+}
+
+.btn1{
+	background-color: white;
+	font-family: 'Alegreya', sans-serif;
+	border: solid 1px #ff8533;
+	color: #ff8533;
+	font-size: 1em;
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	line-height: 1.5;
+	border-radius: .25rem;
+
+}
+
+.btn1:hover{
+	background-color: #ff8533;
+	border: solid 1px white;
+	color: white;
 }
 
 .card{
@@ -162,7 +196,7 @@ span{
 
 .styletitle {
 	position:absolute;
-	font-family: 'Libre Baskerville', serif;
+	font-family: 'Ubuntu', serif;
 	left: 5%;
 	top: 20%; 
 	font-size: 5vw;
@@ -171,7 +205,7 @@ span{
 
 .styletext{
 	position: absolute;
-	font-family: 'Arimo', sans-serif;
+	font-family: 'Alegreya', sans-serif;
 	font-size: 2.5vw;
 	color: #ff8533;
 }
@@ -179,8 +213,12 @@ span{
 
 /*Modal*/
 .modal {
-	font-family: Arimo-Regular;
+	font-family: 'Alegreya', sans-serif;
 	font-size: 1.1em;
+}
+
+.modal-title{
+	font-family: 'Ubuntu', serif;
 }
 
 .modal-dialog{
@@ -190,13 +228,13 @@ span{
 
 .card-title-features{
 	margin-left: 1.2em;
+	text-align: justify;
 }
 
 .modal p{
 	margin-top: 1.5em;
 	padding-right: 3em;
-	text-align: justify;
-	
+	text-align: justify;	
 }
 
 @media screen and (min-width: 200px) and (max-width: 500px){
@@ -231,7 +269,6 @@ span{
 	color: #ff8533;
 }
 
-
 hr{
 	border: 1px solid lightgrey;
 	width: 70%;
@@ -244,7 +281,7 @@ hr{
 
 .footer {
 	background-color: #343a40;
-	font-family: 'Arimo', sans-serif;
+	font-family: 'Alegreya', sans-serif;
 	box-shadow: 0px 0px 6px lightgrey;
 	padding-top: 5em;
 }
@@ -270,7 +307,7 @@ footer a:hover{
 }
 
 .titleFooter {
-	font-family: 'Libre Baskerville', serif;
+	font-family: 'Ubuntu', serif;
 	padding-top: 4%;
 	font-size: 1.1em;
 }
