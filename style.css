@@ -253,6 +253,9 @@ div.cont-cat:hover {
   	-ms-transition: box-shadow .25s ease-in;
   	-o-transition: box-shadow .25s ease-in;}
 
+
+/* top selling */
+
 .overlay {
   transition: .5s ease;
   opacity: 0;
@@ -289,6 +292,7 @@ img.cat {
   padding: 16px 32px;
   border-radius: 2px;
   margin-top: 22%;
+
 }
 
 #topSelling {
