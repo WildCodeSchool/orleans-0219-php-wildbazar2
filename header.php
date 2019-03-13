@@ -1,4 +1,3 @@
-<<<<<<< HEAD
     <header id="home" class="container-fluid">
 
         <nav class="navbar navbar-expand-lg navbar-dark">
