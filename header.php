@@ -1,6 +1,8 @@
     <header id="home" class="container-fluid">
+		<?php
+		 if ('/index.php' == $_SERVER['PHP_SELF']) {
 
-        <nav class="navbar navbar-expand-lg navbar-dark">
+                echo '<nav class="navbar navbar-expand-lg navbar-dark">
             <img class="logo" src="https://raw.githubusercontent.com/WildCodeSchool/orleans-0219-php-wildbazar2/footer/images/wild.png" alt="logo">
             <a class="navbar-brand" href="index.php">Wild Bazar</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,9 +28,42 @@
                 </ul>
             </div>
             <button type="button" class="btn btn-warning pull-right">Cart <i class="fas fa-cart-arrow-down"></i></button>
-        </nav>
+        </nav>';
 
-        <?php
+            }
+        else{
+
+        	echo '<nav class="navbar navbar-expand-lg navbar-dark">
+            <img class="logo" src="https://raw.githubusercontent.com/WildCodeSchool/orleans-0219-php-wildbazar2/footer/images/wild.png" alt="logo">
+            <a class="navbar-brand" href="../index.php">Wild Bazar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                   
+                    <li class="nav-item">
+                        <a class="nav-link" href="fashion.php">Fashion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aquarium.php">Pet shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tech.php">High-Tech</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="watches.php">Watches</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="electromenager.php">Home appliance</a>
+                    </li>
+                </ul>
+            </div>
+            <button type="button" class="btn btn-warning pull-right">Cart <i class="fas fa-cart-arrow-down"></i></button>
+        </nav>';
+        }
+
+        
 
             if ('/categories/electromenager.php' == $_SERVER['PHP_SELF']) {
 
@@ -40,7 +75,22 @@
                         <p>Fashion equipment for cooking and housekeeping</p>
                     </div>
                 </div>';
-            } else {
+
+
+            } 
+
+            elseif ('/categories/tech.php' == $_SERVER['PHP_SELF']) {
+
+                echo '<div>
+		<div class="home-tech p-0 m-0">
+			<img src="../images/techVr.jpg" alt="background header">
+			<h1>high - tech</h1>
+			<p>The best high-tech articles are here</p>
+		</div>
+	</div>';
+			}	
+
+            else {
                 echo '<div class="bd-example">
 			      	<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
 			        	<ol class="carousel-indicators">
