@@ -16,34 +16,42 @@
 
 <body>
 
-<header id="home" class="container-fluid m-0 p-0">
+	<?php
+	include'../header.php';
+	?>
+
+<!-- <header id="home" class="container-fluid m-0 p-0">
 	<nav class="navbar navbar-expand-lg navbar-dark">
-		<img class="logo" src="https://raw.githubusercontent.com/WildCodeSchool/orleans-0219-php-wildbazar2/footer/images/wild.png" alt="logo">
-		<a class="navbar-brand" href="../index.php">Wild Bazar</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-		<span class="navbar-toggler-icon"></span>
-		</button>
-	<div class="collapse navbar-collapse" id="navbarNav">
-		<ul class="navbar-nav">
-			<li class="nav-item">
-				<a class="nav-link" href="fashion.php">Fashion</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="aquarium.php">Pet shop</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="categories-tech.php">High-Tech</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="watches.php">Watches</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="electromenager.php">Home appliance</a>
-			</li>
-		</ul>
-	</div>
-	<button type="button" class="btn btn-warning pull-right">Cart <i class="fas fa-cart-arrow-down"></i></button>
-	</nav>
+        <img class="logo" src="https://raw.githubusercontent.com/WildCodeSchool/orleans-0219-php-wildbazar2/footer/images/wild.png" alt="logo">
+        <a class="navbar-brand" href="index.php">Wild Bazar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="categories/fashion.php">Fashion</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="categories/aquarium.php">Pet shop</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="categories/tech.php">High-Tech</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="categories/watches.php">Watches</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="categories/electromenager.php">Home appliance</a>
+                </li>
+            </ul>
+        </div>
+        <button type="button" class="btn btn-warning pull-right">Cart <i class="fas fa-cart-arrow-down"></i></button>
+
+    </nav>
 	<div>
 		<div class="home-tech p-0 m-0">
 			<img src="../images/techVr.jpg" alt="background header">
@@ -51,8 +59,7 @@
 			<p>The best high-tech articles are here</p>
 		</div>
 	</div>
-</header>
-
+</header> -->
 <div class="container-fluid" id="tech">
 	<div class="row justify-content-center p-2 mt-5">
 		<div class="col-12 col-md-6 col-lg-2 m-3">
@@ -72,6 +79,7 @@
 				<div class="modal-content">
 					 <div class="modal-header">
 						 <h5 class="modal-title">Raspberry PI 3</h5>
+						 <p class="card-text">29.99  <i class="fas fa-euro-sign"></i></p>
 						 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						 <span aria-hidden="true">&times;</span>
 						 </button>
@@ -89,7 +97,7 @@
 					</div>
 				</div>
 			<div class="col-12 col-lg-6">
-				<p class="price"><p class="card-text">29.99  <i class="fas fa-euro-sign"></i></p></p>
+				
 				<p>The Raspberry Pi is a series of small single-board computers developed in the United Kingdom by the Raspberry Pi Foundation to promote teaching of basic computer science in schools and in developing countries.</p>
 			</div>
 			</div>
@@ -593,55 +601,9 @@
 <!-- Modal -->
 
 <!-- Footer -->
-<footer class="container-fluid footer">
-	<div class="row">
-		<div class="col-12 col-sm-8 col-md-6">
-			<div class="row tableFooter">
-				<div class="col-5 col-sm-5 col-md-5 col-lg-3"> 
-					<a href="#"> Home </a>
-				 </div>
-					<div class="col-5 col-sm-5 col-md-5 col-lg-3"> 
-						<a href="#">Fashion</a>
-					</div>
-				</div>
-<div class="row tableFooter">
-<div class="col-5 col-sm-5 col-md-5 col-lg-3"> <a href="#">About us </a></div>
-<div class="col-5 col-sm-5 col-md-5 col-lg-3"> <a href="#">Pet shop</a></div>
-</div>
-<div class="row tableFooter">
-<div class="col-5 col-sm-5 col-md-5 col-lg-3"> <a href="#">Top selling </a></div>
-<div class="col-5 col-sm-5 col-md-5 col-lg-3"> <a href="#">high-tech</a></div>
-</div>        
-<div class="row tableFooter">
-<div class="col-5 col-sm-5 col-md-5 col-lg-3"> <a href="#">Contact </a></div>
-<div class="col-5 col-sm-5 col-md-5 col-lg-3"> <a href="#">Watches</a></div>
-</div>        
-<div class="row tableFooter">
-<div class="col-5 col-sm-5 col-md-5 col-lg-3"> <a href="#">Legal mentions </a></div>
-<div class="col-5 col-sm-5 col-md-5 col-lg-3"> <a href="#">Fishery</a></div>
-</div>
-<br>  
-</div>  
-<div class="form col-12 col-sm-12 col-md-6"> 
-<h3>Contact us</h3>
-<form method="post" action="traitement.php">
-<p>
-<label for="email"><i class="far fa-envelope"></i></label> <input type="email" name="email" id="email" placeholder="wildbazard2@example.com">
-</p>
-<p>
-<label for="message"> <i class="far fa-comment"></i> </label>  <input type="text" name="message" class="inputText" id="message">
-</p>
-<button type="button" class="btn btn-lg" id="btnFooter">Submit</button>
-</form>
-</div>          
-</div>
-<div class="info">
-<p> 
-<img src="../images/wild.png" class="footerImg" alt="logo">
-<span class="titleFooter"> WILD BAZAR</span> 1, rue de la Paix - 75000 Paris - <i class="fas fa-phone"></i> 01-23-45-67-89
-</p>
-</div>
-</footer>
+<?php
+include'../footer.php';
+?>
 
 
 <!-- Optional JavaScript -->
