@@ -30,17 +30,14 @@
 
         <?php
 
-            if ('/categories/electromenager.php' == $_SERVER['PHP_SELF']) {
+            if ('/categories/aquarium.php' == $_SERVER['PHP_SELF']) {
 
-                echo
-                '<div>
-                    <div class="home_appliance_banner">
-                        <img src="../images/home_appliance_banner.png" class="img-fluid" alt="home appliance"/>
-                        <h1>Home appliance</h1>
-                        <p>Fashion equipment for cooking and housekeeping</p>
-                    </div>
-                </div>';
-            } else {
+    echo
+    '<div class="image-categorie">
+        <img class="image_cate" src="images/fish.jpg" class="d-block w-100" alt="fishs">
+            <h1>PET SHOP<h1><h2>A HOUSE WITHOUT A CAT IS AN AQUARIUM WITHOUT FISH...</h2>
+    </div>';}
+             else {
                 echo '<div class="bd-example">
 			      	<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
 			        	<ol class="carousel-indicators">
