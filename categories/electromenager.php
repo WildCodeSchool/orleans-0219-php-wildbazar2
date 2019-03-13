@@ -24,12 +24,15 @@
 
         <?php
 
+        $classValueBanner = 'home_appliance_banner';
+        $imgBannerSrc = '../images/home_appliance_banner.png';
+        $titleBanner = 'Home appliance';
+        $textBanner = 'Fashion equipment for cooking and housekeeping';
+
         include '../header.php';
 
         ?>
 			
-
-
 
 
 <!-- Main -->
@@ -55,7 +58,15 @@
 					</div>
 
 <!-- Black toaster modal -->
-					<div class="modal fade" id="blackToaster" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+
+                    <?php
+
+                    include '../testModal.php';
+
+                    ?>
+
+
+					<!--<div class="modal fade" id="blackToaster" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
 						<div class="modal-dialog modal-dialog-centered" role="document">
 							<div class="modal-content">
 								<div class="modal-header">
@@ -89,7 +100,7 @@
 								</div>
 							</div>
 						</div>
-					</div>
+					</div>-->
 <!-- STAR WARS TOASTER -->
 					<div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-2 ">					
 						<div class="card">
