@@ -11,7 +11,7 @@
 		<!--  Call fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Alegreya|Ubuntu" rel="stylesheet"> 
 
-		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="css/style.css" />
 
 		<title>Wild Bazar 2</title>
 	</head>
@@ -24,7 +24,7 @@
 
 			<nav class="navbar navbar-expand-lg navbar-dark">
 				<img class="logo" src="https://raw.githubusercontent.com/WildCodeSchool/orleans-0219-php-wildbazar2/footer/images/wild.png" alt="logo">
-				  	<a class="navbar-brand" href="index.html">Wild Bazar</a>
+				  	<a class="navbar-brand" href="index.php">Wild Bazar</a>
 				  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				    	<span class="navbar-toggler-icon"></span>
 				  	</button>
@@ -34,19 +34,19 @@
 					        	<a class="nav-link" href="#about">About us</a>
 					      	</li>
 					      	<li class="nav-item">
-					        	<a class="nav-link" href="fashion.html">Fashion</a>
+					        	<a class="nav-link" href="categories/fashion.php">Fashion</a>
 					      	</li>
 					      	<li class="nav-item">
-					        	<a class="nav-link" href="partisolocategorie/Aquarium.html">Pet shop</a>
+					        	<a class="nav-link" href="categories/aquarium.php">Pet shop</a>
 					      	</li>
 					      	<li class="nav-item">
-					        	<a class="nav-link" href="categories-tech.html">High-Tech</a>
+					        	<a class="nav-link" href="categories/tech.php">High-Tech</a>
 					      	</li>
 					      	<li class="nav-item">
-					        	<a class="nav-link" href="watches-items.html">Watches</a>
+					        	<a class="nav-link" href="categories/watches.php">Watches</a>
 					      	</li>
 					      	<li class="nav-item">
-					        	<a class="nav-link" href="electromenager.html">Home appliance</a>
+					        	<a class="nav-link" href="categories/electromenager.php">Home appliance</a>
 					      	</li>
 					    </ul>
 					</div>
@@ -75,7 +75,7 @@
 				        	</div>
 				      	</div>
 				      	<div class="carousel-item">
-				      		<a href="partisolocategorie/Aquarium.html">
+				      		<a href="partisolocategorie/Aquarium.php">
 				       			<img class="carousel_image  homeImg" src="images/fish.jpg" class="d-block w-100" alt="fishs">
 				       		</a>
 				        	<div class="carousel-caption d-none d-md-block">
@@ -85,7 +85,7 @@
 				      	</div>
 				      	
 				      	<div class="carousel-item">
-				        	<a href="fashion.html">	
+				        	<a href="fashion.php">	
 				        		<img class="carousel_image homeImg" src="images/fashion3.jpg">
 				        	</a>
 				        	<div class="carousel-caption d-none d-md-block">
@@ -94,7 +94,7 @@
 				        	</div>
 				      	</div>
 				      	<div class="carousel-item">
-				      		<a href="watches-items.html">
+				      		<a href="watches-items.php">
 					        	<img class="carousel_image homeImg" src="images/montres.jpg">
 					        </a>
 				        	<div class="carousel-caption d-none d-md-block">
@@ -103,7 +103,7 @@
 				        	</div>
 				      	</div>
 				      	<div class="carousel-item">
-				      		<a href="categories-tech.html">
+				      		<a href="categories-tech.php">
 					        	<img class="carousel_image homeImg" src="images/tech.jpg">
 					        </a>
 				        	<div class="carousel-caption d-none d-md-block">
@@ -112,7 +112,7 @@
 				        	</div>
 				      	</div>
 				      	<div class="carousel-item">
-				      		<a href="electromenager.html">
+				      		<a href="electromenager.php">
 					        	<img class="carousel_image homeImg" src="images/cuisine.jpg">
 					        </a>
 				        	<div class="carousel-caption d-none d-md-block">
@@ -146,7 +146,7 @@
 				<div class="row category">
 					<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 cont-cat">
 						<img class="cat" src="images/categories001.png" alt="montre-003">
-						<a href="watches-items.html">
+						<a href="watches-items.php">
 						<div class="overlay">
     						<div class="text">Watches</div>
   						</div>
@@ -155,7 +155,7 @@
 					</div>
 					<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 cont-cat">
 						<img class="cat" src="images/categories002.png" alt="montre-005">
-						<a href="electromenager.html">
+						<a href="electromenager.php">
 						<div class="overlay">
     						<div class="text">Home Appliance</div>
   						</div>
@@ -164,7 +164,7 @@
 					</div>
 					<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 cont-cat">
 						<img class="cat" src="images/categories003.png" alt="montre-006">
-						<a href="categories-tech.html">
+						<a href="categories-tech.php">
 						<div class="overlay">
     						<div class="text">High Tech</div>
   						</div>
@@ -173,7 +173,7 @@
 					</div>
 					<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 cont-cat">
 						<img class="cat" src="images/categories004.png" alt="montre-007">
-						<a href="fashion.html">
+						<a href="fashion.php">
 						<div class="overlay">
     						<div class="text">Fashion</div>
   						</div>
@@ -182,7 +182,7 @@
 					</div>
 					<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 cont-cat">
 						<img class="cat" src="images/categories005.png" alt="montre-008">
-						<a href="aquarium.html">
+						<a href="aquarium.php">
 						<div class="overlay">
     						<div class="text">Pet shop</div>
   						</div>
@@ -265,23 +265,23 @@
 				<div class="col-12 col-sm-8 col-md-6">
 					<div class="row tableFooter">
 						<div class="col-12 col-sm-6 col-md-6 col-lg-4"> <a href="#"> Home </a> </div>
-						<div class="col-12 col-sm-6 col-md-6 col-lg-4"> <a href="fashion.html">Fashion</a></div>
+						<div class="col-12 col-sm-6 col-md-6 col-lg-4"> <a href="fashion.php">Fashion</a></div>
 					</div>
 					<div class="row tableFooter">
 						<div class="col-12 col-sm-6 col-md-6 col-lg-4"> <a href="#about">About us </a></div>
-						<div class="col-12 col-sm-6 col-md-6 col-lg-4"> <a href="aquarium.html">Pet shop</a></div>
+						<div class="col-12 col-sm-6 col-md-6 col-lg-4"> <a href="aquarium.php">Pet shop</a></div>
 					</div>
 					<div class="row tableFooter">
 						<div class="col-12 col-sm-6 col-md-6 col-lg-4"> <a href="#topSelling">Top selling </a></div>
-						<div class="col-12 col-sm-6 col-md-6 col-lg-4"> <a href="categories-tech.html">High-tech</a></div>
+						<div class="col-12 col-sm-6 col-md-6 col-lg-4"> <a href="categories-tech.php">High-tech</a></div>
 					</div>        
 					<div class="row tableFooter">
 						<div class="col-12 col-sm-6 col-md-6 col-lg-4"> <a href="#email">Contact </a></div>
-						<div class="col-12 col-sm-6 col-md-6 col-lg-4"> <a href="watches-items.html">Watches</a></div>
+						<div class="col-12 col-sm-6 col-md-6 col-lg-4"> <a href="watches-items.php">Watches</a></div>
 					</div>        
 					<div class="row tableFooter">
 						<div class="col-12 col-sm-6 col-md-6 col-lg-4"> <a href="#">Legal mentions </a></div>
-						<div class="col-12 col-sm-6 col-md-6 col-lg-4"> <a href="electromenager.html">Home appliance</a></div>
+						<div class="col-12 col-sm-6 col-md-6 col-lg-4"> <a href="electromenager.php">Home appliance</a></div>
 					</div>
 				<br>  
 				</div>  

@@ -11,7 +11,7 @@
 <!--  Call fonts -->
 <link href="https://fonts.googleapis.com/css?family=Alegreya|Ubuntu" rel="stylesheet"> 
 <!-- Call style.css -->
-<link rel="stylesheet" type="text/css" href="Aquariumm.css">
+<link rel="stylesheet" type="text/css" href="../css/Aquariumm.css">
 
 <title>Pet Shop</title>
   </head>
