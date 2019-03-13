@@ -21,19 +21,21 @@
 
 
 		<!-- Header -->
-        <<?php
+        <header id="home" class="container-fluid">
+        <?php
 
         include '../header.php';
 
         ?>
 			
-        <div class="container-fluid">
-            <div class="home_appliance_banner">
-                <img src="images/home_appliance_banner.png" class="img-fluid" alt="home appliance"/>
-                <h1>Home appliance</h1>
-                <p>Fashion equipment for cooking and housekeeping</p>
+            <div>
+                <div class="home_appliance_banner">
+                    <img src="images/home_appliance_banner.png" class="img-fluid" alt="home appliance"/>
+                    <h1>Home appliance</h1>
+                    <p>Fashion equipment for cooking and housekeeping</p>
+                </div>
             </div>
-        </div>
+        </header>
 
 
 <!-- Main -->

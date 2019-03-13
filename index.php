@@ -20,6 +20,8 @@
 
 
 		<!-- Header -->
+        <header id="home" class="container-fluid">
+
         <?php
 
         include 'header.php';
@@ -27,7 +29,6 @@
         ?>
 
 
-            <div class="container-fluid">
 				<div class="bd-example">
 			      	<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
 			        	<ol class="carousel-indicators">
@@ -111,7 +112,7 @@
 				       		</a>
 			      	</div>
 				</div>
-            </div>
+        </header>
 
 		<main class="container-fluid">
 			<!-- Categories -->

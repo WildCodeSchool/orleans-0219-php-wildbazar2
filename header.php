@@ -1,5 +1,3 @@
-<header id="home" class="container-fluid">
-
     <nav class="navbar navbar-expand-lg navbar-dark">
         <img class="logo" src="https://raw.githubusercontent.com/WildCodeSchool/orleans-0219-php-wildbazar2/footer/images/wild.png" alt="logo">
         <a class="navbar-brand" href="index.php">Wild Bazar</a>
@@ -31,4 +29,3 @@
         <button type="button" class="btn btn-warning pull-right">Cart <i class="fas fa-cart-arrow-down"></i></button>
 
     </nav>
-</header>
