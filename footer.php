@@ -39,7 +39,7 @@
     </div>
     <div class="info">
         <p>
-            <img src="images/wild.png" class="footerImg" alt="logo">
+            <img src="../images/wild.png" class="footerImg" alt="logo">
             <span class="titleFooter"> WILD BAZAR</span> 1, rue de la Paix - 75000 Paris - <i class="fas fa-phone"></i> 01-23-45-67-89
         </p>
     </div>

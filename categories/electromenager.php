@@ -11,8 +11,8 @@
 		<!--  Call fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Alegreya|Ubuntu" rel="stylesheet"> 
 
-		<link rel="stylesheet" href="style.css" />
-		<link rel="stylesheet" href="electromenager.css" />
+		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" href="../css/electromenager.css" />
 
 		<title>WB2 - Home appliance</title>
 	</head>
@@ -30,7 +30,7 @@
 			
             <div>
                 <div class="home_appliance_banner">
-                    <img src="images/home_appliance_banner.png" class="img-fluid" alt="home appliance"/>
+                    <img src="../images/home_appliance_banner.png" class="img-fluid" alt="home appliance"/>
                     <h1>Home appliance</h1>
                     <p>Fashion equipment for cooking and housekeeping</p>
                 </div>
@@ -45,7 +45,7 @@
 				<div class="row justify-content-center">
 					<div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-2 ">				
 						<div class="card">
-							<img class="card-img-top" src="images/grille_pain_russel_noir.jpg" alt="Card image cap">
+							<img class="card-img-top" src="../images/grille_pain_russel_noir.jpg" alt="Card image cap">
 							<div class="card-body">
 								<h5 class="card-text">Black toaster</h5>
 								<p class="price">30 &euro;</p>
@@ -73,7 +73,7 @@
 								</div>
 								<div class="modal-body row">
 									<div class="card col-sm-6 modalImg">
-										<img class="card-img-top" src="images/grille_pain_russel_noir.jpg" alt="Card image cap">
+										<img class="card-img-top" src="../images/grille_pain_russel_noir.jpg" alt="Card image cap">
 										<div class="card-body">
 											<h5 class="carac">Technical description :</h5>
 											<ul class="carac">
@@ -99,7 +99,7 @@
 <!-- STAR WARS TOASTER -->
 					<div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-2 ">					
 						<div class="card">
-							<img class="card-img-top" src="images/grille_pain_etoile_de_la_mort.jpeg" alt="Card image cap">
+							<img class="card-img-top" src="../images/grille_pain_etoile_de_la_mort.jpeg" alt="Card image cap">
 							<div class="card-body">
 								<h5 class="card-text">Star-Wars toaster</h5>
 								<p class="price">59 &euro;</p>
@@ -123,7 +123,7 @@
 								</div>
 								<div class="modal-body row">
 									<div class="card col-sm-6 modalImg">
-										<img class="card-img-top" src="images/grille_pain_etoile_de_la_mort.jpeg" alt="Card image cap">
+										<img class="card-img-top" src="../images/grille_pain_etoile_de_la_mort.jpeg" alt="Card image cap">
 										<div class="card-body">
 											<h5 class="carac">Technical description :</h5>
 											<ul class="carac">
@@ -149,7 +149,7 @@
 <!-- RED TOASTER -->
 					<div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-2 ">	
 						<div class="card">
-							<img class="card-img-top" src="images/grille_pain_rouge.jpg" alt="Card image cap">
+							<img class="card-img-top" src="../images/grille_pain_rouge.jpg" alt="Card image cap">
 							<div class="card-body">
 								<h5 class="card-text">Red toaster</h5>
 								<p class="price">99 &euro;</p>
@@ -173,7 +173,7 @@
 								</div>
 								<div class="modal-body row">
 									<div class="card col-sm-6 modalImg">
-										<img class="card-img-top" src="images/grille_pain_rouge.jpg" alt="Card image cap">
+										<img class="card-img-top" src="../images/grille_pain_rouge.jpg" alt="Card image cap">
 										<div class="card-body">
 											<h5 class="carac">Technical description :</h5>
 											<ul class="carac">
@@ -198,7 +198,7 @@
 <!-- VINTAGE TOASTER -->
 					<div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-2 ">				
 						<div class="card">
-							<img class="card-img-top" src="images/grille_pain_vintage.jpg" alt="Card image cap">
+							<img class="card-img-top" src="../images/grille_pain_vintage.jpg" alt="Card image cap">
 							<div class="card-body">
 								<h5 class="card-text">Vintage toaster</h5>
 								<p class="price">49 &euro;</p>
@@ -223,7 +223,7 @@
 								</div>
 								<div class="modal-body row">
 									<div class="card col-sm-6 modalImg">
-										<img class="card-img-top" src="images/grille_pain_vintage.jpg" alt="Card image cap">
+										<img class="card-img-top" src="../images/grille_pain_vintage.jpg" alt="Card image cap">
 										<div class="card-body">
 											<h5 class="carac">Technical description :</h5>
 											<ul class="carac">
@@ -258,7 +258,7 @@
 				<div class="row justify-content-center">
 					<div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-2 ">				
 						<div class="card">
-							<img class="card-img-top" src="images/micro_ondes_rouge.jpg" alt="Card image cap">
+							<img class="card-img-top" src="../images/micro_ondes_rouge.jpg" alt="Card image cap">
 							<div class="card-body">
 								<h5 class="card-text">Red microwave</h5>
 								<p class="price">89 &euro;</p>
@@ -282,7 +282,7 @@
 								</div>
 								<div class="modal-body row">
 									<div class="card col-sm-6 modalImg">
-										<img class="card-img-top" src="images/micro_ondes_rouge.jpg" alt="Card image cap">
+										<img class="card-img-top" src="../images/micro_ondes_rouge.jpg" alt="Card image cap">
 										<div class="card-body">
 											<h5 class="carac">Technical description :</h5>
 											<ul class="carac">
@@ -308,7 +308,7 @@
 <!-- ROUND MICROWAVE -->
 					<div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-2 ">				
 						<div class="card">
-							<img class="card-img-top" src="images/micro_ondes_rond.jpg" alt="Card image cap">
+							<img class="card-img-top" src="../images/micro_ondes_rond.jpg" alt="Card image cap">
 							<div class="card-body">
 								<h5 class="card-text">Round microwave</h5>
 								<p class="price">89 &euro;</p>
@@ -332,7 +332,7 @@
 								</div>
 								<div class="modal-body row">
 									<div class="card col-sm-6 modalImg">
-										<img class="card-img-top" src="images/micro_ondes_rond.jpg" alt="Card image cap">
+										<img class="card-img-top" src="../images/micro_ondes_rond.jpg" alt="Card image cap">
 										<div class="card-body">
 											<h5 class="carac">Technical description :</h5>
 											<ul class="carac">
@@ -357,7 +357,7 @@
 <!-- BLACK MICROWAVE -->
 					<div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-2 ">				
 						<div class="card">
-							<img class="card-img-top" src="images/micro_onde_noir.jpg" alt="Card image cap">
+							<img class="card-img-top" src="../images/micro_onde_noir.jpg" alt="Card image cap">
 							<div class="card-body">
 								<h5 class="card-text">Black microwave</h5>
 								<p class="price">75 &euro;</p>
@@ -382,7 +382,7 @@
 								</div>
 								<div class="modal-body row">
 									<div class="card col-sm-6 modalImg">
-										<img class="card-img-top" src="images/micro_onde_noir.jpg" alt="Card image cap">
+										<img class="card-img-top" src="../images/micro_onde_noir.jpg" alt="Card image cap">
 										<div class="card-body">
 											<h5 class="carac">Technical description :</h5>
 											<ul class="carac">
@@ -411,7 +411,7 @@
 
 					<div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-2 ">				
 						<div class="card">
-							<img class="card-img-top" src="images/micro_ondes_violet.jpg" alt="Card image cap">
+							<img class="card-img-top" src="../images/micro_ondes_violet.jpg" alt="Card image cap">
 							<div class="card-body">
 								<h5 class="card-text">Pink microwave</h5>
 								<p class="price">99 &euro;</p>
@@ -435,7 +435,7 @@
 								</div>
 								<div class="modal-body row">
 									<div class="card col-sm-6 modalImg">
-										<img class="card-img-top" src="images/micro_ondes_violet.jpg" alt="Card image cap">
+										<img class="card-img-top" src="../images/micro_ondes_violet.jpg" alt="Card image cap">
 										<div class="card-body">
 											<h5 class="carac">Technical description :</h5>
 											<ul class="carac">
@@ -466,7 +466,7 @@
 				<div class="row justify-content-center">
 					<div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-2 ">			
 						<div class="card">
-							<img class="card-img-top" src="images/aspirateur_robot_dv.jpg" alt="Card image cap">
+							<img class="card-img-top" src="../images/aspirateur_robot_dv.jpg" alt="Card image cap">
 							<div class="card-body">
 								<h5 class="card-text">Star-Wars hoover</h5>
 								<p class="price">649 &euro;</p>
@@ -490,7 +490,7 @@
 								</div>
 								<div class="modal-body row">
 									<div class="card col-sm-6 modalImg">
-										<img class="card-img-top" src="images/aspirateur_robot_dv.jpg" alt="Card image cap">
+										<img class="card-img-top" src="../images/aspirateur_robot_dv.jpg" alt="Card image cap">
 										<div class="card-body">
 											<h5 class="carac">Technical description :</h5>
 											<ul class="carac">
@@ -520,7 +520,7 @@
 <!-- CLASSICAL HOOVER -->
 					<div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-2 ">				
 						<div class="card">
-							<img class="card-img-top" src="images/aspirateur_fagor.jpg" alt="Card image cap">
+							<img class="card-img-top" src="../images/aspirateur_fagor.jpg" alt="Card image cap">
 							<div class="card-body">
 								<h5 class="card-text">Classical hoover</h5>
 								<p class="price">175 &euro;</p>
@@ -544,7 +544,7 @@
 								</div>
 								<div class="modal-body row">
 									<div class="card col-sm-6 modalImg">
-										<img class="card-img-top" src="images/aspirateur_fagor.jpg" alt="Card image cap">
+										<img class="card-img-top" src="../images/aspirateur_fagor.jpg" alt="Card image cap">
 										<div class="card-body">
 											<h5 class="carac">Technical description :</h5>
 											<ul class="carac">
@@ -571,7 +571,7 @@
 <!-- SMILEY HOOVER -->
 					<div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-2 ">				
 						<div class="card">
-							<img class="card-img-top" src="images/aspirateur_henry.jpg" alt="Card image cap">
+							<img class="card-img-top" src="../images/aspirateur_henry.jpg" alt="Card image cap">
 							<div class="card-body">
 								<h5 class="card-text">Smiley hoover</h5>
 								<p class="price">158 &euro;</p>
@@ -595,7 +595,7 @@
 								</div>
 								<div class="modal-body row">
 									<div class="card col-sm-6">
-										<img class="card-img-top modalImg" src="images/aspirateur_henry.jpg" alt="Card image cap">
+										<img class="card-img-top modalImg" src="../images/aspirateur_henry.jpg" alt="Card image cap">
 										<div class="card-body">
 											<h5 class="carac">Technical description :</h5>
 											<ul class="carac">
@@ -626,7 +626,7 @@
 <!-- HOOVER TABLE -->
 					<div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-2 ">				
 						<div class="card">
-							<img class="card-img-top" src="images/aspirateur_de_table.jpg" alt="Card image cap">
+							<img class="card-img-top" src="../images/aspirateur_de_table.jpg" alt="Card image cap">
 							<div class="card-body">							
 								<h5 class="card-text">Hoover table cleaner</h5>
 								<p class="price">119 &euro;</p>
@@ -650,7 +650,7 @@
 								</div>
 								<div class="modal-body row">
 									<div class="card col-sm-6">
-										<img class="card-img-top modalImg" src="images/aspirateur_de_table.jpg" alt="Card image cap">
+										<img class="card-img-top modalImg" src="../images/aspirateur_de_table.jpg" alt="Card image cap">
 										<div class="card-body">
 											<h5 class="carac">Technical description :</h5>
 											<ul class="carac">
