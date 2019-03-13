@@ -78,7 +78,7 @@
 					 </div>
 			 <div class="modal-body row">
 				<div class="card-modal col-12 col-lg-6 justify-content-center">
-				<img src="../ images/raspberryPi.JPG" class="modal-img" alt="raspberry pi" >
+				<img src="../images/raspberryPi.JPG" class="modal-img" alt="raspberry pi" >
 					<div class="card-body ">
 						<h5 class="card-title-features">Features :</h5>
 						<ul>
@@ -121,13 +121,13 @@
 					</div>
 					<div class="modal-body row">
 						<div class="card-modal col-12 col-lg-6 justify-content-center">
-							<img src="../ images/googleHome.jpg" class="modal-img" alt="google home" >
+							<img src="../images/googleHome.jpg" class="modal-img" alt="google home" >
 						<div class="card-body ">
 							 <h5 class="card-title-features">Features :</h5>
 							<ul>
-								<li></li>
-								<li>blalbblaablablab</li>
-								<li>blabbalbalbalba  balbalablab</li>
+								<li>Processeur : 700 MHz ARM1176JZF-S core (ARM11)</li>
+								<li>Système sur puce (Soc) : Broadcom BCM2835</li>
+								<li>décodeur Broadcom VideoCore IV, API logicielle vidéo OpenGL ES 2.0</li>
 							</ul>
 						</div>
 					</div>
@@ -169,9 +169,9 @@
 						<div class="card-body ">
 				<h5 class="card-title-features">Features :</h5>
 				<ul>
-					<li>blabla, blablabla blaaaaa</li>
-					<li>blalbblaablablab</li>
-					<li>blabbalbalbalba  balbalablab</li>
+					<li>Processeur : 700 MHz ARM1176JZF-S core (ARM11)</li>
+					<li>Système sur puce (Soc) : Broadcom BCM2835</li>
+					<li>décodeur Broadcom VideoCore IV, API logicielle vidéo OpenGL ES 2.0</li>
 				</ul>
 			</div>
 		</div>
@@ -214,20 +214,15 @@
 			<div class="card-body ">
 				<h5 class="card-title-features">Features :</h5>
 				<ul>
-					<li>blabla, blablabla blaaaaa</li>
-					<li>blalbblaablablab</li>
-					<li>blabbalbalbalba  balbalablab</li>
+					<li>Processeur : 700 MHz ARM1176JZF-S core (ARM11)</li>
+					<li>Système sur puce (Soc) : Broadcom BCM2835</li>
+					<li>décodeur Broadcom VideoCore IV, API logicielle vidéo OpenGL ES 2.0</li>
 				</ul>
 			</div>
 		</div>
 	  <div class="col-12 col-lg-6">
 	  			<p class="price"><p class="card-text">199.99  <i class="fas fa-euro-sign"></i></p></p>
-				<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p> Google Home is a brand of smart speakers developed by Google. The first device was announced in May 2016 and released in the United States in November 2016, with subsequent releases globally throughout 2017 and 2018</p>
 			</div>
 		</div>
 	  <div class="modal-footer">
@@ -265,20 +260,15 @@
 			<div class="card-body ">
 				<h5 class="card-title-features">Features :</h5>
 				<ul>
-					<li>blabla, blablabla blaaaaa</li>
-					<li>blalbblaablablab</li>
-					<li>blabbalbalbalba  balbalablab</li>
+					<li>Processeur : 700 MHz ARM1176JZF-S core (ARM11)</li>
+					<li>Système sur puce (Soc) : Broadcom BCM2835</li>
+					<li>décodeur Broadcom VideoCore IV, API logicielle vidéo OpenGL ES 2.0</li>
 				</ul>
 			</div>
 		</div>
 	  <div class="col-12 col-lg-6">
 	  			<p class="price"><p class="card-text">229.99  <i class="fas fa-euro-sign"></i></p></p>
-				<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p> Google Home is a brand of smart speakers developed by Google. The first device was announced in May 2016 and released in the United States in November 2016, with subsequent releases globally throughout 2017 and 2018</p>
 			</div>
 		</div>
 	  <div class="modal-footer">
@@ -314,20 +304,15 @@
 			<div class="card-body ">
 				<h5 class="card-title-features">Features :</h5>
 				<ul>
-					<li>blabla, blablabla blaaaaa</li>
-					<li>blalbblaablablab</li>
-					<li>blabbalbalbalba  balbalablab</li>
+					<li>Processeur : 700 MHz ARM1176JZF-S core (ARM11)</li>
+					<li>Système sur puce (Soc) : Broadcom BCM2835</li>
+					<li>décodeur Broadcom VideoCore IV, API logicielle vidéo OpenGL ES 2.0</li>
 				</ul>
 			</div>
 		</div>
 	  <div class="col-12 col-lg-6">
 	  			<p class="price"><p class="card-text">499.99 <i class="fas fa-euro-sign"></i></p></p>
-				<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p> Google Home is a brand of smart speakers developed by Google. The first device was announced in May 2016 and released in the United States in November 2016, with subsequent releases globally throughout 2017 and 2018</p>
 			</div>
 		</div>
 	  <div class="modal-footer">
@@ -363,20 +348,15 @@
 			<div class="card-body ">
 				<h5 class="card-title-features">Features :</h5>
 				<ul>
-					<li>blabla, blablabla blaaaaa</li>
-					<li>blalbblaablablab</li>
-					<li>blabbalbalbalba  balbalablab</li>
+					<li>Processeur : 700 MHz ARM1176JZF-S core (ARM11)</li>
+					<li>Système sur puce (Soc) : Broadcom BCM2835</li>
+					<li>décodeur Broadcom VideoCore IV, API logicielle vidéo OpenGL ES 2.0</li>
 				</ul>
 			</div>
 		</div>
 	  <div class="col-12 col-lg-6">
 	  			<p class="price"><p class="card-text">279.99 <i class="fas fa-euro-sign"></i></p></p>
-				<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p> Google Home is a brand of smart speakers developed by Google. The first device was announced in May 2016 and released in the United States in November 2016, with subsequent releases globally throughout 2017 and 2018</p>
 			</div>
 		</div>
 	  <div class="modal-footer">
@@ -413,20 +393,15 @@
 			<div class="card-body ">
 				<h5 class="card-title-features">Features :</h5>
 				<ul>
-					<li>blabla, blablabla blaaaaa</li>
-					<li>blalbblaablablab</li>
-					<li>blabbalbalbalba  balbalablab</li>
+					<li>Processeur : 700 MHz ARM1176JZF-S core (ARM11)</li>
+					<li>Système sur puce (Soc) : Broadcom BCM2835</li>
+					<li>décodeur Broadcom VideoCore IV, API logicielle vidéo OpenGL ES 2.0</li>
 				</ul>
 			</div>
 		</div>
 	  <div class="col-12 col-lg-6">
 	  			<p> <p class="card-text">699.99  <i class="fas fa-euro-sign"></i></p></p>
-				<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p> Google Home is a brand of smart speakers developed by Google. The first device was announced in May 2016 and released in the United States in November 2016, with subsequent releases globally throughout 2017 and 2018</p>
 			</div>
 		</div>
 	  <div class="modal-footer">
@@ -464,20 +439,15 @@
 			<div class="card-body ">
 				<h5 class="card-title-features">Features :</h5>
 				<ul>
-					<li>blabla, blablabla blaaaaa</li>
-					<li>blalbblaablablab</li>
-					<li>blabbalbalbalba  balbalablab</li>
+					<li>Processeur : 700 MHz ARM1176JZF-S core (ARM11)</li>
+					<li>Système sur puce (Soc) : Broadcom BCM2835</li>
+					<li>décodeur Broadcom VideoCore IV, API logicielle vidéo OpenGL ES 2.0</li>
 				</ul>
 			</div>
 		</div>
 	  <div class="col-12 col-lg-6">
 	  			<p class="price"><p class="card-text">229.99  <i class="fas fa-euro-sign"></i></p></p>
-				<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p> Google Home is a brand of smart speakers developed by Google. The first device was announced in May 2016 and released in the United States in November 2016, with subsequent releases globally throughout 2017 and 2018</p>
 			</div>
 		</div>
 	  <div class="modal-footer">
@@ -513,20 +483,15 @@
 			<div class="card-body ">
 				<h5 class="card-title-features">Features :</h5>
 				<ul>
-					<li>blabla, blablabla blaaaaa</li>
-					<li>blalbblaablablab</li>
-					<li>blabbalbalbalba  balbalablab</li>
+					<li>Processeur : 700 MHz ARM1176JZF-S core (ARM11)</li>
+					<li>Système sur puce (Soc) : Broadcom BCM2835</li>
+					<li>décodeur Broadcom VideoCore IV, API logicielle vidéo OpenGL ES 2.0</li>
 				</ul>
 			</div>
 		</div>
 	  <div class="col-12 col-lg-6">
 	  			<p class="price"><p class="card-text">149.99  <i class="fas fa-euro-sign"></i></p></p>
-				<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p> Google Home is a brand of smart speakers developed by Google. The first device was announced in May 2016 and released in the United States in November 2016, with subsequent releases globally throughout 2017 and 2018</p>
 			</div>
 		</div>
 	  <div class="modal-footer">
@@ -562,20 +527,15 @@
 			<div class="card-body ">
 				<h5 class="card-title-features">Features :</h5>
 				<ul>
-					<li>blabla, blablabla blaaaaa</li>
-					<li>blalbblaablablab</li>
-					<li>blabbalbalbalba  balbalablab</li>
+					<li>Processeur : 700 MHz ARM1176JZF-S core (ARM11)</li>
+					<li>Système sur puce (Soc) : Broadcom BCM2835</li>
+					<li>décodeur Broadcom VideoCore IV, API logicielle vidéo OpenGL ES 2.0</li>
 				</ul>
 			</div>
 		</div>
 	  <div class="col-12 col-lg-6">
 	  			<p class="price"><p class="card-text">199.99  <i class="fas fa-euro-sign"></i></p></p>
-				<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p> Google Home is a brand of smart speakers developed by Google. The first device was announced in May 2016 and released in the United States in November 2016, with subsequent releases globally throughout 2017 and 2018</p>
 			</div>
 		</div>
 	  <div class="modal-footer">
@@ -613,20 +573,15 @@
 			<div class="card-body ">
 				<h5 class="card-title-features">Features :</h5>
 				<ul>
-					<li>blabla, blablabla blaaaaa</li>
-					<li>blalbblaablablab</li>
-					<li>blabbalbalbalba  balbalablab</li>
+					<li>Processeur : 700 MHz ARM1176JZF-S core (ARM11)</li>
+					<li>Système sur puce (Soc) : Broadcom BCM2835</li>
+					<li>décodeur Broadcom VideoCore IV, API logicielle vidéo OpenGL ES 2.0</li>
 				</ul>
 			</div>
 		</div>
 	  <div class="col-12 col-lg-6">
 	  			<p class="price"><p class="card-text">79.99  <i class="fas fa-euro-sign"></i></p></p>
-				<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p> Google Home is a brand of smart speakers developed by Google. The first device was announced in May 2016 and released in the United States in November 2016, with subsequent releases globally throughout 2017 and 2018</p>
 			</div>
 		</div>
 	  <div class="modal-footer">
