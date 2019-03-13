@@ -26,20 +26,14 @@
 		</div>
 		<button type="button" class="btn btn-warning pull-right">Cart <i class="fas fa-cart-arrow-down"></i></button>
 	</nav>
-		<?php
-		
-			if('/index.php'== $_SERVER['PHP_SELF']){
-				include 'carousel.php';
-			}
-			else{
-				include 'banner.php';
-			}
-		?>
+
+	<?php
 	
-        <div class="<?php echo $classValueBanner; ?>">
-            <img src="<?php echo $imgBannerSrc; ?>" class="img-fluid" alt="category image"/>
-            <h1><?php echo $titleBanner; ?></h1>
-            <p><?php echo $textBanner; ?></p>
-        </div>
-    </div>
+		if('/index.php'== $_SERVER['PHP_SELF']){
+			include 'carousel.php';
+		}
+		else{
+			include 'banner.php';
+		}
+	?>
 </header>
