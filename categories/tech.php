@@ -16,9 +16,9 @@
 
 <body>
 
-	<?php
-	include'../header.php';
-	?>
+<?php
+	include '../header.php';
+?>
 
 <!-- <header id="home" class="container-fluid m-0 p-0">
 	<nav class="navbar navbar-expand-lg navbar-dark">
@@ -33,19 +33,19 @@
                     <a class="nav-link" href="#about">About us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="categories/fashion.php">Fashion</a>
+                    <a class="nav-link" href="/categories/fashion.php">Fashion</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="categories/aquarium.php">Pet shop</a>
+                    <a class="nav-link" href="/categories/aquarium.php">Pet shop</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="categories/tech.php">High-Tech</a>
+                    <a class="nav-link" href="/categories/tech.php">High-Tech</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="categories/watches.php">Watches</a>
+                    <a class="nav-link" href="/categories/watches.php">Watches</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="categories/electromenager.php">Home appliance</a>
+                    <a class="nav-link" href="/categories/electromenager.php">Home appliance</a>
                 </li>
             </ul>
         </div>
