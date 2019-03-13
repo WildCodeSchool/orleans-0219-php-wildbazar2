@@ -17,6 +17,11 @@
 <body>
 
 <?php
+
+	$classValueBanner = 'home_appliance_banner';
+    $imgBannerSrc = '../images/tech5.png';
+    $titleBanner = 'Home appliance';
+    $textBanner = 'Fashion equipment for cooking and housekeeping';
 	include '../header.php';
 ?>
 
