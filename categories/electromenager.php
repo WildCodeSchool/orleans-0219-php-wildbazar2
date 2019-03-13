@@ -21,47 +21,19 @@
 
 
 		<!-- Header -->
-		<header id="home" class="container-fluid">
+        <<?php
 
-			<nav class="navbar navbar-expand-lg navbar-dark">
-				<img class="logo" src="https://raw.githubusercontent.com/WildCodeSchool/orleans-0219-php-wildbazar2/footer/images/wild.png" alt="logo">
-				  	<a class="navbar-brand" href="index.html">Wild Bazar</a>
-				  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-				    	<span class="navbar-toggler-icon"></span>
-				  	</button>
-					<div class="collapse navbar-collapse" id="navbarNav">
-					    <ul class="navbar-nav">
-					      	<li class="nav-item">
-					        	<a class="nav-link" href="fashion.html">Fashion</a>
-					      	</li>
-					      	<li class="nav-item">
-					        	<a class="nav-link" href="aquarium.hmtl">Pet shop</a>
-					      	</li>
-					      	<li class="nav-item">
-					        	<a class="nav-link" href="categories-tech.html">High-Tech</a>
-					      	</li>
-					      	<li class="nav-item">
-					        	<a class="nav-link" href="watches-items.html">Watches</a>
-					      	</li>
-					      	<li class="nav-item">
-					        	<a class="nav-link" href="electromenager.html">Home appliance</a>
-					      	</li>
-					    </ul>
-					</div>
-			  		<button type="button" class="btn btn-warning pull-right">Cart <i class="fas fa-cart-arrow-down"></i></button>
-				    
-				</nav>
+        include '../header.php';
+
+        ?>
 			
-
-			<div>
-				<div class="home_appliance_banner">
-					<img src="images/home_appliance_banner.png" class="img-fluid" alt="home appliance"/>
-					<h1>Home appliance</h1>
-					<p>Fashion equipment for cooking and housekeeping</p>
-				</div>
-			</div>
-
-		</header>
+        <div class="container-fluid">
+            <div class="home_appliance_banner">
+                <img src="images/home_appliance_banner.png" class="img-fluid" alt="home appliance"/>
+                <h1>Home appliance</h1>
+                <p>Fashion equipment for cooking and housekeeping</p>
+            </div>
+        </div>
 
 
 <!-- Main -->
