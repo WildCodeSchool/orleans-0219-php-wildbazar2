@@ -10,11 +10,22 @@
 		<link href="https://fonts.googleapis.com/css?family=Alegreya|Ubuntu" rel="stylesheet">
 		<!-- Call style.css -->
 		<link rel="stylesheet" type="text/css" href="../css/watches.css">
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+
 		<title>Watches</title>
 	</head>
 	<body>
 	    <!-- Header -->
-		<?php include '../header.php'; ?>
+        <?php
+
+        $classValueBanner = 'watches_banner';
+        $imgBannerSrc = '../images/slide-watch.png';
+        $titleBanner = 'Only for Men';
+        $textBanner = 'Time is life';
+
+        include '../header.php';
+
+        ?>
 
         <main class="container-fluid">
             <section id="watches" class="container">
