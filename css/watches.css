@@ -11,7 +11,7 @@ p, li {
 }
 
 /* HEADER*/
-#home{
+/*#home{
 	box-shadow: 0px 15px 10px -15px #111;
 	padding: 0;
 	margin: 0;
@@ -127,7 +127,7 @@ p, li {
 .carousel-caption {
 	right: 5%!important;
 	left: auto!important;
-}
+}*/
 
 /*FIN HEADER*/
 
@@ -144,7 +144,7 @@ div.card.cont-watches {
 	border: none!important;
 	transition: all .2s ease-out;
 	box-sizing: border-box;
-	margin: 2%;
+	/*margin: 2%;*/
 	position: relative;}
 
 div.card.cont-watches img:hover {
@@ -168,7 +168,7 @@ button.btn-card {
 	border: none;}
 
 .cont-watches img.card-img-top {
-	min-width: 150%!important;
+	min-width: 120%!important;
     border-top: 1px solid lightgray;}
 
 .cont-watches.n-bd img.card-img-top {border-top: none!important;}
@@ -215,7 +215,7 @@ a.i-btn:hover {
 	color: #ff8533;}
 
 /*FOOTER*/
-.footer {
+/*.footer {
 	background-color: #343a40;
 	font-family: 'Alegreya', sans-serif;
 	box-shadow: 0px 0px 6px lightgrey;
@@ -305,4 +305,4 @@ footer h3{
 
 @media screen and (max-width: 750px){
 #email, .inputText {width:80%;;
-	margin: 0 auto 0 10px!important;}}
+	margin: 0 auto 0 10px!important;}}*/
