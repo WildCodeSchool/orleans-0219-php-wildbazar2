@@ -124,13 +124,19 @@
 	font-family: 'Alegreya', sans-serif;
 	font-size: 3em;
 	color: black;
-	
 }
 
 .carousel_image{
 	opacity: 0.9;
 }
 
+
+div h1 {
+	position: absolute;
+	top:40%;
+	font-size: 6em;
+	color: #ff8533;
+}
 
 /*category*/
 

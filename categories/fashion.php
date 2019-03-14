@@ -12,49 +12,23 @@
 <link href="https://fonts.googleapis.com/css?family=Alegreya|Ubuntu" rel="stylesheet">
 
 <!-- Call style.css -->
-<link rel="stylesheet" type="text/css" href="fashion.css">
+<link rel="stylesheet" type="text/css" href="../css/fashion.css">
 
-<title>Hello, world!</title>
+<title>Wild Bazar</title>
 </head>
 <body>
 
 <!--header-->
 
-       <header id="home" class="container-fluid">
+<?php
+$classValueBanner ='';
+$imgBannerSrc = '../images/mode homme.jpg';
+$titleBanner = 'fashion';
+$textBanner = 'New collection for you adopt a crazy look with Wild Bazar!';
+include '../header.php';
 
-        <nav class="navbar navbar-expand-lg navbar-dark">
-          <img class="logo" src="https://raw.githubusercontent.com/WildCodeSchool/orleans-0219-php-wildbazar2/footer/images/wild.png" alt="logo">
-              <a class="navbar-brand" href="#home">Wild Bazar</a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                      <a class="nav-link" href="fashion.html">Fashion</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="partisolocategorie/Aquarium.html">Pet shop</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="categories-tech.html">High-Tech</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="watches-items.html">Watches</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="electromenager.html">Home appliance</a>
-                    </li>
-                </ul>
-            </div>
-              <button type="button" class="btn btn-warning pull-right">Cart <i class="fas fa-cart-arrow-down"></i></button>
-              
-        </nav> 
+?>
 
-<!--image-->
-
-
-        <img src="images/mode homme.jpg" class="img-fluid" alt="Responsive image"><h1 class="styletitle">New<br>Collection<p class="styletext">Adopt a crazy look with the Wild Bazar!</p></h1>
 
 
 <!-- Categories -->
@@ -63,7 +37,7 @@
 	<div class="row justify-content-center p-4 mr-4">
     <div class="col-12  col-md-6 col-lg-2 mr-4">
 			<div class="card" style=";">
-	  			<img src="images/chaussures_rsaara8a-600x600.jpg" class="card-img-top" alt="timberland">
+	  			<img src="../images/fashion-01.jpg" class="card-img-top" alt="timberland">
 	 			<div class="card-body">
 				    <h5 class="card-title">Timberland</h5>
 				    <p class="card-text">170 €</p>
@@ -91,7 +65,7 @@
            <div class="modal-body row">
 
           <div class="card col-sm-6">
-            <img src="images/chaussures_rsaara8a-600x600.jpg" class="card-img-top" alt="timberland">
+            <img src="../images/fashion-01.jpg" class="card-img-top" alt="timberland">
             <div class="card-body">
                 <h5 class="descriptif">Description</h5>
                 <ul class="card-text">
@@ -119,7 +93,7 @@
 
 		<div class="col-12  col-md-6 col-lg-2 mr-4">
 			<div class="card" style=";">
-			 <img src="images/chaussures_homme___po2936hbn_3-600x600.jpg" class="card-img-top" alt="shoes">
+			 <img src="../images/fashion-02.jpg" class="card-img-top" alt="shoes">
 				 <div class="card-body">
 			    	 <h5 class="card-title">Puma</h5>
 			    	 <p class="card-text">120.00 €</p>
@@ -147,7 +121,7 @@
            <div class="modal-body row">
 
           <div class="card col-sm-6">
-            <img src="images/chaussures_homme___po2936hbn_3-600x600.jpg" class="card-img-top" alt="puma">
+            <img src="../images/chaussures_homme___po2936hbn_3-600x600.jpg" class="card-img-top" alt="puma">
             <div class="card-body">
                 <h5 class="descriptif">Description</h5>
                 <ul class="card-text">
@@ -175,7 +149,7 @@
 
 		<div class="col-12  col-md-6 col-lg-2 mr-4">
 			<div class="card" style=";">
-	  			<img src="images/adidas-superstar-bleu-blanc-basket-adidas-277_3.jpg" class="card-img-top" alt="shoes">
+	  			<img src="../images/adidas-superstar-bleu-blanc-basket-adidas-277_3.jpg" class="card-img-top" alt="shoes">
 	 			<div class="card-body">
 				    <h5 class="card-title">Addidas super stars</h5>
 				    <p class="card-text">100.00 €</p>
@@ -203,7 +177,7 @@
            <div class="modal-body row">
 
           <div class="card col-sm-6">
-            <img src="images/adidas-superstar-bleu-blanc-basket-adidas-277_3.jpg" class="card-img-top" alt="addidas">
+            <img src="../images/adidas-superstar-bleu-blanc-basket-adidas-277_3.jpg" class="card-img-top" alt="addidas">
             <div class="card-body">
                 <h5 class="descriptif">Description</h5>
                 <ul class="card-text">
@@ -231,7 +205,7 @@
 
 		<div class="col-12  col-md-6 col-lg-2 mr-4">
 			<div class="card" style=";">
-			 <img src="images/monderer_homme_milano_bottines_en_cuir_noir_boots_chaussures_homme___8sezdz8b6-600x600.jpg" class="card-img-top" alt=shoes>
+			 <img src="../images/monderer_homme_milano_bottines_en_cuir_noir_boots_chaussures_homme___8sezdz8b6-600x600.jpg" class="card-img-top" alt=shoes>
 				 <div class="card-body">
 			    	 <h5 class="card-title">Milano</h5>
 			    	 <p class="card-text">170.00 €</p>
@@ -259,7 +233,7 @@
            <div class="modal-body row">
 
           <div class="card col-sm-6">
-            <img src="images/monderer_homme_milano_bottines_en_cuir_noir_boots_chaussures_homme___8sezdz8b6-600x600.jpg" class="card-img-top" alt="timberland">
+            <img src="../images/monderer_homme_milano_bottines_en_cuir_noir_boots_chaussures_homme___8sezdz8b6-600x600.jpg" class="card-img-top" alt="timberland">
             <div class="card-body">
                 <h5 class="descriptif">Description</h5>
                 <ul class="card-text">
@@ -292,7 +266,7 @@
 	 <div class="row justify-content-center p-4 mr-4">
     <div class="col-12  col-md-6 col-lg-2 mr-4">
 			<div class="card" style=";">
-	  			<img src="images/d-skins-jeans-homme-bleu-slim-carrot-dk-8581.jpg" class="card-img-top" alt="jean">
+	  			<img src="../images/d-skins-jeans-homme-bleu-slim-carrot-dk-8581.jpg" class="card-img-top" alt="jean">
 	 			<div class="card-body">
 				    <h5 class="card-title">Jean straight</h5>
 				    <p class="card-text">80.00 €</p>
@@ -320,7 +294,7 @@
            <div class="modal-body row">
 
           <div class="card col-sm-6">
-            <img src="images/d-skins-jeans-homme-bleu-slim-carrot-dk-8581.jpg" class="card-img-top" alt="jeanstraight">
+            <img src="../images/d-skins-jeans-homme-bleu-slim-carrot-dk-8581.jpg" class="card-img-top" alt="jeanstraight">
             <div class="card-body">
                 <h5 class="descriptif">Description</h5>
                 <ul class="card-text">
@@ -350,7 +324,7 @@
 
 		<div class="col-12  col-md-6 col-lg-2 mr-4">
 			<div class="card" style=";">
-			 <img src="images/jeans-homme-bleu-slim-carrot-dk-8463.jpg" class="card-img-top" alt="jeanslim">
+			 <img src="../images/jeans-homme-bleu-slim-carrot-dk-8463.jpg" class="card-img-top" alt="jeanslim">
 				 <div class="card-body">
 			    	 <h5 class="card-title">Jean slim</h5>
 			    	 <p class="card-text">80.00 €</p>
@@ -378,7 +352,7 @@
            <div class="modal-body row">
 
           <div class="card col-sm-6">
-            <img src="images/jeans-homme-bleu-slim-carrot-dk-8463.jpg" class="card-img-top" alt="timberland">
+            <img src="../images/jeans-homme-bleu-slim-carrot-dk-8463.jpg" class="card-img-top" alt="timberland">
             <div class="card-body">
                 <h5 class="descriptif">Description</h5>
                 <ul class="card-text">
@@ -406,7 +380,7 @@
 
 		<div class="col-12  col-md-6 col-lg-2 mr-4">
 			<div class="card" style=";">
-	  			<img src="images/Jean Slim Gris Clair Homme Outlet Paris 1666.jpg" class="card-img-top" alt="grayjean">
+	  			<img src="../images/Jean Slim Gris Clair Homme Outlet Paris 1666.jpg" class="card-img-top" alt="grayjean">
 	 			<div class="card-body">
 				    <h5 class="card-title">Jean skinny</h5>
 				    <p class="card-text">80 €</p>
@@ -434,7 +408,7 @@
            <div class="modal-body row">
 
           <div class="card col-sm-6">
-            <img src="images/Jean Slim Gris Clair Homme Outlet Paris 1666.jpg" class="card-img-top" alt="grayjean">
+            <img src="../images/Jean Slim Gris Clair Homme Outlet Paris 1666.jpg" class="card-img-top" alt="grayjean">
             <div class="card-body">
                 <h5 class="descriptif">Description</h5>
                 <ul class="card-text">
@@ -462,7 +436,7 @@
 
 		<div class="col-12  col-md-6 col-lg-2 mr-4">
 			<div class="card" style=";">
-			 <img src="images/levis-jean-501-homme.jpg" class="card-img-top" alt="jeanlevis">
+			 <img src="../images/levis-jean-501-homme.jpg" class="card-img-top" alt="jeanlevis">
 				 <div class="card-body">
 			    	 <h5 class="card-title">Jean Levi's</h5>
 			    	 <p class="card-text">70.00 €</p>
@@ -490,7 +464,7 @@
            <div class="modal-body row">
 
           <div class="card col-sm-6">
-            <img src="images/levis-jean-501-homme.jpg" class="card-img-top" alt="timberland">
+            <img src="../images/levis-jean-501-homme.jpg" class="card-img-top" alt="timberland">
             <div class="card-body">
                 <h5 class="descriptif">Description</h5>
                 <ul class="card-text">
@@ -523,7 +497,7 @@
 	<div class="row justify-content-center p-4 mr-4">
 		<div class="col-12  col-md-6 col-lg-2 mr-4">
 			<div class="card" style=";">
-	  			<img src="images/Chemise-Homme-carreaux-manches-courtes-Fashion-slim-fit-Tendance-2015-mens-shirts-09-600x600.jpg" class="card-img-top" alt="skirt">
+	  			<img src="../images/Chemise-Homme-carreaux-manches-courtes-Fashion-slim-fit-Tendance-2015-mens-shirts-09-600x600.jpg" class="card-img-top" alt="skirt">
 	 			<div class="card-body">
 				    <h5 class="card-title">Short-sleeve shirt</h5>
 				    <p class="card-text"> 60.00 €</p>
@@ -551,7 +525,7 @@
            <div class="modal-body row">
 
           <div class="card col-sm-6">
-            <img src="images/Chemise-Homme-carreaux-manches-courtes-Fashion-slim-fit-Tendance-2015-mens-shirts-09-600x600.jpg" class="card-img-top" alt="shirtred">
+            <img src="../images/Chemise-Homme-carreaux-manches-courtes-Fashion-slim-fit-Tendance-2015-mens-shirts-09-600x600.jpg" class="card-img-top" alt="shirtred">
             <div class="card-body">
                 <h5 class="descriptif">Description</h5>
                 <ul class="card-text">
@@ -579,7 +553,7 @@
 
 		<div class="col-12  col-md-6 col-lg-2 mr-4">
 			<div class="card" style=";">
-			 <img src="images/chemise-homme-coupe-ajustee-manches-3-quarts-elegance-blanc-600x600.jpg" class="card-img-top" alt="...">
+			 <img src="../images/chemise-homme-coupe-ajustee-manches-3-quarts-elegance-blanc-600x600.jpg" class="card-img-top" alt="...">
 				 <div class="card-body">
 			    	 <h5 class="card-title">White shirt</h5>
 			    	 <p class="card-text">70.00 €</p>
@@ -607,7 +581,7 @@
            <div class="modal-body row">
 
           <div class="card col-sm-6">
-            <img src="images/chemise-homme-coupe-ajustee-manches-3-quarts-elegance-blanc-600x600.jpg" class="card-img-top" alt="whiteshirt">
+            <img src="../images/chemise-homme-coupe-ajustee-manches-3-quarts-elegance-blanc-600x600.jpg" class="card-img-top" alt="whiteshirt">
             <div class="card-body">
                 <h5 class="descriptif">Description</h5>
                 <ul class="card-text">
@@ -635,7 +609,7 @@
 
 		<div class="col-12  col-md-6 col-lg-2 mr-4">
 			<div class="card" style=";">
-	  			<img src="images/Chemise-Homme-en-Jean-manches-courtes-chemisette-pas-cher-2015-mens-jeans-shirts-04-600x600.jpg" class="card-img-top" alt="jeanshirt">
+	  			<img src="../images/Chemise-Homme-en-Jean-manches-courtes-chemisette-pas-cher-2015-mens-jeans-shirts-04-600x600.jpg" class="card-img-top" alt="jeanshirt">
 	 			<div class="card-body">
 				    <h5 class="card-title">Short-sleeve shirt</h5>
 				    <p class="card-text">80.00 €</p>
@@ -663,7 +637,7 @@
            <div class="modal-body row">
 
           <div class="card col-sm-6">
-            <img src="images/Chemise-Homme-en-Jean-manches-courtes-chemisette-pas-cher-2015-mens-jeans-shirts-04-600x600.jpg" class="card-img-top" alt="timberland">
+            <img src="../images/Chemise-Homme-en-Jean-manches-courtes-chemisette-pas-cher-2015-mens-jeans-shirts-04-600x600.jpg" class="card-img-top" alt="timberland">
             <div class="card-body">
                 <h5 class="descriptif">Description</h5>
                 <ul class="card-text">
@@ -691,7 +665,7 @@
 
 		<div class="col-12  col-md-6 col-lg-2 mr-4">
 			<div class="card" style=";">
-			 <img src="images/chemise-fashion-homme-manche-courte.jpg" class="card-img-top" alt="shirt">
+			 <img src="../images/chemise-fashion-homme-manche-courte.jpg" class="card-img-top" alt="shirt">
 				 <div class="card-body">
 			    	 <h5 class="card-title">Cored shirt</h5>
 			    	 <p class="card-text">70.00 €</p>
@@ -719,7 +693,7 @@
            <div class="modal-body row">
 
           <div class="card col-sm-6">
-            <img src="images/chemise-fashion-homme-manche-courte.jpg" class="card-img-top" alt="cored">
+            <img src="../images/chemise-fashion-homme-manche-courte.jpg" class="card-img-top" alt="cored">
             <div class="card-body">
                 <h5 class="descriptif">Description</h5>
                 <ul class="card-text">
