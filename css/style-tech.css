@@ -9,11 +9,12 @@
 */
 /*dubut du header*/
 
-#home{
+#home-tech_banner{
 	box-shadow: 0px 15px 10px -15px #111;
 	padding: 0;
 	margin: 0;
 	width: 100%;
+	
 
 }
 .navbar{
@@ -21,6 +22,7 @@
 	padding-bottom: 2em;
 	margin-right: 0;
 	background-color: #343a40;
+	width: 100%;
 }
 
 .navbar-nav{
@@ -64,31 +66,31 @@
 	color: #ff8533;
 	transition: all 0.2s ease-in; 
 }
-.home-tech{
+.home-tech_banner{
 	position: relative;
 	padding: 0;
 	margin: 0;
 	box-shadow: 0px 15px 10px -15px #111;
 }
 
-.home-tech h1{
+.home-tech_banner h1{
 	font-size: 6vw;
 	position: absolute;
-	top: 8.5vw;
+	top: 8vw;
 	left: 50vw;
 	font-weight: bold;
 	font-family: Ubuntu;
 	color: #ff8533;;
 }
 
-.home-tech p{
+.home-tech_banner p{
 	font-size: 3vw;
 	position: absolute;
-	top: 18vw;
+	top: 14vw;
 	left: 50vw;
 	font-weight: bold;
 }
-.home-tech img{
+.home-tech_img img{
 	width: 100%;
 }
 
@@ -104,7 +106,8 @@
 }
 .card {
 	border: none;
-	max-width: 350px;
+	max-width: 270px;
+    margin: 4em;
 }
 .card-img-top{
 	object-fit: cover;
@@ -169,11 +172,7 @@
 
 }
 
-hr {
-	border: solid 1px lightgrey;
-	width: 80%;
-	color: lightgrey;
-}
+
 
 /*fin de la section tech*/
 
@@ -288,7 +287,7 @@ h3{
 
 }
 @media screen and (min-width: 200px) and (max-width: 800px){
-		.home-tech h1{
+		.home-tech_banner h1{
 	font-size: 6vw;
 	position: absolute;
 	top: 15vw;
@@ -296,7 +295,7 @@ h3{
 	font-weight: bold;
 }
 
-.home-tech p{
+.home-tech_banner p{
 	font-size: 3vw;
 	position: absolute;
 	top: 22vw;
@@ -306,7 +305,7 @@ h3{
 }
 
 @media screen and (min-width: 800px) and (max-width: 1000px){
-		.home-tech h1{
+		.home-tech_banner h1{
 	font-size: 6vw;
 	position: absolute;
 	top: 15vw;
@@ -314,7 +313,7 @@ h3{
 	font-weight: bold;
 }
 
-.home-tech p{
+.home-tech_banner p{
 	font-size: 3vw;
 	position: absolute;
 	top: 22vw;
