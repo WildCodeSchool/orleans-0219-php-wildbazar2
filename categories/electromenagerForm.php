@@ -80,7 +80,7 @@ if ($_POST) {
 
 <!-- Main -->
         <main>
-            <h2>Ajouter un produit</h2>
+            <h2>Add a new product</h2>
             <form class="addForm" method="post" action="" enctype="application/x-www-form-urlencoded">
                 <div class="form-row justify-content-center">
                     <div class="form-group col-md-9">
