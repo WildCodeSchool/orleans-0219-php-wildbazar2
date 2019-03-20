@@ -28,11 +28,11 @@
             <h3>Contact us</h3>
             <form method="post" action="traitement.php">
                 <p>
-                    <label for="email"><i class="far fa-envelope"></i></label>
+                    <label for="email"><i class="far fa-envelope"></i> Email :</label>
                     <input type="email" name="email" id="email" placeholder="wildbazard2@example.com">
                 </p>
                 <p>
-                    <label for="message"> <i class="far fa-comment"></i> </label>  <input type="text" name="message" class="inputText" id="message">
+                    <label for="message"> <i class="far fa-comment"></i> Message :</label>  <input type="text" name="message" class="inputText" id="message">
                 </p>
                 <button type="button" class="btn btn-lg" id="btnFooter">Submit</button>
             </form>

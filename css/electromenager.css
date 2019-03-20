@@ -33,9 +33,10 @@ p, li {
 	font-weight: bold;
 }
 
-/*.row {
-	margin: auto;
-}*/
+.btnAdd {
+	position: relative;
+	top: -5vw;
+}
 
 .price {
 	font-weight: bold;
