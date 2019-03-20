@@ -13,17 +13,20 @@
 	<link rel="stylesheet" type="text/css" href="../css/style-tech.css">
 </head>
 <body>
+<header>
 <?php
 	$classValueBanner = 'home-tech_banner p-0 m-0';
     $imgBannerSrc = '../images/techVr.jpg';
     $titleBanner = 'high - tech';
     $textBanner = 'The best high-tech articles are here';
-	include '../header.php';
+    include '../header.php';
+
 ?>
+    <a href="productAddTech.php">add</a>
 </header>
 <div class="container-fluid" id="tech">
 	<div class="row justify-content-center p-4 mt-5">
-	<?php include 'products.php'; ?>
+	<?php include 'productsTech.php'; ?>
 	</div>
 </div>
 <!-- Footer -->
