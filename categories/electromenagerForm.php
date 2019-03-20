@@ -6,7 +6,36 @@
  * Time: 14:24
  */
 
+$errors = [];
+$inputValues = [];
 
+if ($_POST) {
+
+    if (empty($_POST['imageUrl'])) {
+        $errors['imageUrl'] = 'The url must be filled in';
+    }
+
+    if (empty($_POST['shortTitle'])) {
+        $errors['shortTitle'] = 'The short title must be filled in';
+    }
+
+    if (empty($_POST['price'])) {
+        $errors['price'] = 'The price must be filled in';
+    }
+
+    if (is_int($_POST['price'])) {
+        $errors['price'] = 'The price must be a round number';
+    }
+
+    if (empty($_POST['technicalDescription'])) {
+        $errors['technicalDescription'] = 'The technical description must be filled in';
+    }
+
+    if (empty($errors)) {
+        header('Location:/categories/electromenager.php');
+    }
+
+}
 
 ?>
 
@@ -50,55 +79,82 @@
 
 
 <!-- Main -->
-        <h2>Ajouter un produit</h2>
-        <form class="addForm">
-            <div class="form-row justify-content-center">
-                <div class="form-group col-md-9">
-                    <label for="imageUrl">Image url</label>
-                    <input type="text" class="form-control" id="imageUrl" name="imageUrl">
-                </div>
-                <div class="form-group col-md-9">
-                    <label for="shortTitle">Short title</label>
-                    <input type="text" class="form-control" id="shortTitle" name="shortTile">
-                </div>
-                <div class="form-group col-md-9">
-                    <label for="price">Price</label>
-                    <input type="number" class="form-control" id="price" name="price">
-                </div>
-                <div class="form-group col-md-9">
-                    <label for="longTitle">Long title</label>
-                    <input type="text" class="form-control" id="longTitle" name="longTitle">
-                </div>
-                <div class="form-group col-md-4">
-                    <label for="size">Size</label>
-                    <input type="text" class="form-control" id="size" name="size">
-                </div>
-                <div class="form-group col-md-4">
-                    <label for="power">Power</label>
-                    <input type="text" class="form-control" id="power" name="power">
-                </div>
-<!--COLOR EN CASE A COCHER-->
-                <div class="form-group col-md-9 center">
-                    <?php
-                        $colorsAvailable = ['Blue', 'Black', 'Green', 'Pink', 'Grey', 'White', 'Silver'];
-                    for ($i = 0; $i < count($colorsAvailable); $i++) : ?>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="color<?=$i?>" name="colors">
-                        <label class="form-check-label" for="color<?=$i?>"><?= $colorsAvailable[$i] ?></label>
+        <main>
+            <h2>Ajouter un produit</h2>
+            <form class="addForm" method="post" action="" enctype="application/x-www-form-urlencoded">
+                <div class="form-row justify-content-center">
+                    <div class="form-group col-md-9">
+                        <label for="imageUrl">Image url</label>
+                        <input type="text" class="form-control" id="imageUrl" name="imageUrl" value="<?= trim($_POST['imageUrl']);?>" required>
+                        <p class="errors"> <?php
+                            if (isset($errors['imageUrl'])):
+                                echo $errors['imageUrl'];
+                            endif;
+                            ?>
+                        </p>
                     </div>
-                    <?php endfor ?>
+                    <div class="form-group col-md-9">
+                        <label for="shortTitle">Short title</label>
+                        <input type="text" class="form-control" id="shortTitle" name="shortTitle" value="<?= trim($_POST['shortTitle']);?>" >
+                        <p class="errors"> <?php
+                            if (isset($errors['shortTitle'])):
+                                echo $errors['shortTitle'];
+                            endif;
+                            ?>
+                        </p>
+                    </div>
+                    <div class="form-group col-md-9">
+                        <label for="price">Price</label>
+                        <input type="number" class="form-control" id="price" name="price" value="<?= trim($_POST['price']);?>" required>
+                        <p class="errors"> <?php
+                            if (isset($errors['price'])):
+                                echo $errors['price'];
+                            endif;
+                            ?>
+                        </p>
+                    </div>
+                    <div class="form-group col-md-9">
+                        <label for="longTitle">Long title</label>
+                        <input type="text" class="form-control" id="longTitle" name="longTitle" value="<?= trim($_POST['longTitle']);?>">                               } ?>">
+                    </div>
+                    <div class="form-group col-md-9">
+                        <label for="size">Size</label>
+                        <input type="text" class="form-control" id="size" name="size" value="<?= trim($_POST['size']);?>">
+                    </div>
+                    <div class="form-group col-md-9">
+                        <label for="power">Power</label>
+                        <input type="text" class="form-control" id="power" name="power" value="<?= trim($_POST['power']);?>">
+                    </div>
+    <!--COLOR EN CASE A COCHER-->
+                    <div class="form-group col-md-9">
+                        <label for="colors">Color</label>
+                        <select class="form-control" id="colors" name="colors">
+                            <?php
+                            $colorsAvailable = ['Choose a color', 'Blue', 'Black', 'Green', 'Pink', 'Grey', 'White', 'Silver'];
+                            for ($i = 0; $i < count($colorsAvailable); $i++) : ?>
+                            <option <?php
+                            if ($_POST['colors'] == $colorsAvailable[$i]) {?> selected="selected"<?php } ?> >
+                                <?= $colorsAvailable[$i]; ?>
+                            </option>
+                            <?php endfor ?>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-9">
+                        <label for="technicalDescription">Technical description</label>
+                        <textarea class="form-control" id="technicalDescription" rows="3" name="technicalDescription" "><?= trim($_POST['technicalDescription']);?></textarea>
+                        <p class="errors"> <?php
+                            if (isset($errors['technicalDescription'])):
+                                echo $errors['technicalDescription'];
+                            endif;
+                            ?>
+                        </p>
+                    </div>
                 </div>
-                <div class="form-group col-md-9">
-                    <label for="exampleFormControlTextarea1">Technical description</label>
-                    <textarea class="form-control" id="technicalDescription" rows="3" name="technicalDescription"></textarea>
+                <div class="center">
+                    <button type="submit" class="btn btnForm">+ Add</button>
                 </div>
-
-
-            </div>
-            <div class="center">
-                <button type="submit" class="btn btnForm">Sign in</button>
-            </div>
-        </form>
+            </form>
+        </main>
 
 
 <!-- Footer -->

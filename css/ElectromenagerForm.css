@@ -4,6 +4,11 @@ h2 {
     padding-bottom: 2vw;
 }
 
+main p {
+    color: black;
+}
+
+
 .addForm label {
     color: #000000;
 }
@@ -14,4 +19,8 @@ h2 {
 
 .addForm {
     padding-bottom: 4vw;
+}
+
+.errors {
+    color: red;
 }
