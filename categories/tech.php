@@ -22,7 +22,7 @@
     include '../header.php';
 
 ?>
-    <a href="productAddTech.php">add</a>
+    <a href="techAddForm/productAddTechComputers.php">add</a>
 </header>
 <div class="container-fluid" id="tech">
 	<div class="row justify-content-center p-4 mt-5">
