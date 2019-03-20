@@ -39,17 +39,17 @@
 		<main class="container-fluid">
 			<section>
 <!-- Black toaster -->
-				<div class="row justify-content-space-around">
+				<div class="row justify-content-center mt-5 ml-5 mr-5">
 
 
                     <?php
 
-                    include 'objects.php';
+                    require 'objectsHomeAppliance.php';
 
                     foreach ($products as $product => $productDescription) {
                     ?>
 
-                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-2 offset-1">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
                         <div class="card">
                             <img class="card-img-top" src="<?php echo $productDescription['Src']; ?>" alt="Card image cap">
                             <div class="card-body">
