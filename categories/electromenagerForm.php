@@ -208,8 +208,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                             </span>
                         </label>
                         <textarea class="form-control" id="technicalDescription" rows="3" name="technicalDescription"
-                        placeholder="Enter a technical description" wrap="hard"> <?= htmlentities($data['technicalDescription']) ?? '';?>
-                        </textarea>
+                        placeholder="Enter a technical description" wrap="hard"><?= htmlentities($data['technicalDescription']) ?? '';?></textarea>
                     </div>
                 </div>
                 <div class="center">
