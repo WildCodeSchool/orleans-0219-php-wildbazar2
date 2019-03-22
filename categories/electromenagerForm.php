@@ -6,37 +6,67 @@
  * Time: 14:24
  */
 
+require '../src/electroFunctions.php';
+
 $errors = [];
 $inputValues = [];
+$colorsAvailable = ['Blue', 'Black', 'Green', 'Pink', 'Grey', 'White', 'Silver'];
 
-if ($_POST) {
+$data = cleanArray($_POST);
 
-    if (empty($_POST['imageUrl'])) {
-        $errors['imageUrl'] = 'The url must be filled in';
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+
+    if (empty($data['imageUrl'])) {
+        $errors['imageUrl'] = 'The url of the image must be filled in';
     }
 
-    if (empty($_POST['shortTitle'])) {
+    $maxLengthUrl = 255;
+    if (strlen($data['imageUrl'])> $maxLengthUrl) {
+        $errors['imageUrl'] = 'The size of the url must be less than ' . $maxLengthUrl . ' characters';
+    }
+
+    if (empty($data['shortTitle'])) {
         $errors['shortTitle'] = 'The short title must be filled in';
     }
 
-    if (empty($_POST['price'])) {
+    $maxLengthShortTitle = 50;
+    if (strlen($data['shortTitle'])> $maxLengthShortTitle) {
+        $errors['shortTitle'] = 'The size of the url must be less than ' . $maxLengthShortTitle . ' characters';
+    }
+
+    if (empty($data['price'])) {
         $errors['price'] = 'The price must be filled in';
     }
 
-    if (is_int($_POST['price'])) {
-        $errors['price'] = 'The price must be a round number';
+    if (!is_numeric($data['price'])) {
+        $errors['price'] = 'The price must be a number';
     }
 
-    if (empty($_POST['technicalDescription'])) {
+    if (empty($data['longTitle'])) {
+        $data['longTitle'] = $data['shortTitle'];
+    }
+
+    $maxLengthLongTitle = 100;
+    if (strlen($data['longTitle'])> $maxLengthLongTitle) {
+        $errors['longTitle'] = 'The size of the url must be less than ' . $maxLengthLongTitle . ' characters';
+    }
+
+    if ($data['colors'] != 'Choose your color') {
+        $errors['colors'] = 'You must select a color';
+    } elseif (!in_array($data['colors'], $colorsAvailable)) {
+        $errors['colors'] = 'You must select a color in the list : ' . implode($colorsAvailable, ', ');
+    }
+
+    if (empty($data['technicalDescription'])) {
         $errors['technicalDescription'] = 'The technical description must be filled in';
     }
 
     if (empty($errors)) {
-        header('Location:/categories/electromenager.php');
+        header('Location:/categories/electromenagerForm.php');
+        exit();
     }
 
 }
-
 ?>
 
 <!doctype html>
@@ -79,75 +109,107 @@ if ($_POST) {
 
 
 <!-- Main -->
-        <main>
-            <h2>Add a new product</h2>
-            <form class="addForm" method="post" action="" enctype="application/x-www-form-urlencoded">
+        <main class="container">
+            <h2>ADD A NEW PRODUCT</h2>
+            <form class="addForm" method="POST" action="" enctype="application/x-www-form-urlencoded">
                 <div class="form-row justify-content-center">
                     <div class="form-group col-md-9">
-                        <label for="imageUrl">Image url</label>
-                        <input type="text" class="form-control" id="imageUrl" name="imageUrl" value="<?= trim($_POST['imageUrl']);?>" required>
-                        <p class="errors"> <?php
-                            if (isset($errors['imageUrl'])):
-                                echo $errors['imageUrl'];
-                            endif;
-                            ?>
-                        </p>
+                        <label for="imageUrl">
+                            Image product
+                            <span class="errors"> * <?php
+                                if (isset($errors['imageUrl'])):
+                                    echo $errors['imageUrl'];
+                                endif;
+                                ?>
+                            </span>
+                        </label>
+                        <input type="text" class="form-control" id="imageUrl" name="imageUrl"
+                               value="<?= htmlentities($data['imageUrl']);?>" placeholder="Enter the image url" required>
                     </div>
                     <div class="form-group col-md-9">
-                        <label for="shortTitle">Short title</label>
-                        <input type="text" class="form-control" id="shortTitle" name="shortTitle" value="<?= trim($_POST['shortTitle']);?>" >
-                        <p class="errors"> <?php
-                            if (isset($errors['shortTitle'])):
-                                echo $errors['shortTitle'];
-                            endif;
-                            ?>
-                        </p>
+                        <label for="shortTitle">
+                            Short title
+                            <span class="errors">*  <?php
+                                if (isset($errors['shortTitle'])):
+                                    echo $errors['shortTitle'];
+                                endif;
+                                ?>
+                            </span>
+                        </label>
+                        <input type="text" class="form-control" id="shortTitle" name="shortTitle"
+                               value="<?= htmlentities($data['shortTitle']);?>"
+                               placeholder="Enter a short title (max 50 chars)" required>
                     </div>
                     <div class="form-group col-md-9">
-                        <label for="price">Price</label>
-                        <input type="number" class="form-control" id="price" name="price" value="<?= trim($_POST['price']);?>" required>
-                        <p class="errors"> <?php
-                            if (isset($errors['price'])):
-                                echo $errors['price'];
-                            endif;
-                            ?>
-                        </p>
+                        <label for="price">
+                            Price
+                            <span class="errors">
+                                *
+                                <?php
+                                if (isset($errors['price'])):
+                                    echo $errors['price'];
+                                endif;
+                                ?>
+                            </span>
+                        </label>
+                        <input type="number" step="0.01" class="form-control" id="price" name="price"
+                               value="<?= $data['price'];?>" placeholder="Enter a price" required>
                     </div>
                     <div class="form-group col-md-9">
                         <label for="longTitle">Long title</label>
-                        <input type="text" class="form-control" id="longTitle" name="longTitle" value="<?= trim($_POST['longTitle']);?>">                               } ?>">
+                        <input type="text" class="form-control" id="longTitle" name="longTitle"
+                               value="<?= $data['longTitle'];?>">
                     </div>
                     <div class="form-group col-md-9">
                         <label for="size">Size</label>
-                        <input type="text" class="form-control" id="size" name="size" value="<?= trim($_POST['size']);?>">
+                        <input type="text" class="form-control" id="size" name="size"
+                               value="<?= htmlentities($data['size']);?>">
                     </div>
                     <div class="form-group col-md-9">
                         <label for="power">Power</label>
-                        <input type="text" class="form-control" id="power" name="power" value="<?= trim($_POST['power']);?>">
+                        <input type="text" class="form-control" id="power" name="power"
+                               value="<?= htmlentities($data['power']);?>">
                     </div>
     <!--COLOR EN CASE A COCHER-->
                     <div class="form-group col-md-9">
-                        <label for="colors">Color</label>
+                        <label for="colors">
+                            Color
+                            <span class="errors">
+                                *
+                                <?php
+                                if (isset($errors['colors'])):
+                                    echo $errors['colors'];
+                                endif;
+                                ?>
+                            </span>
+                        </label>
                         <select class="form-control" id="colors" name="colors">
+                            <option value="" disabled selected>Choose your color</option>
                             <?php
-                            $colorsAvailable = ['Choose a color', 'Blue', 'Black', 'Green', 'Pink', 'Grey', 'White', 'Silver'];
-                            for ($i = 0; $i < count($colorsAvailable); $i++) : ?>
+
+                            foreach ($colorsAvailable as $color) : ?>
                             <option <?php
-                            if ($_POST['colors'] == $colorsAvailable[$i]) {?> selected="selected"<?php } ?> >
-                                <?= $colorsAvailable[$i]; ?>
+                            if (isset($data['colors']) && $data['colors'] === $color) :?> selected="selected"<?php endif; ?> >
+                                <?= $color; ?>
                             </option>
-                            <?php endfor ?>
+                            <?php endforeach; ?>
                         </select>
                     </div>
                     <div class="form-group col-md-9">
-                        <label for="technicalDescription">Technical description</label>
-                        <textarea class="form-control" id="technicalDescription" rows="3" name="technicalDescription" "><?= trim($_POST['technicalDescription']);?></textarea>
-                        <p class="errors"> <?php
-                            if (isset($errors['technicalDescription'])):
-                                echo $errors['technicalDescription'];
-                            endif;
-                            ?>
-                        </p>
+                        <label for="technicalDescription">
+                            Technical description
+                            <span class="errors">
+                                *
+                                <?php
+                                if (isset($errors['technicalDescription'])):
+                                    echo $errors['technicalDescription'];
+                                endif;
+                                ?>
+                            </span>
+                        </label>
+                        <textarea class="form-control" id="technicalDescription" rows="3" name="technicalDescription">
+                            <?= htmlentities($data['technicalDescription']);?>
+                        </textarea>
                     </div>
                 </div>
                 <div class="center">
