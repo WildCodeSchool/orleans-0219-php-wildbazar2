@@ -23,9 +23,9 @@
 <?php
 $classValueBanner = 'fashion-banner';
 $imgBannerSrc = '../images/mode homme.jpg';
-$titleBanner = 'fashion';
-$textBanner = 'New collection for you adopt a crazy look with Wild Bazar!';
-include '../header.php';
+$titleBanner = 'Fashion';
+$textBanner = '';
+include 'header.php';
 
 ?>
 
@@ -62,7 +62,7 @@ foreach($images as $img => $value){ // Boucle pour distribuer les images. Consei
                             <ul class="card-text">
                                 <li><b>Size:</b> 43</li>
                                 <li><b>Color:</b> Brown and Black</li>
-                                <li><b>Category:</b> Men</li>
+                                <li><b>Category:</b> Man</li>
                             </ul>
                         </div>
                     </div>
@@ -75,9 +75,12 @@ foreach($images as $img => $value){ // Boucle pour distribuer les images. Consei
                 </div>
             </div>
         </div>
-    </div>
+ S   </div>
 
 <?php } //Fin du boucle ?>
+
+<!--Bouton-formulaire-->
+<a class="btn-form" href="formulaire_wildbazar.php" target="_blank"> <input type="button" value="Add"> </a>
 
 
 
@@ -775,7 +778,7 @@ foreach($images as $img => $value){ // Boucle pour distribuer les images. Consei
 
 <!-- Footer -->
 
-<?php include '../footer.php'; ?>
+<?php include 'footer.php'; ?>
 
 
 

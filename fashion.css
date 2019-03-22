@@ -74,19 +74,6 @@
 	object-fit: cover;
 }
 
-.fashion-banner h1 {
-	position: absolute;
-	top: 30%;
-	text-align: center;
-	font-size: 6em;
-	color: #ff8533;
-}
-
-.fashion-banner p{
-	position: absolute;
-	font-size: 2em;
-}
-
 .carousel_title{
 	font-family: 'Ubuntu', serif;
 	font-size: 4em;
@@ -126,6 +113,22 @@
 
 .carousel_image{
 	opacity: 0.9;
+}
+
+.btn-form{
+	position: absolute;
+	background-color: #ff8533;
+	border: solid 1px white;
+	color: white;
+	font-family: 'Alegreya', sans-serif;
+	top: 30%;
+	left: 50%;
+}
+
+.btn-form:hover{
+	background-color: white;
+	border: solid 1px #ff8533;
+	color: #ff8533;
 }
 
 
