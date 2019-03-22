@@ -20,7 +20,7 @@ $titleBanner = 'high - tech';
 $textBanner = 'The best high-tech articles are here';
 include 'headerForm.php';
 
-$productName = $productPrice = $productDescription = $productFeat1 = $productFeat2 = $productFeat3 = $productId = $productImage = "";
+$productName = $productPrice = $productDescription = $productFeat1 = $productFeat2 = $productFeat3 = $productImage = "";
 
 $errors = [];
 
@@ -89,32 +89,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
 ?>
-<div class="container mt-5 p-0 ">
-<nav class="navbar navbar-expand-lg navbar-dark">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav justify-content-center">
-            <li class="nav-item">
-                <a class="nav-link" href="productAddTechComputers.php">Computers</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="productAddTechMobile.php">Mobile Phones</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="productAddTechHomeAssist.php">Home assistants</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="productAddTechVideoGame.php">Video games</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="productAddTechSound.php">Sound / Hi-Fi</a>
-            </li>
-        </ul>
-    </div>
-</nav>
-</div>
+
 <div class="container mt-5 mb-5">
 <h1 class="form-title">Add some new products :</h1>
 <form method="post" class="product-form mt-5">
@@ -152,11 +127,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <label for="feat3">Feature 3</label>
         <input type="text" class="form-control" id="feat3" name="feat3" placeholder="" value="<?= $productFeat3 ?>">
     </div>
-    <div class="form-group">
-        <label for="exampleFormControlInput1">Product Id</label>
-        <span class="error">* <?php if (isset($errors["id"])){echo "Identifiant is required";}?></span>
-        <input type="text" class="form-control" id="exampleFormControlInput1" name="id" placeholder="Enter product Id" value="<?= $productId; ?>">
-    </div>
+    
     <button type="submit" class="btn btn-primary">Submit</button>
 </form>
 </div>

@@ -132,7 +132,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="form-group">
             <label for="feat1">Sound</label>
             <span class="error">* <?php if (isset($errors["feat1"])){echo "A feature is required";};?></span>
-            <input type="text" class="form-control" id="feat1" name="feat1" placeholder="Enter a feature" value="<?= $productFeat1; ?> ">
+            <input type="text" class="form-control" id="feat1" name="feat1" placeholder="Enter a feature" value="<?= $productFeat1; ?>">
         </div>
         <div class="form-group">
             <label for="feat2">Connectics</label>
