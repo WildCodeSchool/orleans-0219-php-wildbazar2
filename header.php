@@ -1,4 +1,4 @@
-<header id="home" class="container-fluid">
+<header id="home" class="container-fluid p-0 m-0">
 	<nav class="navbar navbar-expand-lg navbar-dark">
 		<img class="logo" src="https://raw.githubusercontent.com/WildCodeSchool/orleans-0219-php-wildbazar2/footer/images/wild.png" alt="logo">
 		<a class="navbar-brand" href="/index.php">Wild Bazar</a>

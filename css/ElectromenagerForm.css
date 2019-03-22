@@ -1,0 +1,28 @@
+h2 {
+    color: #ff8533;
+    text-align: center;
+    padding-top: 3vw;
+    padding-bottom: 2vw;
+    font-weight: bold;
+}
+
+main p {
+    color: black;
+}
+
+
+.addForm label {
+    color: #000000;
+}
+
+.center {
+    text-align: center;
+}
+
+.addForm {
+    padding-bottom: 4vw;
+}
+
+.errors {
+    color: red;
+}

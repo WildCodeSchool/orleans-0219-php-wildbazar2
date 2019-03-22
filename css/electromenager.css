@@ -33,6 +33,10 @@ p, li {
 	font-weight: bold;
 }
 
+.btnAdd {
+	position: relative;
+	top: -5vw;
+}
 
 .price {
 	font-weight: bold;
@@ -96,6 +100,10 @@ p, li {
 
 .modal-body p {
 	font-size: 1.3em;
+}
+
+.bold {
+	font-weight: bold;
 }
 
 section {

@@ -73,21 +73,40 @@ foreach($images as $img => $value){ // Boucle pour distribuer les images. Consei
                 <div class="modal-footer">
                     <button type="button" class="btn btn-card" data-toggle="modal" data-dismiss="modal"><i class="fas fa-cart-plus"></i> Add to cart</button>
                 </div>
+=======
+       <header id="home" class="container-fluid">
+
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <img class="logo" src="https://raw.githubusercontent.com/WildCodeSchool/orleans-0219-php-wildbazar2/footer/images/wild.png" alt="logo">
+              <a class="navbar-brand" href="#home">Wild Bazar</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" href="fashion.php">Fashion</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="aquarium.php">Pet shop</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="tech.php">High-Tech</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="watches.php">Watches</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="electromenager.php">Home appliance</a>
+                    </li>
+                </ul>
+>>>>>>> 9ad43858ca3f5a97454a1d95cfcfe69a131b65c8
             </div>
         </div>
     </div>
 
 <?php } //Fin du boucle ?>
 
-
-
-<!-- Categories -->
-
-<div id="fashion">
-	<div class="row justify-content-center p-4 mr-4">
-    <div class="col-12  col-md-6 col-lg-2 mr-4">
-			<div class="card" style=";">
-	  			<img src="../images/fashion-01.jpg" class="card-img-top" alt="timberland">
 	 			<div class="card-body">
 				    <h5 class="card-title">Timberland</h5>
 				    <p class="card-text">170 €</p>
@@ -115,7 +134,6 @@ foreach($images as $img => $value){ // Boucle pour distribuer les images. Consei
            <div class="modal-body row">
 
           <div class="card col-sm-6">
-            <img src="../images/fashion-01.jpg" class="card-img-top" alt="timberland">
             <div class="card-body">
                 <h5 class="descriptif">Description</h5>
                 <ul class="card-text">
@@ -143,7 +161,6 @@ foreach($images as $img => $value){ // Boucle pour distribuer les images. Consei
 
 		<div class="col-12  col-md-6 col-lg-2 mr-4">
 			<div class="card" style=";">
-			 <img src="../images/fashion-02.jpg" class="card-img-top" alt="shoes">
 				 <div class="card-body">
 			    	 <h5 class="card-title">Puma</h5>
 			    	 <p class="card-text">120.00 €</p>
