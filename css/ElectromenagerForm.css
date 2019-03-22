@@ -1,7 +1,9 @@
 h2 {
+    color: #ff8533;
     text-align: center;
     padding-top: 3vw;
     padding-bottom: 2vw;
+    font-weight: bold;
 }
 
 main p {
