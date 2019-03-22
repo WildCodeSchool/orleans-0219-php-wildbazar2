@@ -20,125 +20,83 @@ $titleBanner = 'high - tech';
 $textBanner = 'The best high-tech articles are here';
 include 'headerForm.php';
 
-$productName = $productPrice = $productDescription = $productFeat1 = $productFeat2 = $productFeat3 = $productImage = "";
-
 $errors = [];
 
-function testInput($data)
-{
-    $data = trim($data);
-    $data = stripslashes($data);
-    $data = htmlspecialchars($data);
-    return $data;
-}
+include '../../src/functions/functions.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-    if (empty($_POST["image"])) {
+    $data = cleanInput($_POST);
+
+    if (empty($data["image"])) {
         $errors["image"] = "Image url is required";
-    } else {
-        $productImage = testInput($_POST["image"]);
     }
-
-    if (empty($_POST["name"])) {
+    if (empty($data["name"])) {
         $errors["name"] = "Name is required";
-    } else {
-        $productName = testInput($_POST["name"]);
     }
-
-
-    if (empty($_POST["price"])) {
+    if (empty($data["price"])) {
         $errors["price"] = "Price is required";
-    } else {
-        $productPrice = testInput($_POST["price"]);
     }
 
-    if (empty($_POST["description"])) {
+    if (!is_numeric($data['price'])) {
+        $errors['price'] = 'Price must be a number';
+    }
+
+    if (empty($data["description"])) {
         $errors["description"] = "Description is required";
-    } else {
-        $productDescription = testInput($_POST["description"]);
     }
-
-    if (empty($_POST["feat1"])) {
+    if (empty($data["feat1"])) {
         $errors["feat1"] = "A feature is required";
-    } else {
-        $productFeat1 = testInput($_POST["feat1"]);
     }
-
-    if (empty($_POST["feat2"])) {
-        echo "";
-    } else {
-        $productFeat2 = testInput($_POST["feat2"]);
+    if (empty($errors)){
+        header('location:productAddTech.php');
+        exit();
     }
-
-    if (empty($_POST["feat3"])) {
-        echo "";
-    } else {
-        $productFeat3 = testInput($_POST["feat3"]);
-    }
-
-    if (empty($_POST["id"])) {
-        $errors["id"] = "Identifiant is required";
-    } else {
-        $productId = testInput($_POST["id"]);
-    }
-
-
 }
-
-
 
 ?>
 
 <div class="container mt-5 mb-5">
-<h1 class="form-title">Add some new products :</h1>
+<h1 class="form-title">Adding a new product :</h1>
 <form method="post" class="product-form mt-5">
     <div class="form-group">
         <label for="name">Image's product</label>
         <span class="error">* <?php if (isset($errors["image"])){echo "Name is required";}?></span>
-        <input type="url" class="form-control" id="name" name="image" placeholder="Enter the image url" value="<?= $productImage; ?>">
+        <input type="url" class="form-control" id="name" name="image" placeholder="Enter the image url" value="<?= $data['image'] ?? ""; ?>">
     </div>
     <div class="form-group">
         <label for="name">Name</label>
         <span class="error">* <?php if (isset($errors["name"])){echo "Name is required";}?></span>
-        <input type="text" class="form-control" id="name" name="name" placeholder="Enter the product's name" value="<?= $productName; ?>">
+        <input type="text" class="form-control" id="name" name="name" placeholder="Enter the product's name" value="<?= $data['name'] ?? ""; ?>">
     </div>
     <div class="form-group">
         <label for="price">Price</label>
         <span class="error">* <?php if (isset($errors["price"])){echo "Price is required";}?></span>
-        <input type="text" class="form-control" id="price" name="price" placeholder="Enter the product's price" value="<?= $productPrice; ?>">
+        <input type="text" class="form-control" id="price" name="price" placeholder="Enter the product's price" value="<?= $data['price'] ?? ""; ?>">
     </div>
 
     <div class="form-group">
         <label for="description">Description</label>
         <span class="error">* <?php if (isset($errors["description"])){echo "Description is required";}?></span>
-        <textarea class="form-control" id="description" name="description" placeholder="Please enter description, more than 10 words less than 200" rows="3"><?= $productDescription; ?></textarea>
+        <textarea class="form-control" id="description" name="description" placeholder="Please enter description, more than 10 words less than 200" rows="3"><?= $data['description'] ?? ""; ?></textarea>
     </div>
     <div class="form-group">
-        <label for="feat1">Feature 1</label>
+        <label for="feat1">Processor</label>
         <span class="error">* <?php if (isset($errors["feat1"])){echo "A feature is required";};?></span>
-        <input type="text" class="form-control" id="feat1" name="feat1" placeholder="" value="<?= $productFeat1; ?> ">
+        <input type="text" class="form-control" id="feat1" name="feat1" placeholder="" value="<?= $data['feat1'] ?? ""; ?> ">
     </div>
     <div class="form-group">
-        <label for="feat2">Feature 2</label>
-        <input type="text" class="form-control" id="feat2" name="feat2"  placeholder="" value="<?= $productFeat2 ?>">
+        <label for="feat2">Screeen size</label>
+        <input type="text" class="form-control" id="feat2" name="feat2"  placeholder="" value="<?= $data['feat2'] ?? ""; ?>">
     </div>
     <div class="form-group">
-        <label for="feat3">Feature 3</label>
-        <input type="text" class="form-control" id="feat3" name="feat3" placeholder="" value="<?= $productFeat3 ?>">
+        <label for="feat3">Weight</label>
+        <input type="text" class="form-control" id="feat3" name="feat3" placeholder="" value="<?= $data['feat3'] ?? "";?>">
     </div>
     
     <button type="submit" class="btn btn-primary">Submit</button>
 </form>
 </div>
-
-
-
-
-
-
-
-
 
 <?php include 'footerForm.php'; ?>
 <!-- Optional JavaScript -->

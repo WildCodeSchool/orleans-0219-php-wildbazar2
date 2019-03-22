@@ -1,9 +1,8 @@
 <?php
-function cleanInput($data)
+function cleanInput(array $data) : array
 {
-$data = trim($data);
-$data = stripslashes($data);
-$data = htmlspecialchars($data);
-$data = filter_var($data,FILTER_SANITIZE_SPECIAL_CHARS);
-return $data;
+    foreach ($data as $key => $value) {
+        $data[$key]=trim($data[$key]);
+    }
+    return $data;
 }
