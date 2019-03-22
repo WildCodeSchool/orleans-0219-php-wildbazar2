@@ -80,7 +80,7 @@
 	left: 50vw;
 	font-weight: bold;
 	font-family: Ubuntu;
-	color: #ff8533;;
+	color: #ff8533;
 }
 
 .home-tech_banner p{
@@ -96,7 +96,14 @@
 
 
 /*fin du header*/
+/* product form page*/
 
+.form-title {
+	text-align: center;
+	text-transform: uppercase;
+	color: #ff8533;
+	font-family: 'Alegreya', sans-serif;
+}
 
 
 /*debut de la section tech*/
@@ -132,7 +139,7 @@
 
 
 .modal {
-	font-family: Alegreya-Regular;
+	font-family: Alegreya;
 	font-size: 1.1em;
 }
 
@@ -170,6 +177,10 @@
 	width: 80%!important;
 	margin: auto;	
 
+}
+
+.error {
+	color: darkred;
 }
 
 
@@ -259,6 +270,11 @@ form{
 }
 h3{
 	color: white;
+}
+
+.product-form{
+	color: #212529;
+	font-family: 'Alegreya', sans-serif;
 }
 
 /*fin de la section footer */
