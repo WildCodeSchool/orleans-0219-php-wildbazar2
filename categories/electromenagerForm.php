@@ -51,7 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $errors['longTitle'] = 'The size of the url must be less than ' . $maxLengthLongTitle . ' characters';
     }
 
-    if ($data['colors'] != 'Choose your color') {
+    if ($data['colors'] === 'Choose your color') {
         $errors['colors'] = 'You must select a color';
     } elseif (!in_array($data['colors'], $colorsAvailable)) {
         $errors['colors'] = 'You must select a color in the list : ' . implode($colorsAvailable, ', ');
@@ -124,7 +124,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                             </span>
                         </label>
                         <input type="text" class="form-control" id="imageUrl" name="imageUrl"
-                               value="<?= htmlentities($data['imageUrl']);?>" placeholder="Enter the image url" required>
+                               value="<?= htmlentities($data['imageUrl']) ?? '';?>" placeholder="Enter the image url" required>
                     </div>
                     <div class="form-group col-md-9">
                         <label for="shortTitle">
@@ -137,7 +137,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                             </span>
                         </label>
                         <input type="text" class="form-control" id="shortTitle" name="shortTitle"
-                               value="<?= htmlentities($data['shortTitle']);?>"
+                               value="<?= htmlentities($data['shortTitle']) ?? '';?>"
                                placeholder="Enter a short title (max 50 chars)" required>
                     </div>
                     <div class="form-group col-md-9">
@@ -153,22 +153,22 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                             </span>
                         </label>
                         <input type="number" step="0.01" class="form-control" id="price" name="price"
-                               value="<?= $data['price'];?>" placeholder="Enter a price" required>
+                               value="<?= $data['price'] ?? '';?>" placeholder="Enter a price" required>
                     </div>
                     <div class="form-group col-md-9">
                         <label for="longTitle">Long title</label>
-                        <input type="text" class="form-control" id="longTitle" name="longTitle"
-                               value="<?= $data['longTitle'];?>">
+                        <input type="text" class="form-control" id="longTitle" name="longTitle" placeholder="Enter a Long title (optionnal)"
+                               value="<?= $data['longTitle'] ?? '';?>">
                     </div>
                     <div class="form-group col-md-9">
                         <label for="size">Size</label>
-                        <input type="text" class="form-control" id="size" name="size"
-                               value="<?= htmlentities($data['size']);?>">
+                        <input type="text" class="form-control" id="size" name="size" placeholder="Enter a price (only numbers)"
+                               value="<?= htmlentities($data['size']) ?? '';?>">
                     </div>
                     <div class="form-group col-md-9">
                         <label for="power">Power</label>
-                        <input type="text" class="form-control" id="power" name="power"
-                               value="<?= htmlentities($data['power']);?>">
+                        <input type="text" class="form-control" id="power" name="power" placeholder="Enter the power of the product"
+                               value="<?= htmlentities($data['power']) ?? '';?>">
                     </div>
     <!--COLOR EN CASE A COCHER-->
                     <div class="form-group col-md-9">
@@ -208,8 +208,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                             </span>
                         </label>
                         <textarea class="form-control" id="technicalDescription" rows="3" name="technicalDescription"
-                        placeholder="Enter a technical description">
-                            <?= htmlentities($data['technicalDescription']);?>
+                        placeholder="Enter a technical description" wrap="hard"> <?= htmlentities($data['technicalDescription']) ?? '';?>
                         </textarea>
                     </div>
                 </div>
