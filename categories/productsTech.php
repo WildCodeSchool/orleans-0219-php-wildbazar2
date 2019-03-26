@@ -1,5 +1,11 @@
 <?php
 
+require '../src/connec.php';
+$pdo = new PDO(DSN, USER, PASS);
+
+$query = "SELECT * FROM products";
+$res = $pdo->query($query);
+$students = $res->fetchAll();
 $products = [
 
     ['image' => '../images/raspberryPi.JPG',

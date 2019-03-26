@@ -19,7 +19,8 @@ $imgBannerSrc = '/images/techVr.jpg';
 $titleBanner = 'high - tech';
 $textBanner = 'The best high-tech articles are here';
 include 'headerForm.php';
-
+require '../../src/connec.php';
+$pdo = new PDO(DSN, USER, PASS);
 $errors = [];
 
 include '../../src/functions/functions.php';
