@@ -36,9 +36,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
     if (empty($data["price"])) {
         $errors["price"] = "Price is required";
-    }
-
-    if (!is_numeric($data['price'])) {
+    } elseif (!is_numeric($data['price'])) {
         $errors['price'] = 'Price must be a number';
     }
 
@@ -83,14 +81,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <div class="form-group">
         <label for="feat1">Processor</label>
         <span class="error">* <?php if (isset($errors["feat1"])){echo "A feature is required";};?></span>
-        <input type="text" class="form-control" id="feat1" name="feat1" placeholder="" value="<?= $data['feat1'] ?? ""; ?> ">
+        <input type="text" class="form-control" id="feat1" name="feat1" placeholder="Enter a feature" value="<?= $data['feat1'] ?? ""; ?>">
     </div>
     <div class="form-group">
         <label for="feat2">Screeen size</label>
         <input type="text" class="form-control" id="feat2" name="feat2"  placeholder="" value="<?= $data['feat2'] ?? ""; ?>">
     </div>
     <div class="form-group">
-        <label for="feat3">Weight</label>
+        <label for="feat3">GPU</label>
         <input type="text" class="form-control" id="feat3" name="feat3" placeholder="" value="<?= $data['feat3'] ?? "";?>">
     </div>
     

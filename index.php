@@ -16,7 +16,7 @@
 		<title>Wild Bazar 2</title>
 	</head>
 
-	<body>
+	<body class="container-fluid p-0 m-0">
 
 
 		<!-- Header -->
@@ -29,9 +29,9 @@
         ?>
 
 <!--MAIN-->
-        <main class="container-fluid">
+        <main class="container-fluid p-0 m-0">
 <!-- Categories -->
-            <section id="category" class="container-fluid category row">
+            <section id="category" class="container-fluid category row mb-4">
                 <h2 class="title">Categories</h2>
                 <div class="row category">
                     <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 cont-cat">
@@ -83,20 +83,23 @@
             </section>
 
 <!-- About us -->
-			<section id="about">
-				<div class="row justify-content-center">
+			<section id="about" class="container-fluid mt-4">
+				<div class="row justify-content-center p-0 mt-4">
 					<div>
 						<h2 class="col-12 title">About us</h2> 
 					</div>
 				</div>
-				<div class="row media justify-content-center">
+				<div class="row media justify-content-center pt-4 m-0">
 					<div class="col-12 col-lg-3 media-img">
-						<img src="images/about.jpeg" class="col-12">
+						<img src="images/about2.png" class="col-12">
 					</div>
 					<div class="col-12 col-lg-7 media-body">
-						<p>Here you will find a range of quality products, specially chosen by our specialists. Quality and originality are our main objectives.</p>
+						<p>Here you will find a range of quality products, specially chosen by our specialists. Quality
+                            and originality are our main objectives. We work with independants sellers to improve their
+                            chances to sell quality products and become trust sellers </p>
 						<br>
-						<p> Our site is updated daily with the new products available, do not hesitate to visit us frequently!</p>
+						<p> Our site is updated daily with the new products available, do not hesitate to visit us
+                            frequently!</p>
 					</div>
 				</div>
 			</section>
@@ -105,7 +108,7 @@
 		<section id="topSelling">
 
 			<div class="row">
-		    	<div class="col-12 mb-4 text-center">
+		    	<div class="col-12 mb-0 text-center">
 		    		<h2 class="title">Top selling</h2>
 		    		<p>The three best sales of the month</p>
 		    	</div> 
@@ -113,33 +116,33 @@
 
       		<div class="container-fluid ">
 
-        		<div class="row justify-content-around">
+        		<div class="row justify-content-center">
 
           		<!-- ROLEX -->
 
-		         	<div class="card col-sm-12 col-md-3">
+		         	<div class="card col-sm-12 col-md-2">
 		            	<img class="card-img-top" src="images/rolex.jpg" alt="Card image cap">
 		            	<p class="nameWanted">2700 &euro;</p>
-		            	<div class="card-body">
+		            	<div class="card-body p-0">
 		              		<h4 class="card-text">WATCH ROLEX DEEPSEA SEA-DWELLER 116660.</h4>
 		            	</div>
 		          	</div>
 		          <!-- MICRONDE -->
 
-		          	<div class="card col-sm-12 col-md-3">
+		          	<div class="card col-sm-12 col-md-2">
 		            	<img class="card-img-top" src="images/micronde.png" alt="Card image cap">
 		            	<p class="nameWanted">200 &euro;</p>
-		            	<div class="card-body">
+		            	<div class="card-body p-0">
 		              		<h4 class="card-text">H.KOENIG VIO9 MICROWAVE OVEN AND GRILL 25L</h4>  
 		            	</div>
 		          	</div>
 
 		          <!-- RASPBERRY -->
 
-		          	<div class="card col-sm-12 col-md-3">
+		          	<div class="card col-sm-12 col-md-2">
 		            	<img class="card-img-top" src="images/raspberryPi.JPG" alt="Card image cap">
 		          		<p class="nameWanted">50 &euro;</p>
-		            	<div class="card-body">
+		            	<div class="card-body p-0">
 		              		<h4 class="card-text">RASPBERRY PI 3 MODEL B+ RASPBERRY PI</h4>
 		            	</div>
 		          	</div>
