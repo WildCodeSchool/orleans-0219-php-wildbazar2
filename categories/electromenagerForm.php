@@ -7,6 +7,7 @@
  */
 
 require '../src/functions/functions.php';
+require '../src/bdd/connec.php';
 
 $errors = [];
 $inputValues = [];

@@ -1,3 +1,16 @@
+<?php
+
+require '../src/bdd/connec.php';
+
+$pdo = new PDO(DSN, USER, PASS);
+
+$query = "SELECT * FROM home_appliance WHERE id=:id";
+$res = $pdo->prepare($query);
+$products = $res->fetchAll(PDO::FETCH_ASSOC);
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
