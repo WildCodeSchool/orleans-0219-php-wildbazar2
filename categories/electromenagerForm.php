@@ -6,13 +6,13 @@
  * Time: 14:24
  */
 
-require '../src/electroFunctions.php';
+require '../src/functions/functions.php';
 
 $errors = [];
 $inputValues = [];
 $colorsAvailable = ['Blue', 'Black', 'Green', 'Pink', 'Grey', 'White', 'Silver'];
 
-$data = cleanArray($_POST);
+$data = cleanInput($_POST);
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
