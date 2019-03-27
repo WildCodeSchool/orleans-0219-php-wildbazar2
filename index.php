@@ -35,7 +35,7 @@
                 <h2 class="title">Categories</h2>
                 <div class="row category">
                     <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 cont-cat">
-                        <img class="cat" src="images/categories001.png" alt="montre-003">
+                        <img class="cat" src="images/categories001.png" alt="Watch">
                         <a href="watches-items.php">
                             <div class="overlay">
                                 <div class="text">Watches</div>
@@ -44,7 +44,7 @@
                         <h5>Watches</h5>
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 cont-cat">
-                        <img class="cat" src="images/categories002.png" alt="montre-005">
+                        <img class="cat" src="images/categories002.png" alt="Home appliance">
                         <a href="electromenager.php">
                             <div class="overlay">
                                 <div class="text">Home Appliance</div>
@@ -53,7 +53,7 @@
                         <h5>Home appliance</h5>
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 cont-cat">
-                        <img class="cat" src="images/categories003.png" alt="montre-006">
+                        <img class="cat" src="images/categories003.png" alt="Tech">
                         <a href="categories-tech.php">
                             <div class="overlay">
                                 <div class="text">High Tech</div>
@@ -62,7 +62,7 @@
                         <h5>High-tech</h5>
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 cont-cat">
-                        <img class="cat" src="images/categories004.png" alt="montre-007">
+                        <img class="cat" src="images/categories004.png" alt="Fashion">
                         <a href="fashion.php">
                             <div class="overlay">
                                 <div class="text">Fashion</div>
@@ -71,7 +71,7 @@
                         <h5>Fashion</h5>
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 cont-cat">
-                        <img class="cat" src="images/categories005.png" alt="montre-008">
+                        <img class="cat" src="images/categories005.png" alt="Aquarium">
                         <a href="aquarium.php">
                             <div class="overlay">
                                 <div class="text">Pet shop</div>
