@@ -14,6 +14,7 @@
 <body>
 
 <?php
+
 $classValueBanner = 'home-tech_banner p-0 m-0';
 $imgBannerSrc = '/images/techVr.jpg';
 $titleBanner = 'high - tech';
@@ -24,15 +25,20 @@ $errors = [];
 
 include '../../src/functions/functions.php';
 
+require '../../src/connec.php';
+$pdo = new PDO(DSN, USER, PASS);
+
+
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $data = cleanInput($_POST);
 
-    if (empty($data["image"])) {
-        $errors["image"] = "Image url is required";
+    if (empty($data["img"])) {
+        $errors["img"] = "Image is required";
     }
-    if (empty($data["name"])) {
-        $errors["name"] = "Name is required";
+    if (empty($data["title"])) {
+        $errors["title"] = "Name is required";
     }
     if (empty($data["price"])) {
         $errors["price"] = "Price is required";
@@ -47,40 +53,55 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $errors["feat1"] = "A feature is required";
     }
     if (empty($errors)){
+
+        $query = "INSERT INTO products (title,price,img,description,feat1,feat2,feat3) VALUES (:title,:price,:img,:description,:feat1,:feat2,:feat3)";
+        $statement = $pdo->prepare($query);
+        $statement->bindValue(':title',$data['title'], PDO::PARAM_STR);
+        $statement->bindValue(':price', $data['price'], PDO::PARAM_INT);
+        $statement->bindValue(':img', $data['img'], PDO::PARAM_STR);
+        $statement->bindValue(':description',$data['description'], PDO::PARAM_STR);
+        $statement->bindValue(':feat1', $data['feat1'], PDO::PARAM_STR);
+        $statement->bindValue(':feat2', $data['feat2'], PDO::PARAM_STR);
+        $statement->bindValue(':feat3', $data['feat3'], PDO::PARAM_STR);
+        $statement->execute();
+
         header('location:productAddTech.php');
         exit();
     }
 }
-
 ?>
+
+
+
+
 
 <div class="container mt-5 mb-5">
 <h1 class="form-title">Adding a new product :</h1>
 <form method="post" class="product-form mt-5">
     <div class="form-group">
         <label for="name">Image's product</label>
-        <span class="error">* <?php if (isset($errors["image"])){echo "Name is required";}?></span>
-        <input type="url" class="form-control" id="name" name="image" placeholder="Enter the image url" value="<?= $data['image'] ?? ""; ?>">
+        <span class="error">* <?php if (isset($errors["img"])){echo $errors["img"];}?></span>
+        <input type="text" class="form-control" id="name" name="img" placeholder="Enter the image url" value="<?= $data['img'] ?? ""; ?>">
     </div>
     <div class="form-group">
         <label for="name">Name</label>
-        <span class="error">* <?php if (isset($errors["name"])){echo "Name is required";}?></span>
-        <input type="text" class="form-control" id="name" name="name" placeholder="Enter the product's name" value="<?= $data['name'] ?? ""; ?>">
+        <span class="error">* <?php if (isset($errors["title"])){echo$errors["title"];}?></span>
+        <input type="text" class="form-control" id="name" name="title" placeholder="Enter the product's name" value="<?= $data['title'] ?? ""; ?>">
     </div>
     <div class="form-group">
         <label for="price">Price</label>
-        <span class="error">* <?php if (isset($errors["price"])){echo "Price is required";}?></span>
+        <span class="error">* <?php if (isset($errors["price"])){echo $errors["price"];}?></span>
         <input type="text" class="form-control" id="price" name="price" placeholder="Enter the product's price" value="<?= $data['price'] ?? ""; ?>">
     </div>
 
     <div class="form-group">
         <label for="description">Description</label>
-        <span class="error">* <?php if (isset($errors["description"])){echo "Description is required";}?></span>
+        <span class="error">* <?php if (isset($errors["description"])){echo $errors["description"];}?></span>
         <textarea class="form-control" id="description" name="description" placeholder="Please enter description, more than 10 words less than 200" rows="3"><?= $data['description'] ?? ""; ?></textarea>
     </div>
     <div class="form-group">
         <label for="feat1">Processor</label>
-        <span class="error">* <?php if (isset($errors["feat1"])){echo "A feature is required";};?></span>
+        <span class="error">* <?php if (isset($errors["feat1"])){echo $errors["feat1"];};?></span>
         <input type="text" class="form-control" id="feat1" name="feat1" placeholder="Enter a feature" value="<?= $data['feat1'] ?? ""; ?>">
     </div>
     <div class="form-group">
