@@ -10,7 +10,9 @@
 <!--  Call fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Alegrya|Ubuntu" rel="stylesheet"> 
 <!-- Call style.css -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
 	<link rel="stylesheet" type="text/css" href="../css/style-tech.css">
+
 </head>
 <body>
 <header>
