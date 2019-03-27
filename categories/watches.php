@@ -1,3 +1,16 @@
+<?php
+
+//Connection to DATABASE
+require '../connec.php';
+$pdo = new PDO(DSN, USER, PASS);
+
+//Fetching products
+$query = "SELECT * FROM watches LIMIT 12";
+$statement = $pdo->query($query);
+$products = $statement->fetchAll(PDO::FETCH_ASSOC);
+
+?>
+
 <!doctype html>
 <html lang="en">
 	<head>
@@ -31,46 +44,43 @@
             <section id="watches" class="container">
                 <div class="watches row mb-5">
 
-                    <?php
-                    $images = glob("../images/montre-0*.{jpg,png}", GLOB_BRACE);// Recuperation des images dans le dossier "../images/*", precisant
-                    foreach($images as $img => $value){ // Boucle pour distribuer les images. Conseil: optimiser les nom des images en ajoutant un element commun ?>
+                    <?php foreach($products as $product): ?>
 
                         <div class="card cont-watches col-xl-3 col-lg-3 col-md-4 col-sm-6 n-bd">
-                            <img src="<?php echo $value; ?>" class="card-img-top" alt="watches">
+                            <img src="../images/<?= $product['p_image']; ?>" class="card-img-top" alt="watches">
                             <div class="card-body">
-                                <h5 class="card-title">Zeiger Men Watch</h5>
-                                <p class="card-text">30.00 €</p>
+                                <h5 class="card-title"><?= $product['p_name']; ?></h5>
+                                <p class="card-text"><?= $product['p_price']; ?>€</p>
                                 <button type="button" class="btn btn-primary btn-card" data-toggle="modal" data-target="#"><i class="fas fa-cart-plus"></i> Add to cart</button>
-                                <a href="#<?php echo $ahrefModalId = substr($value,10,-4); // Modification du nom de l'image pour creer <a href="#"> et <div class="modal fade" id=""> du modal ?>" class="btn i-btn" data-toggle="modal" data-toggle="tooltip" data-placement="bottom" title="More Details"><i class="fas fa-info"></i></a>
+                                <a href="#id_<?= $product['p_id']; ?>" class="btn i-btn" data-toggle="modal" data-toggle="tooltip" data-placement="bottom" title="More Details"><i class="fas fa-info"></i></a>
                             </div>
                         </div>
                         <!--Modal-->
-                        <div class="modal fade" id="<?php echo $ahrefModalId = substr($value,10,-4); ?>" tabindex="-1" role="dialog" aria-labelledby="<?php echo str_replace('ontre','',$ahrefModalId); // Autre modification du nom de l'image pour creer cette valeur ?>" aria-hidden="true">
+                        <div class="modal fade" id="id_<?= $product['p_id']; ?>" tabindex="-1" role="dialog" aria-labelledby="<?= str_replace('ontre','',$product['p_image']); ?>" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h3>30.00 €</h3>
-                                        <h5 class="modal-title" id="m-001">Zeiger Men Watch</h5>
-                                        <h3>30.00 €</h3>
+                                        <h3><?= $product['p_price']; ?>€</h3>
+                                        <h5 class="modal-title" id="<?= str_replace('ontre','',$product['p_image']); ?>"><?= $product['p_name']; ?></h5>
+                                        <h3><?= $product['p_price']; ?>€</h3>
                                         <button type="button" class="close" data-dismiss="modal">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
                                     </div>
                                     <div class="modal-body row">
                                         <div class="card col-sm-6">
-                                            <img src="<?php echo $value; ?>" class="card-img-top" alt="watches">
+                                            <img src="../images/<?= $product['p_image']; ?>" class="card-img-top" alt="watches">
                                             <div class="card-body">
                                                 <h5 class="descriptif">Technical Description</h5>
                                                 <ul class="card-text">
-                                                    <li><b>Branch:</b> Zeiger</li>
-                                                    <li><b>Batteries:</b> 1 Lithium ion</li>
-                                                    <li><b>Shipping Weight:</b> 9.6 ounces</li>
+                                                    <li><b>Branch: </b><?= $product['p_branch']; ?></li>
+                                                    <li><b>Batteries: </b><?= $product['p_battery']; ?></li>
+                                                    <li><b>Shipping Weight: </b><?= $product['p_shipping']; ?></li>
                                                 </ul>
                                             </div>
                                         </div>
                                         <div class="features col-sm-6">
-                                            <p>Simple, beautiful, lightweight, high quality watch, which is great for daily uses. The style is suitable for any occasion.</p>
-                                            <p>Soft, durable, black genuine leather band give it a very elegant and sophisticated appearance, making it perfects for both business and casual activities.</p>
+                                            <p><?= $product['p_caracteristics']; ?>.</p>
                                         </div>
                                     </div>
                                     <div class="modal-footer">
@@ -80,9 +90,10 @@
                             </div>
                         </div>
 
-                    <?php } //Fin du boucle ?>
+                    <?php endforeach; ?>
 
                 </div>
+                <div><a href="formulaire/form.php" class="btn btn-primary fixed-button i-btn"><i class="fas fa-plus"></i> <span class="i-item">item</span></a></div>
             </section>
         </main>
 	<!--Footer-->
