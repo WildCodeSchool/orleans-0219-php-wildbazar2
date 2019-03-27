@@ -12,6 +12,7 @@ require '../src/bdd/connec.php';
 $errors = [];
 $inputValues = [];
 $colorsAvailable = ['Blue', 'Black', 'Green', 'Pink', 'Grey', 'White', 'Silver'];
+$pdo = new PDO(DSN, USER, PASS);
 
 $data = cleanInput($_POST);
 
@@ -64,8 +65,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if (empty($errors)) {
 
+        $query = "INSERT INTO home_appliance (shorttitle, longtitle, src, price, color, description, size, power)
+                  VALUES (:shorttitle, :longtitle, :src, :price, :color, :description, :size, :power)";
 
-        header('Location:/categories/electromenagerForm.php'); //créer
+        $statement = $pdo->prepare($query);
+
+        $statement->bindValue(':shorttitle', $data['shortTitle'], PDO::PARAM_STR);
+        $statement->bindValue(':longtitle', $data['longTitle'], PDO::PARAM_STR);
+        $statement->bindValue(':src', $data['imageUrl'], PDO::PARAM_STR);
+        $statement->bindValue(':price', $data['price'], PDO::PARAM_STR);
+        $statement->bindValue(':color', $data['colors'], PDO::PARAM_STR);
+        $statement->bindValue(':description', $data['technicalDescription'], PDO::PARAM_STR);
+        $statement->bindValue(':size', $data['size'], PDO::PARAM_STR);
+        $statement->bindValue(':power', $data['power'], PDO::PARAM_STR);
+
+        $statement->execute();
+
+        header('Location:/categories/electromenagerForm.php');
         exit();
     }
 
