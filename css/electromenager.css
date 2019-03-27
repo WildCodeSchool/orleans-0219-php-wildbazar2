@@ -33,8 +33,9 @@ p, li {
 	font-weight: bold;
 }
 
-.row {
-	margin: auto;
+.btnAdd {
+	position: relative;
+	top: -3vw;
 }
 
 .price {
