@@ -205,7 +205,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <select class="form-control" id="colors" name="colors">
                             <option value="" disabled selected>Choose your color</option>
                             <?php
-
                             foreach ($colorsAvailable as $color) : ?>
                             <option <?php
                             if (isset($data['colors']) && $data['colors'] === $color) :?> selected="selected"<?php endif; ?> >
