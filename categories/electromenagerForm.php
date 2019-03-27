@@ -81,7 +81,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         $statement->execute();
 
-        header('Location:/categories/electromenagerForm.php');
+        header('Location:/categories/redirection.php');
         exit();
     }
 
