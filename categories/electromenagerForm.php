@@ -63,7 +63,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     if (empty($errors)) {
-        header('Location:/categories/electromenagerForm.php');
+
+
+        header('Location:/categories/electromenagerForm.php'); //créer
         exit();
     }
 
