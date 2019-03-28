@@ -29,7 +29,7 @@
 
 	<?php
 	
-		if('/index.php'== $_SERVER['PHP_SELF']){
+		if('/index.php'== $_SERVER['PHP_SELF'] OR '/redirection.php'== $_SERVER['PHP_SELF']) {
 			include 'carousel.php';
 		}
 		else{

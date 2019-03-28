@@ -8,7 +8,11 @@
 
 */
 /*dubut du header*/
+.add{
 
+	position: absolute;
+	top: 150px;
+}
 #home-tech_banner{
 	box-shadow: 0px 15px 10px -15px #111;
 	padding: 0;
@@ -17,7 +21,7 @@
 	
 
 }
-.navbar{
+/*.navbar{
 	padding-top: 2em;
 	padding-bottom: 2em;
 	margin-right: 0;
@@ -35,9 +39,9 @@
 	font-family: 'Ubuntu', serif;
 	font-size: 2.3em;
 
-}
+}*/
 
-.logo{
+/*.logo{
 	width: 70px;
 	height: 70px;
 	color: #ff8533;
@@ -65,7 +69,7 @@
 #navbarNav .nav-link:hover{
 	color: #ff8533;
 	transition: all 0.2s ease-in; 
-}
+}*/
 .home-tech_banner{
 	position: relative;
 	padding: 0;
@@ -139,33 +143,43 @@
 
 
 .modal {
-	font-family: Alegreya;
-	font-size: 1.1em;
+	font-family: 'Alegreya';
+	font-size: 1em;
 }
 
 .modal-dialog{
-	max-width: 50%;
-	min-width: 350px;
+	max-width: 40%;
+	min-width: 275px;
 }
 
 .card-title-features{
 	margin-left: 1.2em;
 }
+.modal-header .card-text {
+	margin-top: 0.2em;
+	margin-left: 5em;
+}
 
 .modal-header{
-	border: groove;
+	background-color: #343a40;
+	color: #ff8533;
+	font-size: 1.7em;
+	box-shadow: 0px 15px 10px -15px #111;
 }
-.modal p{
+.modal-header h5{
+	font-size: 1.2em;
+}
+.modal-body .modal p{
 	margin-top: 1.5em;
 	padding-right: 3em;
 	text-align: justify;
-	font-size: 1.5em;
+	font-size: 1em;
 }
 
 .modal-body .features{
 	margin-left: 2em;
 	font-weight: bold;
-	font-size: 1.2em;
+	font-size: 1em;
 
 }
 
@@ -250,7 +264,7 @@ footer {
 
 footer p {
 	font-size: 1.1em;
-	font-family: Alegrya;
+	font-family: 'Alegreya';
 }
 
 footer .info{
@@ -302,42 +316,42 @@ h3{
 	}
 
 }
-@media screen and (min-width: 200px) and (max-width: 800px){
-		.home-tech_banner h1{
-	font-size: 6vw;
-	position: absolute;
-	top: 15vw;
-	left: 5vw;
-	font-weight: bold;
+@media screen and (min-width: 200px) and (max-width: 800px) {
+	.home-tech_banner h1 {
+		font-size: 6vw;
+		position: absolute;
+		top: 15vw;
+		left: 5vw;
+		font-weight: bold;
+	}
+
+	.home-tech_banner p {
+		font-size: 3vw;
+		position: absolute;
+		top: 22vw;
+		left: 5vw;
+		font-weight: bold;
+	}
 }
 
-.home-tech_banner p{
-	font-size: 3vw;
-	position: absolute;
-	top: 22vw;
-	left: 5vw;
-	font-weight: bold;
-}
-}
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+	.home-tech_banner h1 {
+		font-size: 6vw;
+		position: absolute;
+		top: 15vw;
+		left: 35vw;
+		font-weight: bold;
+	}
 
-@media screen and (min-width: 800px) and (max-width: 1000px){
-		.home-tech_banner h1{
-	font-size: 6vw;
-	position: absolute;
-	top: 15vw;
-	left: 35vw;
-	font-weight: bold;
-}
-
-.home-tech_banner p{
-	font-size: 3vw;
-	position: absolute;
-	top: 22vw;
-	left: 35vw;
-	font-weight: bold;
-}
+	.home-tech_banner p {
+		font-size: 3vw;
+		position: absolute;
+		top: 22vw;
+		left: 35vw;
+		font-weight: bold;
+	}
 }
 
 html p{
-	font-family: Alegreya;
+	font-family: 'Alegreya',serif;
 }

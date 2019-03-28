@@ -1,3 +1,17 @@
+<?php
+
+require '../src/bdd/connec.php';
+
+$pdo = new PDO(DSN, USER, PASS);
+
+$id = $_GET['id'];
+
+$query = "SELECT * FROM home_appliance";
+$res = $pdo->query($query);
+$products = $res->fetchAll(PDO::FETCH_ASSOC);
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -38,9 +52,9 @@
 
 <!-- Main -->
 		<main class="container-fluid">
-            <section>
+            <div>
                <a href="electromenagerForm.php"> <button type="button" class="btn btnAdd">+ Add an object</button></a>
-            </section>
+            </div>
 			<section>
 <!-- Black toaster -->
 				<div class="row justify-content-center mt-5 ml-5 mr-5">
@@ -48,41 +62,40 @@
 
                     <?php
 
-                    require 'objectsHomeAppliance.php';
 
                     foreach ($products as $product => $productDescription) {
                     ?>
 
-                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 justify-content-around">
                         <div class="card">
-                            <img class="card-img-top" src="<?= $productDescription['Src']; ?>" alt="Card image cap">
+                            <img class="card-img-top" src="<?= $productDescription['src']; ?>" alt="<?= $productDescription['shorttitle'] ?>">
                             <div class="card-body">
                                 <h5 class="card-text"><?= $productDescription['shorttitle'];?></h5>
-                                <p class="price"><?= $productDescription['Price'];?> &euro;</p>
+                                <p class="price"><?= $productDescription['price'];?> &euro;</p>
                                 <a href="#" class="btn" id="categoryBtn">
                                     <i class="fas fa-cart-plus"></i>
                                     Add to cart
                                 </a>
-                                <button type="button" data-toggle="modal" data-toggle="tooltip" data-target="#<?= strtolower(str_replace(' ', '',$productDescription['shorttitle']));?>" class="btn btnInfo" data-placement="bottom" title="More details">
+                                <button type="button" data-toggle="modal" data-toggle="tooltip" data-target="#id<?= $productDescription['id'] ?>" class="btn btnInfo" data-placement="bottom" title="More details">
                                     <i class="fas fa-info"></i>
                                 </button>
                             </div>
                         </div>
                     </div>
 
-                    <div class="modal fade" id="<?= strtolower(str_replace(' ', '',$productDescription['shorttitle']));?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal fade" id="id<?= $productDescription['id'] ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <h5 class="modal-title" id="exampleModalLongTitle"><?= $productDescription['longtitle'];?></h5>
-                                     <h3> <?= $productDescription['Price'];?> &euro;</h3>
+                                     <h3> <?= $productDescription['price'];?> &euro;</h3>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
                                 <div class="modal-body row">
                                     <div class="card col-sm-6 modalImg">
-                                        <img class="card-img-top" src="<?= $productDescription['Src']; ?>" alt="Card image cap">
+                                        <img class="card-img-top" src="<?= $productDescription['src']; ?>" alt="Card image cap">
                                         <div class="card-body">
                                             <h5 class="carac">Technical description :</h5>
                                             <ul class="carac">

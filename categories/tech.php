@@ -10,7 +10,9 @@
 <!--  Call fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Alegrya|Ubuntu" rel="stylesheet"> 
 <!-- Call style.css -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
 	<link rel="stylesheet" type="text/css" href="../css/style-tech.css">
+
 </head>
 <body>
 <header>
@@ -22,7 +24,7 @@
     include '../header.php';
 
 ?>
-    <a href="techAddForm/productAddTech.php">add</a>
+    <a href="techAddForm/productAddTech.php"><button type="button" class="btn btn-warning add">Add a product</button></a>
 </header>
 <div class="container-fluid" id="tech">
 	<div class="row justify-content-center p-4 mt-5">
