@@ -18,10 +18,10 @@
 $classValueBanner = 'fashion-banner';
 $imgBannerSrc = '../images/mode homme.jpg';
 $titleBanner = 'Fashion';
-$textBanner = '';
+$textBanner = 'Adopt a crazy look!';
 include 'header.php';
 
-$productName = $productPrice = $productDescription = $productSize = $productColor = $productSex = $productImage = "";
+$productTitle = $productPrice = $productDescription = $productSize = $productColor = $productCategory = $productImage = "";
 
 
 $errors = [];
@@ -38,10 +38,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         $productImage = testInput($_POST["image"]);
     }
-    if (empty($_POST["name"])) {
-        $errors["name"] = "Name is required";
+    if (empty($_POST["title"])) {
+        $errors["title"] = "Title is required";
     } else {
-        $productName = testInput($_POST["name"]);
+        $productName = testInput($_POST["title"]);
     }
     if (empty($_POST["price"])) {
         $errors["price"] = "Price is required";
@@ -63,10 +63,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         $productColor = testInput($_POST["color"]);
     }
-    if (empty($_POST["sex"])) {
-        $errors["sex"] = "Sex is required";
+    if (empty($_POST["category"])) {
+        $errors["category"] = "Category is required";
     } else {
-        $productSex = testInput($_POST["sex"]);
+        $productCategory = testInput($_POST["category"]);
     }
     if (empty($_POST["id"])) {
         $errors["id"] = "Identifiant is required";
@@ -82,12 +82,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="form-group">
             <label for="name">Image's product</label>
             <span class="error">* <?php if (isset($errors["image"])){echo "Name is required";}?></span>
-            <input type="url" class="form-control" id="name" name="image" placeholder="Enter the image url" value="<?= $productImage; ?>">
+            <input type="url" class="form-control" id="name" name="images" placeholder="Enter the image url" value="<?= $productImage; ?>">
         </div>
         <div class="form-group">
-            <label for="name">Name</label>
-            <span class="error">* <?php if (isset($errors["name"])){echo "Name is required";}?></span>
-            <input type="text" class="form-control" id="name" name="name" placeholder="Enter the product's name" value="<?= $productName; ?>">
+            <label for="title">Title</label>
+            <span class="error">* <?php if (isset($errors["title"])){echo "Title is required";}?></span>
+            <input type="text" class="form-control" id="title" name="Title" placeholder="Enter the product's title" value="<?= $productTitle; ?>">
         </div>
         <div class="form-group">
             <label for="price">Price</label>
@@ -110,9 +110,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <input type="text" class="form-control" id="color" name="color"  placeholder="please select a color" value="<?= $productColor ?>">
         </div>
         <div class="form-group">
-            <label for="sex">Sex</label>
+            <label for="sex">Category</label>
             <span class="error">* <?php if (isset($errors["sex"])){echo "Sex is required";}?></span>
-            <input type="text" class="form-control" id="sex" name="sex" placeholder="please select sex" value="<?= $productSex ?>">
+            <input type="text" class="form-control" id="sex" name="category" placeholder="please select sex" value="<?= $productCategory ?>">
         </div>
 
         <button type="submit" class="btn btn-primary">envoyer</button>
@@ -127,7 +127,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
 
-<?php include 'footerForm.php'; ?>
+<?php include 'footer.php'; ?>
+
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
